@@ -15,7 +15,7 @@ export default function Header() {
   const isDarkMode = resolvedTheme === "dark";
 
   return (
-    <header className="flex items-center justify-between w-full px-default py-2 absolute top-0 left-0 right-0">
+    <header className="flex items-center justify-between w-full px-default py-2 absolute top-0 left-0 right-0 container">
       <Link href={PAGE.HOME} aria-label="Voltar para página Inicial">
         <Image
           src={isDarkMode ? LogoWhite : LogoBlack}
