@@ -1,4 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+@layer components {
+  .floating {
+    @apply text-white size-12 p-1 fixed z-20 bottom-6 right-6 transition-all duration-500;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  @apply flex touch-none select-none z-20 h-full w-2.5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply relative flex-1 rounded-full transition-all ease-in-out bg-slate-200 hover:bg-slate-400;
+}
