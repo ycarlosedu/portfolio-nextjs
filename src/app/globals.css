@@ -17,6 +17,16 @@ html {
   }
 }
 
+@layer utilities {
+  .max-w-default {
+    @apply max-w-screen-2xl;
+  }
+
+  .px-default {
+    @apply px-4 xs:px-8;
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
   @apply flex touch-none select-none z-20 h-full w-2.5;
