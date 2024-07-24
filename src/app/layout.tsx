@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import { Toaster } from "@/components/Sonner";
 import { TooltipProvider } from "@/components/Tooltip";
 import { ThemeProvider } from "@/providers/Theme";
@@ -92,7 +93,10 @@ export default function RootLayout({ children }: Props) {
         </div>
 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <TooltipProvider delayDuration={50}>{children}</TooltipProvider>
+          <TooltipProvider delayDuration={50}>
+            <Header />
+            {children}
+          </TooltipProvider>
           <Toaster />
         </ThemeProvider>
 
