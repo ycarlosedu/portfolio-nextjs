@@ -84,16 +84,8 @@ type Props = {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html
-      lang="en"
-      className="flex flex-col items-start justify-start w-screen overflow-hidden"
-    >
-      <body
-        className={
-          inter.className +
-          " relative top-0 left-0 right-0 min-h-screen w-full overflow-hidden"
-        }
-      >
+    <html lang="en">
+      <body className={inter.className + " w-full overflow-x-hidden"}>
         <div itemScope itemType="https://schema.org/WebSite">
           <meta itemProp="url" content="https://carlossilva.vercel.app/" />
           <meta itemProp="name" content="Carlos Silva | Front-End Developer" />

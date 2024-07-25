@@ -26,6 +26,10 @@ const config = {
         xs: "425px",
         "2xl": "1400px"
       },
+      colors: {
+        light: "#FFF",
+        dark: "#121212"
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
