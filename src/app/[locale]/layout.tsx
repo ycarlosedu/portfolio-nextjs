@@ -2,6 +2,7 @@ import "@/app/globals.css";
 import Header from "@/components/Header";
 import { Toaster } from "@/components/Sonner";
 import { TooltipProvider } from "@/components/Tooltip";
+import { locales } from "@/i18n";
 import { ThemeProvider } from "@/providers/Theme";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -16,9 +17,9 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  // metadataBase: new URL("https://carlossilva.vercel.app/"),
+  metadataBase: new URL("https://carlossilva.vercel.app/"),
   category: "technology",
-  // manifest: "https://carlossilva.vercel.app/site.webmanifest",
+  manifest: "https://carlossilva.vercel.app/site.webmanifest",
   applicationName: "Carlos Silva | Front-End Developer",
   openGraph: {
     url: "https://carlossilva.vercel.app/",
@@ -83,6 +84,10 @@ export const metadata: Metadata = {
   }
 };
 
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
 type Props = {
   children: React.ReactNode;
   params: { locale: string };
@@ -106,7 +111,7 @@ export default function RootLayout({ children, params: { locale } }: Props) {
             messages={messages as AbstractIntlMessages}
           >
             <TooltipProvider delayDuration={50}>
-              <Header />
+              <Header locale={locale} />
               {children}
             </TooltipProvider>
           </NextIntlClientProvider>

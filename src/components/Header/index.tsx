@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { List } from "@phosphor-icons/react/dist/ssr";
 import LogoBlack from "images/logo/black.svg";
 import LogoWhite from "images/logo/white.svg";
+import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +16,12 @@ import { useEffect, useState } from "react";
 
 let lastScrollPosition = 0;
 
-export default function Header() {
+type Props = {
+  locale: string;
+};
+export default function Header({ locale }: Props) {
+  const t = useTranslations("HEADER");
+
   const [showHeader, setShowHeader] = useState(true);
   const { resolvedTheme } = useTheme();
   const isDarkMode = resolvedTheme === "dark";
@@ -42,7 +48,7 @@ export default function Header() {
         showHeader ? "" : "-translate-y-40"
       )}
     >
-      <Link href={PAGE.HOME} aria-label="Voltar para página Inicial">
+      <Link href={PAGE.HOME} aria-label={t("HOME_ARIA_LABEL")}>
         <Image
           src={isDarkMode ? LogoWhite : LogoBlack}
           alt="Logo Carlos Silva"
@@ -50,16 +56,18 @@ export default function Header() {
           height={50}
         />
       </Link>
-      <Nav className="hidden md:flex" />
-      <ToggleTheme />
-      <ToggleLanguage />
+      <Nav className="hidden md:flex" locale={locale} />
+      <div className="flex items-center gap-4">
+        <ToggleTheme />
+        <ToggleLanguage locale={locale} />
+      </div>
 
       <Sheet>
         <SheetTrigger className="md:hidden">
           <List size={32} />
         </SheetTrigger>
         <SheetContent className="flex flex-col justify-between">
-          <Nav className="flex-col items-start" />
+          <Nav className="flex-col items-start" locale={locale} />
           <Image
             src={isDarkMode ? LogoWhite : LogoBlack}
             alt="Logo Carlos Silva"

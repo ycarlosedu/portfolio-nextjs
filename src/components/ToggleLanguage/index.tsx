@@ -8,7 +8,7 @@ import {
 } from "@/components/Dropdown";
 import { Globe } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
-import { usePathname, useSelectedLayoutSegments } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 type Option = {
   country: string;
@@ -16,9 +16,13 @@ type Option = {
   code: string;
 };
 
-export default function ToggleLanguage() {
+type Props = {
+  locale: string;
+};
+
+export default function ToggleLanguage({ locale }: Props) {
   const pathname = usePathname();
-  const urlSegments = useSelectedLayoutSegments();
+  const urlWithoutLocale = pathname.split(`/${locale}`)[1];
 
   const options: Option[] = [
     { country: "US", lang: "English", code: "en-us" },
@@ -30,7 +34,9 @@ export default function ToggleLanguage() {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
           <Globe className="h-[1.2rem] w-[1.2rem]" />
-          <span className="sr-only">Change Language (en-us/pt-br)</span>
+          <span className="sr-only">
+            Change Language/Alterar Idioma (en-us/pt-br)
+          </span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
@@ -42,7 +48,7 @@ export default function ToggleLanguage() {
           >
             <Link
               key={lang.code}
-              href={`/${lang.code}/${urlSegments.join("/")}`}
+              href={`/${lang.code}${urlWithoutLocale}`}
               className="flex items-center justify-between w-full"
             >
               {lang.lang}

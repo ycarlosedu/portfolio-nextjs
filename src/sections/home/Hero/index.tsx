@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "@/components/Button";
+import Typography from "@/components/Typography";
 import { PAGE } from "@/constants";
 import { CaretRight } from "@phosphor-icons/react/dist/ssr";
 import HeroBlack from "images/hero-black.svg";
@@ -10,7 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
-  const t = useTranslations("");
+  const t = useTranslations("HOME.HERO");
 
   const { resolvedTheme } = useTheme();
   const isDarkMode = resolvedTheme === "dark";
@@ -18,26 +19,21 @@ export default function Hero() {
   return (
     <section className="mx-auto px-default py-28 gap-12 overflow-hidden md:flex">
       <div className="flex-none space-y-5 max-w-xl">
-        <h1 className="text-4xl  font-extrabold sm:text-5xl">
-          Quer construir um site do jeito que você sempre sonhou?
-        </h1>
-        <p>{t("About")}</p>
-        <p>
-          Eu posso te ajudar a construir um site incrível, com um design moderno
-          e responsivo, que vai te ajudar a{" "}
-          <strong>alavancar o seu negócio</strong> e{" "}
-          <strong>conquistar mais clientes</strong>.
-        </p>
+        <Typography.H1 className="text-4xl  font-extrabold sm:text-5xl">
+          {t("TITLE")}
+        </Typography.H1>
+        <Typography.P>{t("SUBTITLE")}</Typography.P>
+        <Typography.P>{t("SUBTITLE2")}</Typography.P>
         <div className="flex items-center gap-x-3 sm:text-sm">
           <Button asChild>
             <Link href={PAGE.CONTACT} className="font-medium">
-              Entrar em contato
+              {t("BUTTON_CONTACT")}
               <CaretRight size={16} />
             </Link>
           </Button>
           <Button asChild variant="outline">
             <Link href={PAGE.CONTACT} className="font-medium">
-              Ver projetos
+              {t("BUTTON_PROJECTS")}
               <CaretRight size={16} />
             </Link>
           </Button>

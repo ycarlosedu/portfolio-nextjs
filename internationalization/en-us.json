@@ -1,4 +1,51 @@
 {
-  "About": "About",
-  "Support": "Support"
+  "METADATA": {
+    "HOME": {
+      "TITLE": "Carlos Silva | Front-End Developer",
+      "DESCRIPTION": "Carlos Silva is a front-end developer who loves to create beautiful and functional things for the web."
+    },
+    "CONTACT": {
+      "TITLE": "Contact | Carlos Silva",
+      "DESCRIPTION": "Get in touch with Carlos Silva to discuss projects, job opportunities or just to say hi."
+    },
+    "ABOUT": {
+      "TITLE": "About | Carlos Silva",
+      "DESCRIPTION": "Carlos Silva is a front-end developer who loves to create beautiful and functional things for the web."
+    },
+    "NOT_FOUND": {
+      "TITLE": "Page not found | Carlos Silva",
+      "DESCRIPTION": "The page you are looking for was not found. Please check the URL and try again."
+    }
+  },
+  "HEADER": {
+    "HOME_ARIA_LABEL": "Go to the home page",
+    "HOME": "Home",
+    "CONTACT": "Contact"
+  },
+  "TOGGLE_THEME": {
+    "ARIA_LABEL": "Toggle theme (Light/Dark/System)",
+    "LIGHT": "Light",
+    "DARK": "Dark",
+    "SYSTEM": "From my system"
+  },
+  "HOME": {
+    "HERO": {
+      "TITLE": "Want to build a website the way you always dreamed of?",
+      "SUBTITLE": "I can help you make that happen.",
+      "SUBTITLE2": "Together we can build an amazing website, with a modern and responsive design, that will help you boost your business and attract more customers.",
+      "BUTTON_CONTACT": "Get in touch",
+      "BUTTON_PROJECTS": "View projects"
+    },
+    "ABOUT": {
+      "TITLE": "About me",
+      "DESCRIPTION": "I'm a passionate front-end developer with a focus on building beautiful and performant web applications. I specialize in React, TypeScript, and modern web technologies.",
+      "BUTTON": "View Portfolio"
+    }
+  },
+  "NOT_FOUND": {
+    "TITLE": "Page not found",
+    "MESSAGE": "Sorry, the page you are looking for could not be found or has been removed.",
+    "BACK_HOME": "Back to home"
+  },
+  "About": "About"
 }

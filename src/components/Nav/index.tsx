@@ -1,10 +1,15 @@
 import { PAGE } from "@/constants";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { ComponentProps } from "react";
 
-type Props = ComponentProps<"nav">;
-export default function Nav({ className, ...props }: Props) {
+type Props = ComponentProps<"nav"> & {
+  locale: string;
+};
+export default function Nav({ className, locale, ...props }: Props) {
+  const t = useTranslations("HEADER");
+
   return (
     <nav
       className={cn([
@@ -13,8 +18,12 @@ export default function Nav({ className, ...props }: Props) {
       ])}
       {...props}
     >
-      <Link href={PAGE.HOME}>Início</Link>
-      <Link href={PAGE.CONTACT}>Contato</Link>
+      <Link lang={locale} href={`/${locale}${PAGE.HOME}`}>
+        {t("HOME")}
+      </Link>
+      <Link lang={locale} href={`/${locale}${PAGE.CONTACT}`}>
+        {t("CONTACT")}
+      </Link>
     </nav>
   );
 }
