@@ -4,11 +4,14 @@ import { PAGE } from "@/constants";
 import { CaretRight } from "@phosphor-icons/react/dist/ssr";
 import HeroBlack from "images/hero-black.svg";
 import HeroWhite from "images/hero-white.svg";
+import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
+  const t = useTranslations("");
+
   const { resolvedTheme } = useTheme();
   const isDarkMode = resolvedTheme === "dark";
 
@@ -18,6 +21,7 @@ export default function Hero() {
         <h1 className="text-4xl  font-extrabold sm:text-5xl">
           Quer construir um site do jeito que você sempre sonhou?
         </h1>
+        <p>{t("About")}</p>
         <p>
           Eu posso te ajudar a construir um site incrível, com um design moderno
           e responsivo, que vai te ajudar a{" "}

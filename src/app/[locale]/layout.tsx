@@ -1,3 +1,4 @@
+import "@/app/globals.css";
 import Header from "@/components/Header";
 import { Toaster } from "@/components/Sonner";
 import { TooltipProvider } from "@/components/Tooltip";
@@ -5,8 +6,12 @@ import { ThemeProvider } from "@/providers/Theme";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
+import {
+  AbstractIntlMessages,
+  NextIntlClientProvider,
+  useMessages
+} from "next-intl";
 import { Inter } from "next/font/google";
-import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -80,11 +85,14 @@ export const metadata: Metadata = {
 
 type Props = {
   children: React.ReactNode;
+  params: { locale: string };
 };
 
-export default function RootLayout({ children }: Props) {
+export default function RootLayout({ children, params: { locale } }: Props) {
+  const messages = useMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className + " w-full overflow-x-hidden"}>
         <div itemScope itemType="https://schema.org/WebSite">
           <meta itemProp="url" content="https://carlossilva.vercel.app/" />
@@ -93,10 +101,15 @@ export default function RootLayout({ children }: Props) {
         </div>
 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <TooltipProvider delayDuration={50}>
-            <Header />
-            {children}
-          </TooltipProvider>
+          <NextIntlClientProvider
+            locale={locale}
+            messages={messages as AbstractIntlMessages}
+          >
+            <TooltipProvider delayDuration={50}>
+              <Header />
+              {children}
+            </TooltipProvider>
+          </NextIntlClientProvider>
           <Toaster />
         </ThemeProvider>
 

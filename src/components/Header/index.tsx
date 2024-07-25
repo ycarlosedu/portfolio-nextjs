@@ -1,5 +1,7 @@
 "use client";
 import Nav from "@/components/Nav";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/Sheet";
+import ToggleLanguage from "@/components/ToggleLanguage";
 import ToggleTheme from "@/components/ToggleTheme";
 import { PAGE } from "@/constants";
 import { cn } from "@/lib/utils";
@@ -10,7 +12,6 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "../Sheet";
 
 let lastScrollPosition = 0;
 
@@ -51,6 +52,7 @@ export default function Header() {
       </Link>
       <Nav className="hidden md:flex" />
       <ToggleTheme />
+      <ToggleLanguage />
 
       <Sheet>
         <SheetTrigger className="md:hidden">
