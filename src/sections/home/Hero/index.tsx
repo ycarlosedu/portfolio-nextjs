@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/Button";
 import Typography from "@/components/Typography";
-import { PAGE } from "@/navigation";
 import { CaretRight } from "@phosphor-icons/react/dist/ssr";
 import HeroBlack from "images/hero-black.svg";
 import { useTranslations } from "next-intl";
@@ -21,13 +20,13 @@ export default function Hero() {
         <Typography.P>{t("SUBTITLE2")}</Typography.P>
         <div className="flex items-center gap-x-3 sm:text-sm">
           <Button asChild>
-            <Link href={PAGE.CONTACT} className="font-medium">
+            <Link href={"/contact"} className="font-medium">
               {t("BUTTON_CONTACT")}
               <CaretRight size={16} />
             </Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href={PAGE.CONTACT} className="font-medium">
+            <Link href={"/contact"} className="font-medium">
               {t("BUTTON_PROJECTS")}
               <CaretRight size={16} />
             </Link>

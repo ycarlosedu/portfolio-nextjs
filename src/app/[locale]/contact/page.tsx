@@ -2,6 +2,7 @@ import { Metadata } from "next";
 
 import { Button } from "@/components/Button";
 import TransitionContainer from "@/components/TransitionContainer";
+import TransitionLink from "@/components/TransitionLink";
 import Typography from "@/components/Typography";
 import { locales } from "@/i18n";
 import { CaretLeft } from "@phosphor-icons/react/dist/ssr";
@@ -46,10 +47,10 @@ export default async function Contact({ params: { locale } }: Props) {
       <Typography.H1 className="">{t("TITLE")}</Typography.H1>
       <Typography.Muted className="">{t("MESSAGE")}</Typography.Muted>
       <Button asChild>
-        <a href={"/" + locale}>
+        <TransitionLink locale={locale} href={"/"}>
           <CaretLeft size={16} />
           {t("BACK_HOME")}
-        </a>
+        </TransitionLink>
       </Button>
     </TransitionContainer>
   );

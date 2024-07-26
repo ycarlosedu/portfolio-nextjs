@@ -6,19 +6,22 @@ import { ComponentProps } from "react";
 
 type Props = ComponentProps<typeof Link> & {
   href: Pages;
+  forceTransition?: boolean;
 };
 export default function TransitionLink({
   children,
   href,
   locale,
   lang,
+  forceTransition = false,
+  onClick,
   ...props
 }: Props) {
   const pathname = usePathname();
   const router = useRouter();
 
-  const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (pathname === href) return;
+  const handleTransition = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === href && !forceTransition) return;
 
     e.preventDefault();
     const main = document.querySelector("main");
@@ -29,7 +32,10 @@ export default function TransitionLink({
 
   return (
     <Link
-      onClick={handleClick}
+      onClick={(e) => {
+        onClick && onClick(e);
+        handleTransition(e);
+      }}
       href={href}
       locale={locale}
       lang={lang}

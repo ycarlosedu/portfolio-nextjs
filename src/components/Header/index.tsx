@@ -3,15 +3,14 @@ import Nav from "@/components/Nav";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/Sheet";
 import ToggleLanguage from "@/components/ToggleLanguage";
 import ToggleTheme from "@/components/ToggleTheme";
+import TransitionLink from "@/components/TransitionLink";
 import useScrollUp from "@/hooks/useScrollUp";
 import { cn } from "@/lib/utils";
-import { PAGE } from "@/navigation";
 import { List } from "@phosphor-icons/react/dist/ssr";
 import LogoBlack from "images/logo/black.svg";
 import LogoWhite from "images/logo/white.svg";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 
 type Props = {
   locale: string;
@@ -28,7 +27,11 @@ export default function Header({ locale }: Props) {
         isScrollingUp ? "" : "-translate-y-40"
       )}
     >
-      <Link href={PAGE.HOME} aria-label={t("HOME_ARIA_LABEL")}>
+      <TransitionLink
+        locale={locale}
+        href={"/"}
+        aria-label={t("HOME_ARIA_LABEL")}
+      >
         <Image
           src={LogoBlack}
           alt="Black Carlos Silva Logo"
@@ -43,7 +46,7 @@ export default function Header({ locale }: Props) {
           width={80}
           height={50}
         />
-      </Link>
+      </TransitionLink>
       <Nav className="hidden md:flex" locale={locale} />
       <div className="flex items-center gap-4">
         <ToggleTheme />

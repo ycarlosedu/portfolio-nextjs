@@ -6,9 +6,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from "@/components/Dropdown";
+import { Pages } from "@/navigation";
 import { Globe } from "@phosphor-icons/react/dist/ssr";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import TransitionLink from "../TransitionLink";
 
 type Option = {
   country: string;
@@ -22,7 +23,7 @@ type Props = {
 
 export default function ToggleLanguage({ locale }: Props) {
   const pathname = usePathname();
-  const urlWithoutLocale = pathname.split(`/${locale}`)[1];
+  const urlWithoutLocale = pathname.split(`/${locale}`)[1] || "/";
 
   const options: Option[] = [
     { country: "US", lang: "English", code: "en-us" },
@@ -46,14 +47,16 @@ export default function ToggleLanguage({ locale }: Props) {
             asChild
             disabled={pathname.includes(lang.code)}
           >
-            <Link
+            <TransitionLink
               key={lang.code}
-              href={`/${lang.code}${urlWithoutLocale}`}
+              locale={lang.code}
+              href={`${urlWithoutLocale}` as Pages}
               className="flex items-center justify-between w-full"
+              forceTransition
             >
               {lang.lang}
               <span>{lang.country}</span>
-            </Link>
+            </TransitionLink>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

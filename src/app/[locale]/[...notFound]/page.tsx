@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 
 import { Button } from "@/components/Button";
+import TransitionContainer from "@/components/TransitionContainer";
+import TransitionLink from "@/components/TransitionLink";
 import Typography from "@/components/Typography";
 import { locales } from "@/i18n";
 import { CaretLeft } from "@phosphor-icons/react/dist/ssr";
@@ -34,22 +36,22 @@ export async function generateMetadata({
   };
 }
 
-export default async function NotFound({ params: { locale } }: Props) {
+export default async function Contact({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations("NOT_FOUND");
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center container space-y-3 text-center">
+    <TransitionContainer className="justify-center space-y-3 text-center mt-0">
       <Typography.P className="font-bold text-lg">404</Typography.P>
       <Typography.H1 className="">{t("TITLE")}</Typography.H1>
       <Typography.Muted className="">{t("MESSAGE")}</Typography.Muted>
       <Button asChild>
-        <a href={"/" + locale}>
+        <TransitionLink locale={locale} href={"/"}>
           <CaretLeft size={16} />
           {t("BACK_HOME")}
-        </a>
+        </TransitionLink>
       </Button>
-    </main>
+    </TransitionContainer>
   );
 }

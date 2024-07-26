@@ -5,11 +5,6 @@ import { locales } from "./i18n";
 
 export const localePrefix = "always";
 
-export const PAGE = {
-  HOME: "/",
-  CONTACT: "/contact"
-};
-
 export const pathnames = {
   "/": "/",
   "/contact": "/contact"
