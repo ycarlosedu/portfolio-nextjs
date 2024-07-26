@@ -1,5 +1,6 @@
 import TransitionContainer from "@/components/TransitionContainer";
 import About from "@/sections/home/About";
+import Banner from "@/sections/home/Banner";
 import Hero from "@/sections/home/Hero";
 import { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -29,6 +30,7 @@ export default function Home({ params: { locale } }: Props) {
 
   return (
     <TransitionContainer>
+      <Banner />
       <Hero />
       <About />
     </TransitionContainer>

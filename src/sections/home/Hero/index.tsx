@@ -13,9 +13,9 @@ export default function Hero() {
   return (
     <section className="mx-auto px-default py-28 gap-12 overflow-hidden md:flex">
       <div className="flex-none space-y-5 max-w-xl">
-        <Typography.H1 className="text-4xl  font-extrabold sm:text-5xl">
+        <Typography.H2 className="text-4xl font-extrabold sm:text-5xl">
           {t("TITLE")}
-        </Typography.H1>
+        </Typography.H2>
         <Typography.P>{t("SUBTITLE")}</Typography.P>
         <Typography.P>{t("SUBTITLE2")}</Typography.P>
         <div className="flex items-center gap-x-3 sm:text-sm">

@@ -18,63 +18,66 @@ type Props = {
 export default function Header({ locale }: Props) {
   const t = useTranslations("HEADER");
 
-  const { isScrollingUp } = useScrollUp({ initialState: true });
+  const { isScrollingUp, isAtTheTop } = useScrollUp({ initialState: true });
 
   return (
     <header
       className={cn(
-        "z-30 flex items-center justify-between w-full px-default py-2 fixed top-0 left-0 right-0 container transition-transform duration-300 bg-light dark:bg-dark",
-        isScrollingUp ? "" : "-translate-y-40"
+        "z-30 flex items-center justify-between px-default py-2 fixed top-0 left-0 right-0 w-screen transition-[transform,background-color] duration-300",
+        isScrollingUp ? "" : "-translate-y-40",
+        isAtTheTop ? "bg-transparent" : "bg-light dark:bg-dark"
       )}
     >
-      <TransitionLink
-        locale={locale}
-        href={"/"}
-        aria-label={t("HOME_ARIA_LABEL")}
-      >
-        <Image
-          src={LogoBlack}
-          alt="Black Carlos Silva Logo"
-          className="block animate-scale-up-and-down dark:hidden dark:animate-none"
-          width={80}
-          height={50}
-        />
-        <Image
-          src={LogoWhite}
-          alt="White Carlos Silva Logo"
-          className="hidden animate-none dark:block dark:animate-scale-up-and-down"
-          width={80}
-          height={50}
-        />
-      </TransitionLink>
-      <Nav className="hidden md:flex" locale={locale} />
-      <div className="flex items-center gap-4">
-        <ToggleTheme />
-        <ToggleLanguage locale={locale} />
-      </div>
-
-      <Sheet>
-        <SheetTrigger className="md:hidden">
-          <List size={32} />
-        </SheetTrigger>
-        <SheetContent className="flex flex-col justify-between">
-          <Nav className="flex-col items-start" locale={locale} />
+      <div className="container flex items-center justify-between">
+        <TransitionLink
+          locale={locale}
+          href={"/"}
+          aria-label={t("HOME_ARIA_LABEL")}
+        >
           <Image
             src={LogoBlack}
             alt="Black Carlos Silva Logo"
-            className="block dark:hidden"
+            className="block animate-scale-up-and-down dark:hidden dark:animate-none"
             width={80}
             height={50}
           />
           <Image
             src={LogoWhite}
             alt="White Carlos Silva Logo"
-            className="hidden dark:block"
+            className="hidden animate-none dark:block dark:animate-scale-up-and-down"
             width={80}
             height={50}
           />
-        </SheetContent>
-      </Sheet>
+        </TransitionLink>
+        <Nav className="hidden md:flex" locale={locale} />
+        <div className="flex items-center gap-4">
+          <ToggleTheme />
+          <ToggleLanguage locale={locale} />
+        </div>
+
+        <Sheet>
+          <SheetTrigger className="md:hidden">
+            <List size={32} />
+          </SheetTrigger>
+          <SheetContent className="flex flex-col justify-between">
+            <Nav className="flex-col items-start" locale={locale} />
+            <Image
+              src={LogoBlack}
+              alt="Black Carlos Silva Logo"
+              className="block dark:hidden"
+              width={80}
+              height={50}
+            />
+            <Image
+              src={LogoWhite}
+              alt="White Carlos Silva Logo"
+              className="hidden dark:block"
+              width={80}
+              height={50}
+            />
+          </SheetContent>
+        </Sheet>
+      </div>
     </header>
   );
 }

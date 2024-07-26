@@ -25,10 +25,7 @@ export default function TransitionContainer({
         type: "tween",
         ease: "easeInOut"
       }}
-      className={cn(
-        "flex min-h-screen flex-col mt-[88px] items-center container",
-        className
-      )}
+      className={cn("flex min-h-screen flex-col items-center", className)}
       {...props}
     >
       {children}
