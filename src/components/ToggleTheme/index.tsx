@@ -14,7 +14,12 @@ import { useTranslations } from "next-intl";
 
 export default function ToggleTheme() {
   const t = useTranslations("TOGGLE_THEME");
-  const { setTheme } = useTheme();
+
+  const { setTheme, theme } = useTheme();
+
+  const isLight = theme === "light";
+  const isDark = theme === "dark";
+  const isSystem = theme === "system";
 
   return (
     <DropdownMenu>
@@ -26,13 +31,16 @@ export default function ToggleTheme() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
+        <DropdownMenuItem disabled={isLight} onClick={() => setTheme("light")}>
           {t("LIGHT")}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
+        <DropdownMenuItem disabled={isDark} onClick={() => setTheme("dark")}>
           {t("DARK")}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
+        <DropdownMenuItem
+          disabled={isSystem}
+          onClick={() => setTheme("system")}
+        >
           {t("SYSTEM")}
         </DropdownMenuItem>
       </DropdownMenuContent>

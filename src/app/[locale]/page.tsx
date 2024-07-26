@@ -1,7 +1,7 @@
 import About from "@/sections/home/About";
 import Hero from "@/sections/home/Hero";
 import { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
 type Props = {
   params: {
@@ -24,6 +24,8 @@ export async function generateMetadata({
 }
 
 export default function Home({ params: { locale } }: Props) {
+  unstable_setRequestLocale(locale);
+
   return (
     <main className="flex min-h-screen flex-col mt-[88px] items-center container">
       <Hero />

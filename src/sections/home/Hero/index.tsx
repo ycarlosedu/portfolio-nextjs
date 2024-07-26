@@ -4,17 +4,12 @@ import Typography from "@/components/Typography";
 import { PAGE } from "@/constants";
 import { CaretRight } from "@phosphor-icons/react/dist/ssr";
 import HeroBlack from "images/hero-black.svg";
-import HeroWhite from "images/hero-white.svg";
 import { useTranslations } from "next-intl";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
   const t = useTranslations("HOME.HERO");
-
-  const { resolvedTheme } = useTheme();
-  const isDarkMode = resolvedTheme === "dark";
 
   return (
     <section className="mx-auto px-default py-28 gap-12 overflow-hidden md:flex">
@@ -41,7 +36,7 @@ export default function Hero() {
       </div>
       <div className="flex-1 hidden md:block">
         <Image
-          src={isDarkMode ? HeroWhite : HeroBlack}
+          src={HeroBlack}
           alt="Imagem de um notebook e um celular com códigos na tela"
           width={576}
           height={331}

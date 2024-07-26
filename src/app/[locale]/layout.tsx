@@ -12,6 +12,7 @@ import {
   NextIntlClientProvider,
   useMessages
 } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -94,6 +95,7 @@ type Props = {
 };
 
 export default function RootLayout({ children, params: { locale } }: Props) {
+  unstable_setRequestLocale(locale);
   const messages = useMessages();
 
   return (

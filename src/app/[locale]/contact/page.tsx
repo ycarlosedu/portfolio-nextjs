@@ -34,7 +34,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function NotFound({ params: { locale } }: Props) {
+export default async function Contact({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations("NOT_FOUND");

@@ -31,6 +31,10 @@ const config = {
         dark: "#121212"
       },
       keyframes: {
+        scaleUpAndDown: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.3)" }
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" }
@@ -42,7 +46,11 @@ const config = {
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out"
+        "accordion-up": "accordion-up 0.2s ease-out",
+        "enter-spinning": "spin 0.5s linear",
+        "enter-pulse": "pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1)",
+        "enter-bounce": "bounce 0.5s",
+        "scale-up-and-down": "scaleUpAndDown 0.5s"
       }
     }
   },
