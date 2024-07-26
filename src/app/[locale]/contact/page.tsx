@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import { Button } from "@/components/Button";
+import TransitionContainer from "@/components/TransitionContainer";
 import Typography from "@/components/Typography";
 import { locales } from "@/i18n";
 import { CaretLeft } from "@phosphor-icons/react/dist/ssr";
@@ -40,7 +41,7 @@ export default async function Contact({ params: { locale } }: Props) {
   const t = await getTranslations("NOT_FOUND");
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center container space-y-3 text-center">
+    <TransitionContainer className="justify-center space-y-3 text-center mt-0">
       <Typography.P className="font-bold text-lg">404</Typography.P>
       <Typography.H1 className="">{t("TITLE")}</Typography.H1>
       <Typography.Muted className="">{t("MESSAGE")}</Typography.Muted>
@@ -50,6 +51,6 @@ export default async function Contact({ params: { locale } }: Props) {
           {t("BACK_HOME")}
         </a>
       </Button>
-    </main>
+    </TransitionContainer>
   );
 }

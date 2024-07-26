@@ -1,3 +1,4 @@
+import TransitionContainer from "@/components/TransitionContainer";
 import About from "@/sections/home/About";
 import Hero from "@/sections/home/Hero";
 import { Metadata } from "next";
@@ -27,9 +28,9 @@ export default function Home({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   return (
-    <main className="flex min-h-screen flex-col mt-[88px] items-center container">
+    <TransitionContainer>
       <Hero />
       <About />
-    </main>
+    </TransitionContainer>
   );
 }

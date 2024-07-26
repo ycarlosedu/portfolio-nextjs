@@ -1,7 +1,6 @@
-import { PAGE } from "@/constants";
+import TransitionLink from "@/components/TransitionLink";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { ComponentProps } from "react";
 
 type Props = ComponentProps<"nav"> & {
@@ -18,12 +17,12 @@ export default function Nav({ className, locale, ...props }: Props) {
       ])}
       {...props}
     >
-      <Link lang={locale} href={`/${locale}${PAGE.HOME}`}>
+      <TransitionLink lang={locale} locale={locale} href={`/`}>
         {t("HOME")}
-      </Link>
-      <Link lang={locale} href={`/${locale}${PAGE.CONTACT}`}>
+      </TransitionLink>
+      <TransitionLink lang={locale} locale={locale} href={`/contact`}>
         {t("CONTACT")}
-      </Link>
+      </TransitionLink>
     </nav>
   );
 }

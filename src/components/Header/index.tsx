@@ -3,9 +3,9 @@ import Nav from "@/components/Nav";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/Sheet";
 import ToggleLanguage from "@/components/ToggleLanguage";
 import ToggleTheme from "@/components/ToggleTheme";
-import { PAGE } from "@/constants";
 import useScrollUp from "@/hooks/useScrollUp";
 import { cn } from "@/lib/utils";
+import { PAGE } from "@/navigation";
 import { List } from "@phosphor-icons/react/dist/ssr";
 import LogoBlack from "images/logo/black.svg";
 import LogoWhite from "images/logo/white.svg";
@@ -24,7 +24,7 @@ export default function Header({ locale }: Props) {
   return (
     <header
       className={cn(
-        "flex items-center justify-between w-full px-default py-2 fixed top-0 left-0 right-0 container transition-transform duration-300 bg-light dark:bg-dark",
+        "z-30 flex items-center justify-between w-full px-default py-2 fixed top-0 left-0 right-0 container transition-transform duration-300 bg-light dark:bg-dark",
         isScrollingUp ? "" : "-translate-y-40"
       )}
     >

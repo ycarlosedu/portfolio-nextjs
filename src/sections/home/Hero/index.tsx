@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/Button";
 import Typography from "@/components/Typography";
-import { PAGE } from "@/constants";
+import { PAGE } from "@/navigation";
 import { CaretRight } from "@phosphor-icons/react/dist/ssr";
 import HeroBlack from "images/hero-black.svg";
 import { useTranslations } from "next-intl";

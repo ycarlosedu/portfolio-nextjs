@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+main {
+  @apply transition-[opacity,transform,filter] duration-500 ease-in-out;
+}
+
 @layer components {
   .floating {
     @apply text-white size-12 p-1 fixed z-20 bottom-6 right-6 transition-all duration-500;
@@ -25,10 +29,14 @@ html {
   .px-default {
     @apply px-4 xs:px-8;
   }
+
+  .page-transition {
+    @apply !opacity-0 !-translate-x-[100vw] !blur-md;
+  }
 }
 
 /* width */
-::-webkit-scrollbar {
+z ::-webkit-scrollbar {
   @apply flex touch-none select-none z-20 h-full w-2.5;
 }
 
