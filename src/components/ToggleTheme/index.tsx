@@ -27,7 +27,7 @@ export default function ToggleTheme() {
       <DropdownMenu>
         <TooltipTrigger asChild>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" size="icon">
+            <Button variant="outline" size="icon" id="toggle-theme-trigger">
               <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <MoonStars className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               <span className="sr-only">{t("ARIA_LABEL")}</span>
@@ -35,7 +35,7 @@ export default function ToggleTheme() {
           </DropdownMenuTrigger>
         </TooltipTrigger>
 
-        <DropdownMenuContent align="end">
+        <DropdownMenuContent align="end" id="toggle-theme-content">
           <DropdownMenuItem
             disabled={isLight}
             onClick={() => setTheme("light")}

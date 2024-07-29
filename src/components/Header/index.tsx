@@ -28,7 +28,8 @@ export default function Header({ locale }: Props) {
       onFocus={() => {
         !isFocused && setIsFocused(true);
       }}
-      onBlur={() => {
+      onBlur={(event) => {
+        console.log("🚀 ~ Header ~ event:", event.target);
         isFocused && setIsFocused(false);
       }}
       className={cn(

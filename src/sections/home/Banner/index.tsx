@@ -27,12 +27,15 @@ export default function Banner() {
           initial={{ y: "-100vh", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 2 }}
-          className="absolute top-[40%] z-20 p-8 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 border border-gray-100"
+          className="absolute top-[30%] right-0 z-20 p-16 bg-gray-900 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 border border-gray-100"
         >
-          <h1 className="scroll-m-20 text-white dark:text-white text-3xl font-normal tracking-wider">
-            Transformando ideias em
+          <h1 className="scroll-m-20 text-white dark:text-white text-2xl font-normal tracking-widest">
+            TRANSFORMANDO IDEIAS EM
             <br />
-            <strong className="text-5xl">experiências digitais</strong>
+            <strong className="text-7xl">
+              experiências <br />
+              digitais
+            </strong>
           </h1>
         </motion.div>
       </div>
