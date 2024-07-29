@@ -23,9 +23,10 @@ export default function Header({ locale }: Props) {
   return (
     <header
       className={cn(
-        "z-30 flex items-center justify-between px-default py-2 fixed top-0 left-0 right-0 w-screen transition-[transform,background-color] duration-300",
+        "z-30 flex items-center justify-between px-default py-2 fixed top-0 left-0 right-0 w-screen transition-[transform,background-color] duration-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30",
         isScrollingUp ? "" : "-translate-y-40",
-        isAtTheTop ? "bg-transparent" : "bg-light dark:bg-dark"
+        // isAtTheTop ? "bg-transparent" : "bg-light/40 dark:bg-dark/40"
+        "bg-light/30 dark:bg-dark/30"
       )}
     >
       <div className="container flex items-center justify-between">
