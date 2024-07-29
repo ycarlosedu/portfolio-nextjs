@@ -6,10 +6,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from "@/components/Dropdown";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/Tooltip";
+import TransitionLink from "@/components/TransitionLink";
 import { Pages } from "@/navigation";
 import { Globe } from "@phosphor-icons/react/dist/ssr";
 import { usePathname } from "next/navigation";
-import TransitionLink from "../TransitionLink";
 
 type Option = {
   country: string;
@@ -31,35 +32,42 @@ export default function ToggleLanguage({ locale }: Props) {
   ];
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon">
-          <Globe className="h-[1.2rem] w-[1.2rem]" />
-          <span className="sr-only">
-            Change Language/Alterar Idioma (en-us/pt-br)
-          </span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        {options.map((lang) => (
-          <DropdownMenuItem
-            key={lang.code}
-            asChild
-            disabled={pathname.includes(lang.code)}
-          >
-            <TransitionLink
+    <Tooltip>
+      <DropdownMenu>
+        <TooltipTrigger asChild>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="icon">
+              <Globe className="h-[1.2rem] w-[1.2rem]" />
+              <span className="sr-only">
+                Change Language/Alterar Idioma (en-us/pt-br)
+              </span>
+            </Button>
+          </DropdownMenuTrigger>
+        </TooltipTrigger>
+        <DropdownMenuContent align="end">
+          {options.map((lang) => (
+            <DropdownMenuItem
               key={lang.code}
-              locale={lang.code}
-              href={`${urlWithoutLocale}` as Pages}
-              className="flex items-center justify-between w-full"
-              forceTransition
+              asChild
+              disabled={pathname.includes(lang.code)}
             >
-              {lang.lang}
-              <span>{lang.country}</span>
-            </TransitionLink>
-          </DropdownMenuItem>
-        ))}
-      </DropdownMenuContent>
-    </DropdownMenu>
+              <TransitionLink
+                key={lang.code}
+                locale={lang.code}
+                href={`${urlWithoutLocale}` as Pages}
+                className="flex items-center justify-between w-full"
+                forceTransition
+              >
+                {lang.lang}
+                <span>{lang.country}</span>
+              </TransitionLink>
+            </DropdownMenuItem>
+          ))}
+        </DropdownMenuContent>
+      </DropdownMenu>
+      <TooltipContent side="right">
+        <p>Alterar Idioma</p>
+      </TooltipContent>
+    </Tooltip>
   );
 }

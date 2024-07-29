@@ -10,6 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from "@/components/Dropdown";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/Tooltip";
 import { useTranslations } from "next-intl";
 
 export default function ToggleTheme() {
@@ -22,28 +23,39 @@ export default function ToggleTheme() {
   const isSystem = theme === "system";
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon">
-          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <MoonStars className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">{t("ARIA_LABEL")}</span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem disabled={isLight} onClick={() => setTheme("light")}>
-          {t("LIGHT")}
-        </DropdownMenuItem>
-        <DropdownMenuItem disabled={isDark} onClick={() => setTheme("dark")}>
-          {t("DARK")}
-        </DropdownMenuItem>
-        <DropdownMenuItem
-          disabled={isSystem}
-          onClick={() => setTheme("system")}
-        >
-          {t("SYSTEM")}
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <Tooltip>
+      <DropdownMenu>
+        <TooltipTrigger asChild>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="icon">
+              <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+              <MoonStars className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <span className="sr-only">{t("ARIA_LABEL")}</span>
+            </Button>
+          </DropdownMenuTrigger>
+        </TooltipTrigger>
+
+        <DropdownMenuContent align="end">
+          <DropdownMenuItem
+            disabled={isLight}
+            onClick={() => setTheme("light")}
+          >
+            {t("LIGHT")}
+          </DropdownMenuItem>
+          <DropdownMenuItem disabled={isDark} onClick={() => setTheme("dark")}>
+            {t("DARK")}
+          </DropdownMenuItem>
+          <DropdownMenuItem
+            disabled={isSystem}
+            onClick={() => setTheme("system")}
+          >
+            {t("SYSTEM")}
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+      <TooltipContent side="left">
+        <p>Alterar Tema</p>
+      </TooltipContent>
+    </Tooltip>
   );
 }
