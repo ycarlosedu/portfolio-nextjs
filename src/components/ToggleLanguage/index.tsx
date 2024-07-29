@@ -66,7 +66,10 @@ export default function ToggleLanguage({ locale }: Props) {
         </DropdownMenuContent>
       </DropdownMenu>
       <TooltipContent side="right">
-        <p>Alterar Idioma</p>
+        <p>
+          Change Language / <br />
+          Alterar Idioma
+        </p>
       </TooltipContent>
     </Tooltip>
   );

@@ -54,7 +54,10 @@ export default function ToggleTheme() {
         </DropdownMenuContent>
       </DropdownMenu>
       <TooltipContent side="left">
-        <p>Alterar Tema</p>
+        <p>
+          Change Theme / <br />
+          Alterar Tema
+        </p>
       </TooltipContent>
     </Tooltip>
   );

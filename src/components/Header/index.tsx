@@ -11,6 +11,7 @@ import LogoBlack from "images/logo/black.svg";
 import LogoWhite from "images/logo/white.svg";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useState } from "react";
 
 type Props = {
   locale: string;
@@ -18,13 +19,21 @@ type Props = {
 export default function Header({ locale }: Props) {
   const t = useTranslations("HEADER");
 
+  const [isFocused, setIsFocused] = useState(false);
+
   const { isScrollingUp, isAtTheTop } = useScrollUp({ initialState: true });
 
   return (
     <header
+      onFocus={() => {
+        !isFocused && setIsFocused(true);
+      }}
+      onBlur={() => {
+        isFocused && setIsFocused(false);
+      }}
       className={cn(
         "z-30 flex items-center justify-between px-default py-2 fixed top-0 left-0 right-0 w-screen transition-[transform,background-color] duration-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30",
-        isScrollingUp ? "" : "-translate-y-40",
+        isScrollingUp || isFocused ? "" : "-translate-y-40",
         // isAtTheTop ? "bg-transparent" : "bg-light/40 dark:bg-dark/40"
         "bg-light/30 dark:bg-dark/30"
       )}
