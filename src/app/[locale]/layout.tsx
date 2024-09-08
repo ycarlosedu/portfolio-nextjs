@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://carlossilva.vercel.app/images/logo/logo-black.webp",
+        url: "https://carlossilva.vercel.app/images/logo/full.webp",
         width: 280,
         height: 250
       }
