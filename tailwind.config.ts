@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from "./src/styles/colors";
 
 const config = {
   darkMode: ["class"],
@@ -21,21 +22,11 @@ const config = {
         "2xl": "1400px"
       }
     },
+    colors,
     extend: {
       screens: {
         xs: "425px",
         "2xl": "1400px"
-      },
-      backgroundImage: {
-        "banner-gradient-light":
-          "linear-gradient(to bottom, #f1f5f999, #67e8f999), url('/images/banner-bg.svg')",
-        "banner-gradient-dark":
-          "linear-gradient(to bottom, #0f172a99, #67e8f999), url('/images/banner-bg.svg')",
-        banner: "url('/images/banner-bg.svg')"
-      },
-      colors: {
-        light: "#FFF",
-        dark: "#121212"
       },
       keyframes: {
         scaleUpAndDown: {

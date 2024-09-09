@@ -35,7 +35,6 @@ export default function Header({ locale }: Props) {
       className={cn(
         "z-30 flex items-center h-[120px] max-h-[120px] justify-between px-default py-6 xs:py-2 fixed top-0 left-0 right-0 w-screen transition-[transform,background-color] duration-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30",
         isScrollingUp || isFocused ? "" : "-translate-y-40"
-        // isAtTheTop ? "bg-transparent" : "bg-light/40 dark:bg-dark/40"
       )}
     >
       <div className="container flex items-start xs:items-center justify-between h-full">
