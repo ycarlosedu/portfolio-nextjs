@@ -12,7 +12,7 @@ export default function Nav({ className, locale, ...props }: Props) {
   return (
     <nav
       className={cn([
-        "flex gap-6 items-center flex-wrap justify-center [&>.link:hover]:border-b-slate-600",
+        "flex gap-6 items-center flex-wrap justify-center [&>.link:hover]:border-b-zinc-600",
         className
       ])}
       {...props}

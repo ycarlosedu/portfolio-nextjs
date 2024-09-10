@@ -47,5 +47,5 @@ z ::-webkit-scrollbar {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply relative flex-1 rounded-full transition-all ease-in-out bg-slate-200 hover:bg-slate-400;
+  @apply relative flex-1 rounded-full transition-all ease-in-out bg-zinc-200 hover:bg-zinc-400;
 }
