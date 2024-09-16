@@ -28,6 +28,9 @@ const config = {
         xs: "425px",
         "2xl": "1400px"
       },
+      borderRadius: {
+        "4xl": "2rem"
+      },
       keyframes: {
         scaleUpAndDown: {
           "0%, 100%": { transform: "scale(1)" },

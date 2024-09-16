@@ -4,7 +4,7 @@ import { Button } from "./ui/Button";
 
 export function SeeMyWork() {
   return (
-    <section className="px-default bg-gray-light flex flex-col items-center justify-center py-20">
+    <section className="px-default w-full bg-gray-light flex flex-col items-center justify-center py-20">
       <div className="bg-white flex flex-col gap-8">
         <div className="flex flex-col p-4 gap-16">
           <div className="flex flex-col gap-3">
@@ -12,7 +12,7 @@ export function SeeMyWork() {
               I build & <span className="text-primary">code</span> stuff
             </Typography.H2>
             <Typography.P>
-              Open sourceprojects, web appsand experimentals.
+              Open source projects, web appsand experimentals.
             </Typography.P>
           </div>
           <Button>
