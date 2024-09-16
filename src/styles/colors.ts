@@ -1,4 +1,4 @@
-import { zinc } from "tailwindcss/colors";
+import { red, zinc } from "tailwindcss/colors";
 
 const colors = {
   black: "#000",
@@ -9,7 +9,8 @@ const colors = {
     light: "#F2F2F7",
     dark: "#1B1B1B"
   },
-  zinc
+  zinc,
+  red
 };
 
 export default colors;
