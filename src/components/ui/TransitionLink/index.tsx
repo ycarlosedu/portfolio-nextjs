@@ -8,7 +8,7 @@ type Props = ComponentProps<typeof Link> & {
   href: Pages;
   forceTransition?: boolean;
 };
-export default function TransitionLink({
+export function TransitionLink({
   children,
   href,
   locale,

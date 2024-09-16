@@ -3,17 +3,21 @@
 import { MoonStars, Sun } from "@phosphor-icons/react/dist/ssr";
 import { useTheme } from "next-themes";
 
-import { Button } from "@/components/Button";
+import { Button } from "@/components/ui/Button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger
-} from "@/components/Dropdown";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/Tooltip";
+} from "@/components/ui/Dropdown";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger
+} from "@/components/ui/Tooltip";
 import { useTranslations } from "next-intl";
 
-export default function ToggleTheme() {
+export function ToggleTheme() {
   const t = useTranslations("TOGGLE_THEME");
 
   const { setTheme, theme } = useTheme();

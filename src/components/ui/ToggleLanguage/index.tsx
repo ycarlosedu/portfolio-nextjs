@@ -1,13 +1,17 @@
 "use client";
-import { Button } from "@/components/Button";
+import { Button } from "@/components/ui/Button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger
-} from "@/components/Dropdown";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/Tooltip";
-import TransitionLink from "@/components/TransitionLink";
+} from "@/components/ui/Dropdown";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger
+} from "@/components/ui/Tooltip";
+import { TransitionLink } from "@/components/ui/TransitionLink";
 import { Pages } from "@/navigation";
 import { Globe } from "@phosphor-icons/react/dist/ssr";
 import { usePathname } from "next/navigation";
@@ -22,7 +26,7 @@ type Props = {
   locale: string;
 };
 
-export default function ToggleLanguage({ locale }: Props) {
+export function ToggleLanguage({ locale }: Props) {
   const pathname = usePathname();
   const urlWithoutLocale = pathname.split(`/${locale}`)[1] || "/";
 

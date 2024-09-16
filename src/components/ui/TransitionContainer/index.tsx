@@ -3,11 +3,7 @@ import { cn } from "@/lib/utils";
 import { HTMLMotionProps, motion } from "framer-motion";
 type Props = HTMLMotionProps<"main">;
 
-export default function TransitionContainer({
-  children,
-  className,
-  ...props
-}: Props) {
+export function TransitionContainer({ children, className, ...props }: Props) {
   return (
     <motion.main
       animate={{

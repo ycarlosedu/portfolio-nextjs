@@ -10,7 +10,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-white hover:bg-gray-dark border border-gray-dark dark:border-white"
+          "bg-primary text-white hover:bg-gray-dark border border-gray-dark dark:border-white",
+        outline:
+          "border border-zinc-200 bg-white hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
       },
       size: {
         default: "w-full max-w-[324px] p-3 min-h-[62px]",

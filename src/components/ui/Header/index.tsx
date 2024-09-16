@@ -1,9 +1,9 @@
 "use client";
-import Nav from "@/components/Nav";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/Sheet";
-import ToggleLanguage from "@/components/ToggleLanguage";
-import ToggleTheme from "@/components/ToggleTheme";
-import TransitionLink from "@/components/TransitionLink";
+import Nav from "@/components/ui/Nav";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/Sheet";
+import { ToggleLanguage } from "@/components/ui/ToggleLanguage";
+import { ToggleTheme } from "@/components/ui/ToggleTheme";
+import { TransitionLink } from "@/components/ui/TransitionLink";
 import useScrollUp from "@/hooks/useScrollUp";
 import { cn } from "@/lib/utils";
 import { List } from "@phosphor-icons/react/dist/ssr";
@@ -43,13 +43,7 @@ export default function Header({ locale }: Props) {
           href={"/"}
           aria-label={t("HOME_ARIA_LABEL")}
         >
-          <Image
-            src={Logo}
-            alt="Carlos Silva Logo"
-            className=""
-            width={200}
-            height={56}
-          />
+          <Image src={Logo} alt="Carlos Silva Logo" width={200} height={56} />
         </TransitionLink>
         <div className="flex items-center gap-4 flex-col-reverse xs:flex-row h-fit">
           <ToggleTheme />
@@ -65,7 +59,6 @@ export default function Header({ locale }: Props) {
               <Image
                 src={Logo}
                 alt="Carlos Silva Logo"
-                className=""
                 width={200}
                 height={56}
               />

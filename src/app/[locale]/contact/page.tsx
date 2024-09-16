@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
-import { Button } from "@/components/Button";
-import TransitionContainer from "@/components/TransitionContainer";
-import TransitionLink from "@/components/TransitionLink";
-import Typography from "@/components/Typography";
+import { Button } from "@/components/ui/Button";
+import { TransitionContainer } from "@/components/ui/TransitionContainer";
+import { TransitionLink } from "@/components/ui/TransitionLink";
+import { Typography } from "@/components/ui/Typography";
 import { locales } from "@/i18n";
 import { CaretLeft } from "@phosphor-icons/react/dist/ssr";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";

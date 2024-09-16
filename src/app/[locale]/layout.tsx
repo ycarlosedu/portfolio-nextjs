@@ -1,7 +1,7 @@
 import "@/app/globals.css";
-import Header from "@/components/Header";
-import { Toaster } from "@/components/Sonner";
-import { TooltipProvider } from "@/components/Tooltip";
+import Header from "@/components/ui/Header";
+import { Toaster } from "@/components/ui/Sonner";
+import { TooltipProvider } from "@/components/ui/Tooltip";
 import { locales } from "@/i18n";
 import { ThemeProvider } from "@/providers/Theme";
 import { Analytics } from "@vercel/analytics/react";

@@ -1,4 +1,4 @@
-import TransitionLink from "@/components/TransitionLink";
+import { TransitionLink } from "@/components/ui/TransitionLink";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { ComponentProps } from "react";

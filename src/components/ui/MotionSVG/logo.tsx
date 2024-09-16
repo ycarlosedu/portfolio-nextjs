@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-export default function MotionSVGLogo() {
+export function MotionSVGLogo() {
   const [hasLoaded, setHasLoaded] = useState(false);
 
   useEffect(() => {
