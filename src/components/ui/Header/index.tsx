@@ -21,23 +21,22 @@ export default function Header({ locale }: Props) {
 
   const [isFocused, setIsFocused] = useState(false);
 
-  const { isScrollingUp, isAtTheTop } = useScrollUp({ initialState: true });
+  const { isScrollingUp } = useScrollUp({ initialState: true });
 
   return (
     <header
       onFocus={() => {
         !isFocused && setIsFocused(true);
       }}
-      onBlur={(event) => {
-        console.log("🚀 ~ Header ~ event:", event.target);
+      onBlur={() => {
         isFocused && setIsFocused(false);
       }}
       className={cn(
-        "z-30 flex items-center h-[120px] max-h-[120px] justify-between px-default py-6 xs:py-2 fixed top-0 left-0 right-0 w-screen transition-[transform,background-color] duration-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30",
-        isScrollingUp || isFocused ? "" : "-translate-y-40"
+        "z-30 flex items-center justify-between px-default lg:px-20 py-6 fixed top-0 left-0 right-0 w-screen transition-[transform,background-color] duration-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30",
+        isScrollingUp || isFocused ? "" : "-translate-y-52"
       )}
     >
-      <div className="container flex items-start xs:items-center justify-between h-full">
+      <div className="container relative flex items-start xs:items-center justify-between h-full">
         <TransitionLink
           locale={locale}
           href={"/"}
@@ -45,7 +44,7 @@ export default function Header({ locale }: Props) {
         >
           <Image src={Logo} alt="Carlos Silva Logo" width={200} height={56} />
         </TransitionLink>
-        <div className="flex items-center gap-4 flex-col-reverse xs:flex-row h-fit">
+        <div className="flex items-center absolute xs:relative top-0 right-0 gap-4 flex-col-reverse xs:flex-row h-fit">
           <ToggleTheme />
           <ToggleLanguage locale={locale} />
           <Sheet>
