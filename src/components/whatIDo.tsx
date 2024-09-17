@@ -2,7 +2,7 @@ import { Typography } from "@/components/ui/Typography";
 
 export function WhatIDo() {
   return (
-    <section className="px-default bg-gray-light flex flex-col gap-20 py-32">
+    <section className="px-default bg-gray-light dark:bg-black flex flex-col gap-20 py-32">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-3">
           <Typography.H2>Development</Typography.H2>

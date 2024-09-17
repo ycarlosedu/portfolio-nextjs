@@ -4,8 +4,8 @@ import { Button } from "./ui/Button";
 
 export function SeeMyWork() {
   return (
-    <section className="px-default w-full bg-gray-light flex flex-col items-center justify-center py-20">
-      <div className="bg-white flex flex-col gap-8">
+    <section className="px-default w-full bg-gray-light dark:bg-black flex flex-col items-center justify-center py-20">
+      <div className="bg-white dark:bg-gray-dark flex flex-col gap-8">
         <div className="flex flex-col p-4 gap-16">
           <div className="flex flex-col gap-3">
             <Typography.H2 className="text-5xl leading-[1.2]">

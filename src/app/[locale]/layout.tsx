@@ -3,6 +3,7 @@ import Header from "@/components/ui/Header";
 import { Toaster } from "@/components/ui/Sonner";
 import { TooltipProvider } from "@/components/ui/Tooltip";
 import { locales } from "@/i18n";
+import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/Theme";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -100,7 +101,12 @@ export default function RootLayout({ children, params: { locale } }: Props) {
 
   return (
     <html lang={locale}>
-      <body className={inter.className + " w-full overflow-x-hidden"}>
+      <body
+        className={cn(
+          inter.className,
+          "w-full overflow-x-hidden bg-white dark:bg-gray-dark text-black dark:text-white antialiased"
+        )}
+      >
         <div itemScope itemType="https://schema.org/WebSite">
           <meta itemProp="url" content="https://carlossilva.vercel.app/" />
           <meta itemProp="name" content="Carlos Silva | Front-End Developer" />
