@@ -118,7 +118,7 @@ export function SendMeAMessage() {
                   </FormItem>
                 )}
               />
-              <Button type="submit">
+              <Button type="submit" className="self-center">
                 SEND IT
                 <ArrowRight size={16} weight="bold" />
               </Button>

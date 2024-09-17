@@ -5,14 +5,14 @@ import { Button } from "./ui/Button";
 export function SeeMyWork() {
   return (
     <section className="px-default w-full bg-gray-light dark:bg-black flex flex-col items-center justify-center py-20">
-      <div className="bg-white dark:bg-gray-dark flex flex-col gap-8">
+      <div className="bg-white dark:bg-gray-dark flex flex-col gap-8 w-full">
         <div className="flex flex-col p-4 gap-16">
           <div className="flex flex-col gap-3">
             <Typography.H2 className="text-5xl leading-[1.2]">
-              I build & <span className="text-primary">code</span> stuff
+              I build &<br /> <span className="text-primary">code</span> stuff
             </Typography.H2>
-            <Typography.P>
-              Open source projects, web appsand experimentals.
+            <Typography.P className="w-36">
+              Open source projects, web apps and experimentals.
             </Typography.P>
           </div>
           <Button>
@@ -26,9 +26,9 @@ export function SeeMyWork() {
         <div className="flex flex-col p-4 gap-16">
           <div className="flex flex-col gap-3">
             <Typography.H2 className="text-5xl leading-[1.2]">
-              I <span className="text-primary">design</span>, sometimes
+              I <span className="text-primary">design</span>,<br /> sometimes
             </Typography.H2>
-            <Typography.P>
+            <Typography.P className="w-36">
               Personal projects, my college works and more.
             </Typography.P>
           </div>

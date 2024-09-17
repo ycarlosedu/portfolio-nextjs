@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="px-default flex flex-col gap-8 pb-8">
-      <div className="flex flex-col gap-16">
-        <div className="flex flex-col gap-3">
-          <Typography.H1 className="text-primary">
+    <section className="px-default flex flex-col gap-8 pb-8 w-full max-w-default">
+      <div className="flex flex-col gap-16 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-3 max-w-[500px]">
+          <Typography.H1 className="text-primary lg:text-7xl">
             Frontend Developer.
           </Typography.H1>
           <Typography.P className="text-xl">
@@ -22,7 +22,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 md:flex-row md:gap-16">
         <Typography.P className="text-sm max-w-[240px]">
           Want to build a website the way you always dreamed of? I can help you
           make that happen.
