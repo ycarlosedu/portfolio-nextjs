@@ -22,7 +22,7 @@ export function TransitionContainer({ children, className, ...props }: Props) {
         ease: "easeInOut"
       }}
       className={cn(
-        "flex min-h-screen flex-col items-center mt-24 pt-8",
+        "flex min-h-screen flex-col items-center mt-24 pt-8 md:mt-0 md:pt-0",
         className
       )}
       {...props}

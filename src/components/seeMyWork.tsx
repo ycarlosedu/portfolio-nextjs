@@ -4,9 +4,12 @@ import { Button } from "./ui/Button";
 
 export function SeeMyWork() {
   return (
-    <section className="px-default w-full bg-gray-light dark:bg-black flex flex-col items-center justify-center py-20">
-      <div className="bg-white dark:bg-gray-dark flex flex-col gap-8 w-full">
-        <div className="flex flex-col p-4 gap-16">
+    <section
+      id="see-my-work"
+      className="px-default w-full md:h-screen bg-gray-light dark:bg-black flex flex-col items-center justify-center py-20"
+    >
+      <div className="bg-white dark:bg-gray-dark flex flex-col gap-8 w-full max-w-default md:h-[622px] md:flex-row md:justify-between md:gap-0">
+        <div className="flex flex-col p-4 gap-16 md:w-full md:justify-center md:p-10 lg:p-20">
           <div className="flex flex-col gap-3">
             <Typography.H2 className="text-5xl leading-[1.2]">
               I build &<br /> <span className="text-primary">code</span> stuff
@@ -21,9 +24,9 @@ export function SeeMyWork() {
           </Button>
         </div>
 
-        <hr className="h-[1px] w-full bg-black" />
+        <hr className="h-[1px] w-full md:min-h-full md:w-[1px] bg-black" />
 
-        <div className="flex flex-col p-4 gap-16">
+        <div className="flex flex-col p-4 gap-16 md:w-full md:justify-center md:p-10 lg:p-20">
           <div className="flex flex-col gap-3">
             <Typography.H2 className="text-5xl leading-[1.2]">
               I <span className="text-primary">design</span>,<br /> sometimes

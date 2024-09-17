@@ -33,7 +33,7 @@ export default function Header({ locale }: Props) {
       }}
       className={cn(
         "z-30 flex items-center justify-between px-default lg:px-20 py-6 fixed top-0 left-0 right-0 w-screen transition-[transform,background-color] duration-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30",
-        isScrollingUp || isFocused ? "" : "-translate-y-52"
+        isScrollingUp || isFocused ? "" : "-translate-y-52 md:translate-y-0"
       )}
     >
       <div className="container relative flex items-start xs:items-center justify-between h-full">

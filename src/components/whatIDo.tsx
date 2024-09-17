@@ -2,7 +2,10 @@ import { Typography } from "@/components/ui/Typography";
 
 export function WhatIDo() {
   return (
-    <section className="px-default w-full bg-gray-light dark:bg-black flex items-center justify-center">
+    <section
+      id="what-i-do"
+      className="px-default w-full md:h-screen bg-gray-light dark:bg-black flex items-center justify-center"
+    >
       <div className="max-w-default flex flex-col md:flex-row md:justify-between gap-20 py-32">
         <div className="flex flex-col gap-8 md:w-1/2">
           <div className="flex flex-col gap-3">

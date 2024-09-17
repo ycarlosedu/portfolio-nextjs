@@ -48,56 +48,61 @@ export function SendMeAMessage() {
   }
 
   return (
-    <section className="px-default flex flex-col justify-center py-20">
+    <section
+      id="send-me-a-message"
+      className="px-default md:h-screen max-w-default w-full flex flex-col justify-center py-20"
+    >
       <div className="flex flex-col gap-8">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 items-center">
           <Typography.H2 className="text-5xl leading-[1.2] text-center">
             Send me a <span className="text-primary">message</span>!
           </Typography.H2>
-          <Typography.H3 className="text-center">
+          <Typography.H3 className="text-center max-w-[438px]">
             Got a question or proposal, or just want to say hello? Go ahead.
           </Typography.H3>
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className="flex flex-col gap-8 py-6"
+              className="flex flex-col gap-8 py-6 w-full max-w-[750px]"
             >
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Name</FormLabel>
-                    <FormControl>
-                      <Input
-                        placeholder="What`s your name?"
-                        type="text"
-                        autoCapitalize="words"
-                        maxLength={MAX_NAME_LENGTH}
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email Adress</FormLabel>
-                    <FormControl>
-                      <Input
-                        placeholder="example@dev.com"
-                        type="email"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+              <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between md:gap-12">
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem className="w-full">
+                      <FormLabel>Name</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="What`s your name?"
+                          type="text"
+                          autoCapitalize="words"
+                          maxLength={MAX_NAME_LENGTH}
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem className="w-full">
+                      <FormLabel>Email Adress</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="example@dev.com"
+                          type="email"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
               <FormField
                 control={form.control}
                 name="message"
