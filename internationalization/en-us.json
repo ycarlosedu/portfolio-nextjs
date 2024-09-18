@@ -4,13 +4,13 @@
       "TITLE": "Carlos Silva | Front-End Developer",
       "DESCRIPTION": "Carlos Silva is a front-end developer who loves to create beautiful and functional things for the web."
     },
-    "CONTACT": {
-      "TITLE": "Contact | Carlos Silva",
-      "DESCRIPTION": "Get in touch with Carlos Silva to discuss projects, job opportunities or just to say hi."
+    "CODES": {
+      "TITLE": "Codes | Carlos Silva",
+      "DESCRIPTION": "Check out some of the projects I've worked on. From websites to web applications, I've done a little bit of everything."
     },
-    "ABOUT": {
-      "TITLE": "About | Carlos Silva",
-      "DESCRIPTION": "Carlos Silva is a front-end developer who loves to create beautiful and functional things for the web."
+    "DESIGNS": {
+      "TITLE": "Designs | Carlos Silva",
+      "DESCRIPTION": "Check out some of the designs I've created. From wireframes to high-fidelity mockups, I've done a little bit of everything."
     },
     "NOT_FOUND": {
       "TITLE": "Page not found | Carlos Silva",
@@ -20,7 +20,8 @@
   "HEADER": {
     "HOME_ARIA_LABEL": "Go to the home page",
     "HOME": "Home",
-    "CONTACT": "Contact"
+    "CODES": "Projects",
+    "DESIGNS": "Designs"
   },
   "TOGGLE_THEME": {
     "ARIA_LABEL": "Toggle theme (Light/Dark/System)",
@@ -30,22 +31,67 @@
   },
   "HOME": {
     "HERO": {
-      "TITLE": "Want to build a website the way you always dreamed of?",
-      "SUBTITLE": "I can help you make that happen.",
-      "SUBTITLE2": "Together we can build an amazing website, with a modern and responsive design, that will help you boost your business and attract more customers.",
-      "BUTTON_CONTACT": "Get in touch",
-      "BUTTON_PROJECTS": "View projects"
+      "SUBTITLE": "I like to build solid and scalable frontend projects with great user experiences.",
+      "DESCRIPTION1": "Want to build a website the way you always dreamed of? I can help you make that happen.",
+      "DESCRIPTION2": "Together we can build an amazing website, with a modern and responsive design, that will help you boost your business and attract more customers."
     },
-    "ABOUT": {
-      "TITLE": "About me",
-      "DESCRIPTION": "I'm a passionate front-end developer with a focus on building beautiful and performant web applications. I specialize in React, TypeScript, and modern web technologies.",
-      "BUTTON": "View Portfolio"
+    "WHAT_I_DO": {
+      "DEVELOPMENT": "Development",
+      "DEVELOPMENT_DESCRIPTION": "I'm a passionate Front-end Developer with a focus on building beautiful and performant web applications. I specialize in React, TypeScript, and modern web technologies.",
+      "TECHNOLOGIES": "Technologies",
+      "DESIGN": "Design",
+      "DESIGN_DESCRIPTION": "I'm also a self-taught UI/UX Designer. I love creating beautiful and functional designs that provide a great user experience. I use Figma to create wireframes, mockups, and prototypes.",
+      "TOOLS": "Tools"
+    },
+    "OVER_THE_YEARS": {
+      "TITLE": "Over the years,",
+      "PARAGRAPH1": "I've built products for companies and businesses ranging from marketing websites to complex solutions and enterprise apps with focus on fast, elegant and accessible user experiences.",
+      "PARAGRAPH2": "Currently, I work at Compass.UOL as a Frontend Developer crafting thoughtful and inclusive experiences for various client companies.",
+      "PARAGRAPH3": "During my working hours, I am also a front end instructor for interns joining the company.",
+      "PARAGRAPH4": "In my free time, besides studying development for hours, I also work on two startups that I co-founded, <onne>ONNE</onne> and <savebys>SAVEBYS</savebys>.",
+      "PARAGRAPH5": "In both startups, in addition to working in the administrative area, I play the role of UX/UI and develop the entire front-end of the applications myself."
+    },
+    "SEE_MY_WORK": {
+      "CODE_TITLE": "I build &<br></br> <span>code</span> stuff",
+      "CODE_DESCRIPTION": "Open source projects, web apps and experimentals.",
+      "CODE_BUTTON": "SEE MY CODES",
+      "DESIGN_TITLE": "I <span>design</span>,<br></br> sometimes",
+      "DESIGN_DESCRIPTION": "Personal projects, my college stuff and more.",
+      "DESIGN_BUTTON": "SEE MY DESIGNS"
+    },
+    "SEND_ME_A_MESSAGE": {
+      "TITLE": "Send me a <span>message</span>!",
+      "DESCRIPTION": "Want to work together or just chat? Go ahead. I'll get back to you as soon as possible.",
+      "FORM": {
+        "NAME": {
+          "LABEL": "Name",
+          "PLACEHOLDER": "What`s your name?"
+        },
+        "EMAIL": {
+          "LABEL": "Email Adress",
+          "PLACEHOLDER": "example@dev.com"
+        },
+        "MESSAGE": {
+          "LABEL": "Your Message",
+          "PLACEHOLDER": "Hi, I think we need a website for our Company X. How soon can we talk about this?"
+        }
+      },
+      "BUTTON": "SEND IT",
+      "SUCCESS": "Message sent successfully!"
+    }
+  },
+  "CONTACT": {
+    "SOCIAL_TITLE": "SAY HELLO",
+    "PAGES": {
+      "TITLE": "PAGES",
+      "HOME": "Home",
+      "CODES": "My Projects",
+      "DESIGNS": "My Designs"
     }
   },
   "NOT_FOUND": {
     "TITLE": "Page not found",
     "MESSAGE": "Sorry, the page you are looking for could not be found or has been removed.",
     "BACK_HOME": "Back to home"
-  },
-  "About": "About"
+  }
 }

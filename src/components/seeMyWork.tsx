@@ -1,8 +1,11 @@
 import { Typography } from "@/components/ui/Typography";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { useTranslations } from "next-intl";
 import { Button } from "./ui/Button";
 
 export function SeeMyWork() {
+  const t = useTranslations("HOME.SEE_MY_WORK");
+
   return (
     <section
       id="see-my-work"
@@ -12,14 +15,19 @@ export function SeeMyWork() {
         <div className="flex flex-col p-4 gap-16 md:w-full md:justify-center md:p-10 lg:p-20">
           <div className="flex flex-col gap-3">
             <Typography.H2 className="text-5xl leading-[1.2]">
-              I build &<br /> <span className="text-primary">code</span> stuff
+              {t.rich("CODE_TITLE", {
+                span: (chunks) => (
+                  <span className="text-primary">{chunks}</span>
+                ),
+                br: () => <br />
+              })}
             </Typography.H2>
             <Typography.P className="w-36">
-              Open source projects, web apps and experimentals.
+              {t("CODE_DESCRIPTION")}
             </Typography.P>
           </div>
           <Button>
-            SEE MY CODES
+            {t("CODE_BUTTON")}
             <ArrowRight size={16} weight="bold" />
           </Button>
         </div>
@@ -29,14 +37,19 @@ export function SeeMyWork() {
         <div className="flex flex-col p-4 gap-16 md:w-full md:justify-center md:p-10 lg:p-20">
           <div className="flex flex-col gap-3">
             <Typography.H2 className="text-5xl leading-[1.2]">
-              I <span className="text-primary">design</span>,<br /> sometimes
+              {t.rich("DESIGN_TITLE", {
+                span: (chunks) => (
+                  <span className="text-primary">{chunks}</span>
+                ),
+                br: () => <br />
+              })}
             </Typography.H2>
             <Typography.P className="w-36">
-              Personal projects, my college works and more.
+              {t("DESIGN_DESCRIPTION")}
             </Typography.P>
           </div>
           <Button>
-            SEE MY DESIGNS
+            {t("DESIGN_BUTTON")}
             <ArrowRight size={16} weight="bold" />
           </Button>
         </div>

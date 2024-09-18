@@ -1,4 +1,5 @@
 import { Typography } from "@/components/ui/Typography";
+import { useTranslations } from "next-intl";
 import Carousel from "./ui/Carousel";
 
 const technologies = [
@@ -100,6 +101,8 @@ const tools = [
 ];
 
 export function WhatIDo() {
+  const t = useTranslations("HOME.WHAT_I_DO");
+
   return (
     <section
       id="what-i-do"
@@ -108,30 +111,26 @@ export function WhatIDo() {
       <div className="max-w-default w-full flex flex-col md:flex-row md:justify-between gap-20 py-32">
         <div className="flex flex-col gap-8 md:w-1/2">
           <div className="flex flex-col gap-3">
-            <Typography.H2>Development</Typography.H2>
+            <Typography.H2>{t("DEVELOPMENT")}</Typography.H2>
             <Typography.P className="h-40 lg:text-xl">
-              I&apos;m a passionate Front-end Developer with a focus on building
-              beautiful and performant web applications. I specialize in React,
-              TypeScript, and modern web technologies.
+              {t("DEVELOPMENT_DESCRIPTION")}
             </Typography.P>
           </div>
           <div className="flex flex-col gap-3">
-            <Typography.H2>Technologies</Typography.H2>
+            <Typography.H2>{t("TECHNOLOGIES")}</Typography.H2>
             <Carousel list={technologies} />
           </div>
         </div>
 
         <div className="flex flex-col gap-8 md:w-1/2">
           <div className="flex flex-col gap-3">
-            <Typography.H2>Design</Typography.H2>
+            <Typography.H2>{t("DESIGN")}</Typography.H2>
             <Typography.P className="h-40 lg:text-xl leading-6">
-              I love looking at modern layouts that deliver a great User
-              Experience and still look amazing. And my goal is to create more
-              of them.
+              {t("DESIGN_DESCRIPTION")}
             </Typography.P>
           </div>
           <div className="flex flex-col gap-3">
-            <Typography.H2>Tools</Typography.H2>
+            <Typography.H2>{t("TOOLS")}</Typography.H2>
             <Carousel list={tools} />
           </div>
         </div>

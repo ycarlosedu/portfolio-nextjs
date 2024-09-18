@@ -7,7 +7,9 @@ export const localePrefix = "always";
 
 export const pathnames = {
   "/": "/",
-  "/contact": "/contact"
+  "/projects/codes": "projects/codes",
+  "/projects/designs": "projects/designs",
+  "/project/": "projects/"
 } satisfies Pathnames<typeof locales>;
 
 export type Pages = keyof typeof pathnames;

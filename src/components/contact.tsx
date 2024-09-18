@@ -5,10 +5,13 @@ import {
   LinkedinLogo
 } from "@phosphor-icons/react/dist/ssr";
 import Logo from "images/logo/full.svg";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { TransitionLink } from "./ui/TransitionLink";
 
 export function Contact() {
+  const t = useTranslations("CONTACT");
+
   return (
     <section
       id="contact"
@@ -17,7 +20,7 @@ export function Contact() {
       <div className="flex flex-col max-w-default w-full gap-12 pt-[300px] md:flex-row">
         <div className="flex flex-col gap-6 p-8 rounded-4xl w-full bg-white dark:bg-gray-dark">
           <Typography.H2 className="text-primary text-xl font-semibold">
-            SAY HELLO
+            {t("SOCIAL_TITLE")}
           </Typography.H2>
           <ul className="flex flex-col gap-6">
             <li>
@@ -64,17 +67,21 @@ export function Contact() {
 
         <div className="flex flex-col gap-6 p-8 rounded-4xl w-full bg-white dark:bg-gray-dark">
           <Typography.H2 className="text-primary text-xl font-semibold">
-            PAGES
+            {t("PAGES.TITLE")}
           </Typography.H2>
           <ul className="flex flex-col gap-6">
             <li>
-              <TransitionLink href="/">Home</TransitionLink>
+              <TransitionLink href="/">{t("PAGES.HOME")}</TransitionLink>
             </li>
             <li>
-              <TransitionLink href="/contact">My Projects</TransitionLink>
+              <TransitionLink href="/projects/codes">
+                {t("PAGES.CODES")}
+              </TransitionLink>
             </li>
             <li>
-              <TransitionLink href="/contact">My Designs</TransitionLink>
+              <TransitionLink href="/projects/designs">
+                {t("PAGES.DESIGNS")}
+              </TransitionLink>
             </li>
           </ul>
         </div>

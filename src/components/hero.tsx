@@ -1,7 +1,10 @@
 import { Typography } from "@/components/ui/Typography";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export function Hero() {
+  const t = useTranslations("HOME.HERO");
+
   return (
     <section
       id="hero"
@@ -13,10 +16,7 @@ export function Hero() {
             <Typography.H1 className="text-primary lg:text-7xl">
               Frontend Developer.
             </Typography.H1>
-            <Typography.P className="text-xl">
-              I like to build solid and scalable frontend projects with great
-              user experiences.
-            </Typography.P>
+            <Typography.P className="text-xl">{t("SUBTITLE")}</Typography.P>
           </div>
           <Image
             src="/images/profile.png"
@@ -28,13 +28,10 @@ export function Hero() {
 
         <div className="flex flex-col gap-3 md:flex-row md:gap-16">
           <Typography.P className="text-sm max-w-[240px] md:text-base">
-            Want to build a website the way you always dreamed of? I can help
-            you make that happen.
+            {t("DESCRIPTION1")}
           </Typography.P>
           <Typography.P className="text-sm max-w-[240px] md:text-base">
-            Together we can build an amazing website, with a modern and
-            responsive design, that will help you boost your business and
-            attract more customers.
+            {t("DESCRIPTION2")}
           </Typography.P>
         </div>
       </div>

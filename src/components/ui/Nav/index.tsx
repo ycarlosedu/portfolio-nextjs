@@ -20,8 +20,11 @@ export default function Nav({ className, locale, ...props }: Props) {
       <TransitionLink lang={locale} locale={locale} href={"/"}>
         {t("HOME")}
       </TransitionLink>
-      <TransitionLink lang={locale} locale={locale} href={"/contact"}>
-        {t("CONTACT")}
+      <TransitionLink lang={locale} locale={locale} href={"/projects/codes"}>
+        {t("CODES")}
+      </TransitionLink>
+      <TransitionLink lang={locale} locale={locale} href={"/projects/designs"}>
+        {t("DESIGNS")}
       </TransitionLink>
     </nav>
   );

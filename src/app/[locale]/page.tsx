@@ -17,13 +17,17 @@ type Props = {
 export async function generateMetadata({
   params: { locale }
 }: Props): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: "METADATA" });
+  const t = await getTranslations({ locale, namespace: "METADATA.HOME" });
 
   return {
-    title: "Carlos Silva | Front-End Developer",
-    description: "",
+    title: t("TITLE"),
+    description: t("DESCRIPTION"),
     alternates: {
-      canonical: "https://carlossilva.vercel.app/pt-br/"
+      canonical: "https://carlossilva.vercel.app/pt-br/",
+      languages: {
+        "en-US": "https://carlossilva.vercel.app/en-us/",
+        "pt-BR": "https://carlossilva.vercel.app/pt-br/"
+      }
     }
   };
 }

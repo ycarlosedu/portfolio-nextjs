@@ -14,6 +14,7 @@ import {
   FormMessage
 } from "@/components/ui/Form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -32,6 +33,8 @@ const formSchema = z.object({
 type SendMeAMessageFormValues = z.infer<typeof formSchema>;
 
 export function SendMeAMessage() {
+  const t = useTranslations("HOME.SEND_ME_A_MESSAGE");
+
   const form = useForm<SendMeAMessageFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -44,7 +47,7 @@ export function SendMeAMessage() {
   function onSubmit(values: SendMeAMessageFormValues) {
     console.log(values);
     form.reset();
-    toast.success("Message sent successfully!");
+    toast.success(t("SUCCESS"));
   }
 
   return (
@@ -55,10 +58,12 @@ export function SendMeAMessage() {
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4 items-center">
           <Typography.H2 className="text-5xl leading-[1.2] text-center">
-            Send me a <span className="text-primary">message</span>!
+            {t.rich("TITLE", {
+              span: (chunks) => <span className="text-primary">{chunks}</span>
+            })}
           </Typography.H2>
           <Typography.H3 className="text-center max-w-[438px]">
-            Got a question or proposal, or just want to say hello? Go ahead.
+            {t("DESCRIPTION")}
           </Typography.H3>
           <Form {...form}>
             <form
@@ -71,10 +76,10 @@ export function SendMeAMessage() {
                   name="name"
                   render={({ field }) => (
                     <FormItem className="w-full">
-                      <FormLabel>Name</FormLabel>
+                      <FormLabel>{t("FORM.NAME.LABEL")}</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder="What`s your name?"
+                          placeholder={t("FORM.NAME.PLACEHOLDER")}
                           type="text"
                           autoCapitalize="words"
                           maxLength={MAX_NAME_LENGTH}
@@ -90,10 +95,10 @@ export function SendMeAMessage() {
                   name="email"
                   render={({ field }) => (
                     <FormItem className="w-full">
-                      <FormLabel>Email Adress</FormLabel>
+                      <FormLabel>{t("FORM.EMAIL.LABEL")}</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder="example@dev.com"
+                          placeholder={t("FORM.EMAIL.PLACEHOLDER")}
                           type="email"
                           {...field}
                         />
@@ -108,10 +113,10 @@ export function SendMeAMessage() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Your Message</FormLabel>
+                    <FormLabel>{t("FORM.MESSAGE.LABEL")}</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Hi, I think we need a website for our Company X. How soon can we talk about this?"
+                        placeholder={t("FORM.MESSAGE.PLACEHOLDER")}
                         maxLength={MAX_MESSAGE_LENGTH}
                         {...field}
                       />
@@ -124,7 +129,7 @@ export function SendMeAMessage() {
                 )}
               />
               <Button type="submit" className="self-center">
-                SEND IT
+                {t("BUTTON")}
                 <ArrowRight size={16} weight="bold" />
               </Button>
             </form>

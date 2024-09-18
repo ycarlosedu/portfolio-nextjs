@@ -1,26 +1,27 @@
 {
   "METADATA": {
     "HOME": {
-      "TITLE": "Carlos Silva | Front-End Developer",
-      "DESCRIPTION": "Carlos Silva é um desenvolvedor front-end que adora criar coisas bonitas e funcionais para a web."
+      "TITLE": "Carlos Silva | Desenvolvedor Front-End",
+      "DESCRIPTION": "Carlos Silva é um desenvolvedor front-end que adora criar websites modernos e funcionais para a web."
     },
-    "CONTACT": {
-      "TITLE": "Contato | Carlos Silva",
-      "DESCRIPTION": "Entre em contato com Carlos Silva para discutir sobre projetos, oportunidades de trabalho ou apenas para dizer oi."
+    "CODES": {
+      "TITLE": "Códigos | Carlos Silva",
+      "DESCRIPTION": "Confira alguns dos projetos em que trabalhei. De sites a aplicações web, já fiz de tudo um pouco."
     },
-    "ABOUT": {
-      "TITLE": "Sobre | Carlos Silva",
-      "DESCRIPTION": "Carlos Silva é um desenvolvedor front-end que adora criar coisas bonitas e funcionais para a web."
+    "DESIGNS": {
+      "TITLE": "Designs | Carlos Silva",
+      "DESCRIPTION": "Confira alguns dos designs que criei. De wireframes a mockups de alta fidelidade, já fiz de tudo um pouco."
     },
     "NOT_FOUND": {
       "TITLE": "Página não encontrada | Carlos Silva",
-      "DESCRIPTION": "A página que você está procurando não foi encontrada. Por favor, verifique o URL e tente novamente."
+      "DESCRIPTION": "A página que você está procurando não foi encontrada. Verifique o URL e tente novamente."
     }
   },
   "HEADER": {
     "HOME_ARIA_LABEL": "Ir para a página inicial",
     "HOME": "Início",
-    "CONTACT": "Contato"
+    "CODES": "Projetos",
+    "DESIGNS": "Designs"
   },
   "TOGGLE_THEME": {
     "ARIA_LABEL": "Alternar tema (Claro/Escuro/Sistema)",
@@ -30,22 +31,67 @@
   },
   "HOME": {
     "HERO": {
-      "TITLE": "Quer construir um site do jeito que você sempre sonhou?",
-      "SUBTITLE": "Eu posso te ajudar a tornar isso realidade.",
-      "SUBTITLE2": "Juntos podemos construir um site incrível, com um design moderno e responsivo, que vai te ajudar a alavancar o seu negócio e conquistar mais clientes.",
-      "BUTTON_CONTACT": "Entrar em contato",
-      "BUTTON_PROJECTS": "Ver projetos"
+      "SUBTITLE": "Gosto de construir projetos front-end sólidos e escaláveis com ótimas experiências para os usuários.",
+      "DESCRIPTION1": "Quer construir um site do jeito que sempre sonhou? Posso te ajudar a fazer isso acontecer.",
+      "DESCRIPTION2": "Juntos podemos criar um site incrível, com um design moderno e responsivo, que vai te ajudar a impulsionar seu negócio e atrair mais clientes."
     },
-    "ABOUT": {
-      "TITLE": "Sobre mim",
-      "DESCRIPTION": "Sou um desenvolvedor front-end apaixonado por tecnologia com foco em construir aplicações web bonitas e performáticas. Eu sou especializado em React, TypeScript e tecnologias web modernas.",
-      "BUTTON": "Ver portfólio"
+    "WHAT_I_DO": {
+      "DEVELOPMENT": "Desenvolvimento",
+      "DEVELOPMENT_DESCRIPTION": "Sou um desenvolvedor front-end apaixonado por tecnologia, com foco em construir aplicações web sofisticadas  e de alto desempenho. Sou especialista em React, TypeScript e tecnologias modernas da web.",
+      "TECHNOLOGIES": "Tecnologias",
+      "DESIGN": "Design",
+      "DESIGN_DESCRIPTION": "Também sou um designer UI/UX autodidata. Adoro criar designs harmoniosos e funcionais que proporcionam uma ótima experiência ao usuário. Uso o Figma para criar wireframes, mockups e protótipos.",
+      "TOOLS": "Ferramentas"
+    },
+    "OVER_THE_YEARS": {
+      "TITLE": "Ao longo dos anos,",
+      "PARAGRAPH1": "Construí produtos para empresas e negócios que vão desde sites de marketing até soluções complexas e aplicativos corporativos, com foco em experiências de usuário rápidas, elegantes e acessíveis.",
+      "PARAGRAPH2": "Atualmente, trabalho na Compass.UOL como Desenvolvedor Frontend, criando experiências cuidadosas e inclusivas para diversas empresas clientes.",
+      "PARAGRAPH3": "Durante meu horário de trabalho, também sou instrutor de front-end para estagiários que ingressam na empresa.",
+      "PARAGRAPH4": "No meu tempo livre, além de estudar desenvolvimento por horas, também trabalho em duas startups que co-fundei, <onne>ONNE</onne> e <savebys>SAVEBYS</savebys>.",
+      "PARAGRAPH5": "Em ambas as startups, além de atuar na área administrativa, exerço o papel de UX/UI e desenvolvo sozinho todo o front-end das aplicações."
+    },
+    "SEE_MY_WORK": {
+      "CODE_TITLE": "Eu construo &<br></br> <span>codifico</span> coisas",
+      "CODE_DESCRIPTION": "Projetos open-source, web apps e experimentos.",
+      "CODE_BUTTON": "VER MEUS CÓDIGOS",
+      "DESIGN_TITLE": "Eu faço <span>designs</span>,<br></br> às vezes",
+      "DESIGN_DESCRIPTION": "Projetos pessoais, trabalhos da faculdade e mais.",
+      "DESIGN_BUTTON": "VER MEUS DESIGNS"
+    },
+    "SEND_ME_A_MESSAGE": {
+      "TITLE": "Me mande uma <span>mensagem</span>!",
+      "DESCRIPTION": "Quer trabalhar junto ou apenas bater um papo? Fique à vontade. Responderei o mais rápido possível.",
+      "FORM": {
+        "NAME": {
+          "LABEL": "Nome",
+          "PLACEHOLDER": "Qual é o seu nome?"
+        },
+        "EMAIL": {
+          "LABEL": "Endereço de E-mail",
+          "PLACEHOLDER": "exemplo@dev.com"
+        },
+        "MESSAGE": {
+          "LABEL": "Sua Mensagem",
+          "PLACEHOLDER": "Oi, acho que precisamos de um site para nossa Empresa X. Quando podemos falar sobre isso?"
+        }
+      },
+      "BUTTON": "ENVIAR",
+      "SUCCESS": "Mensagem enviada com sucesso!"
+    }
+  },
+  "CONTACT": {
+    "SOCIAL_TITLE": "DIGA OLÁ",
+    "PAGES": {
+      "TITLE": "PÁGINAS",
+      "HOME": "Início",
+      "CODES": "Meus Projetos",
+      "DESIGNS": "Meus Designs"
     }
   },
   "NOT_FOUND": {
     "TITLE": "Página não encontrada",
     "MESSAGE": "Desculpe, a página que você está procurando não pôde ser encontrada ou foi removida.",
-    "BACK_HOME": "Voltar para a página inicial"
-  },
-  "About": "Sobre"
+    "BACK_HOME": "Voltar para o início"
+  }
 }
