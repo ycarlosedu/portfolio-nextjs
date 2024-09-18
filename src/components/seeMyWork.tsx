@@ -6,6 +6,7 @@ import { useIsVisible } from "@/hooks/useIsVisible";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { useScrollToNextElement } from "@/hooks/useScrollNext";
 import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
+import { Link } from "@/navigation";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
@@ -46,9 +47,11 @@ export function SeeMyWork() {
               {t("CODE_DESCRIPTION")}
             </Typography.P>
           </div>
-          <Button>
-            {t("CODE_BUTTON")}
-            <ArrowRight size={16} weight="bold" />
+          <Button asChild>
+            <Link href={"/projects/codes"}>
+              {t("CODE_BUTTON")}
+              <ArrowRight size={16} weight="bold" />
+            </Link>
           </Button>
         </div>
 
@@ -68,9 +71,11 @@ export function SeeMyWork() {
               {t("DESIGN_DESCRIPTION")}
             </Typography.P>
           </div>
-          <Button>
-            {t("DESIGN_BUTTON")}
-            <ArrowRight size={16} weight="bold" />
+          <Button asChild>
+            <Link href={"/projects/designs"}>
+              {t("DESIGN_BUTTON")}
+              <ArrowRight size={16} weight="bold" />
+            </Link>
           </Button>
         </div>
       </div>

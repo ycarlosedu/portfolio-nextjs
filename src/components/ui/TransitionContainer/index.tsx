@@ -18,7 +18,7 @@ export function TransitionContainer({ children, className, ...props }: Props) {
         filter: "blur(0px)"
       }}
       transition={{
-        duration: 0.5,
+        duration: 0.2,
         type: "tween",
         ease: "easeInOut"
       }}

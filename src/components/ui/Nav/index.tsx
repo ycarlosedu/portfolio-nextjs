@@ -12,18 +12,28 @@ export default function Nav({ className, locale, ...props }: Props) {
   return (
     <nav
       className={cn([
-        "flex gap-6 items-center flex-wrap justify-center [&>.link:hover]:border-b-zinc-600",
+        "flex gap-6 items-center flex-wrap justify-center",
         className
       ])}
       {...props}
     >
-      <TransitionLink lang={locale} locale={locale} href={"/"}>
+      <TransitionLink className="link" lang={locale} locale={locale} href={"/"}>
         {t("HOME")}
       </TransitionLink>
-      <TransitionLink lang={locale} locale={locale} href={"/projects/codes"}>
+      <TransitionLink
+        className="link"
+        lang={locale}
+        locale={locale}
+        href={"/projects/codes"}
+      >
         {t("CODES")}
       </TransitionLink>
-      <TransitionLink lang={locale} locale={locale} href={"/projects/designs"}>
+      <TransitionLink
+        className="link"
+        lang={locale}
+        locale={locale}
+        href={"/projects/designs"}
+      >
         {t("DESIGNS")}
       </TransitionLink>
     </nav>

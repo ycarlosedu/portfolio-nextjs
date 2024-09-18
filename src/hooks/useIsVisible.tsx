@@ -14,7 +14,7 @@ export function useIsVisible(ref: RefObject<HTMLElement>, rootMargin = "0px") {
       {
         root: null,
         rootMargin,
-        threshold: 0.5
+        threshold: 0.95
       }
     );
 

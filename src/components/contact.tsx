@@ -44,7 +44,7 @@ export function Contact() {
             <li>
               <a
                 target="_blank"
-                className="break-all flex gap-3 items-center"
+                className="break-all link"
                 href={URL_SOCIALS.OUTLOOK.FULL}
               >
                 <EnvelopeSimple
@@ -58,7 +58,7 @@ export function Contact() {
             <li>
               <a
                 target="_blank"
-                className="break-all flex gap-3 items-center"
+                className="break-all link"
                 href={URL_SOCIALS.GITHUB.FULL}
               >
                 <GithubLogo
@@ -72,7 +72,7 @@ export function Contact() {
             <li>
               <a
                 target="_blank"
-                className="break-all flex gap-3 items-center"
+                className="break-all link"
                 href={URL_SOCIALS.LINKEDIN.FULL}
               >
                 <LinkedinLogo
@@ -92,15 +92,17 @@ export function Contact() {
           </Typography.H2>
           <ul className="flex flex-col gap-6">
             <li>
-              <TransitionLink href="/">{t("PAGES.HOME")}</TransitionLink>
+              <TransitionLink className="link" href="/">
+                {t("PAGES.HOME")}
+              </TransitionLink>
             </li>
             <li>
-              <TransitionLink href="/projects/codes">
+              <TransitionLink className="link" href="/projects/codes">
                 {t("PAGES.CODES")}
               </TransitionLink>
             </li>
             <li>
-              <TransitionLink href="/projects/designs">
+              <TransitionLink className="link" href="/projects/designs">
                 {t("PAGES.DESIGNS")}
               </TransitionLink>
             </li>
