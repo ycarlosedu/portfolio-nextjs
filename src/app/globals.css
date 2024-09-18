@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+hr {
+  border: none;
+}
+
 main {
   @apply transition-[opacity,transform,filter] duration-500 ease-in-out;
 }
@@ -18,6 +22,47 @@ main {
 @layer components {
   .floating {
     @apply text-white size-12 p-1 fixed z-20 bottom-6 right-6 transition-all duration-500;
+  }
+
+  .embla {
+    @apply max-w-full;
+  }
+
+  .embla__viewport {
+    @apply overflow-x-hidden relative w-full;
+  }
+
+  .embla__container {
+    @apply flex w-full;
+  }
+
+  .embla__slide {
+    flex: 0 0 100%;
+    @apply min-w-0 flex flex-col justify-center items-center;
+  }
+
+  .embla__controls {
+    @apply flex items-center justify-center mt-4 mx-4 gap-4;
+  }
+
+  .embla__dots {
+    margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
+    @apply flex flex-wrap justify-center items-center;
+  }
+
+  .embla__dot {
+    -webkit-tap-highlight-color: #1b1b1b50;
+    -webkit-appearance: none;
+    @apply appearance-none rounded-full justify-center items-center h-8 w-8 m-0 p-0 border-none cursor-pointer inline-flex touch-manipulation bg-transparent;
+  }
+
+  .embla__dot:after {
+    box-shadow: inset 10px 0 0 0.2rem #b3b3b3;
+    @apply content-[""] flex items-center rounded-full h-3 w-3;
+  }
+
+  .embla__dot--selected:after {
+    box-shadow: inset 10px 0 0 0.2rem #007aff;
   }
 }
 
