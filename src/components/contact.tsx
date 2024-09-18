@@ -1,4 +1,10 @@
+"use client";
+
 import { Typography } from "@/components/ui/Typography";
+import { SECTIONS } from "@/constants";
+import { useIsVisible } from "@/hooks/useIsVisible";
+import { useScrollDirection } from "@/hooks/useScrollDirection";
+import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
 import {
   EnvelopeSimple,
   GithubLogo,
@@ -7,14 +13,26 @@ import {
 import Logo from "images/logo/full.svg";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useRef } from "react";
 import { TransitionLink } from "./ui/TransitionLink";
 
 export function Contact() {
   const t = useTranslations("CONTACT");
 
+  const ref = useRef(null);
+
+  const { isScrollingUp } = useScrollDirection();
+  const { isVisible } = useIsVisible(ref);
+  useScrollToPreviousElement(
+    SECTIONS.SEND_ME_A_MESSAGE,
+    isScrollingUp,
+    isVisible
+  );
+
   return (
     <section
-      id="contact"
+      ref={ref}
+      id={SECTIONS.CONTACT}
       className="px-default md:h-screen w-full bg-gray-light dark:bg-black flex flex-col items-center justify-center py-4 gap-12"
     >
       <div className="flex flex-col max-w-default w-full gap-12 pt-[300px] md:flex-row">

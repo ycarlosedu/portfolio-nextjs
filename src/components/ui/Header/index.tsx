@@ -4,7 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/Sheet";
 import { ToggleLanguage } from "@/components/ui/ToggleLanguage";
 import { ToggleTheme } from "@/components/ui/ToggleTheme";
 import { TransitionLink } from "@/components/ui/TransitionLink";
-import useScrollUp from "@/hooks/useScrollUp";
+import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { cn } from "@/lib/utils";
 import { List } from "@phosphor-icons/react/dist/ssr";
 import Logo from "images/logo/full.svg";
@@ -21,7 +21,7 @@ export default function Header({ locale }: Props) {
 
   const [isFocused, setIsFocused] = useState(false);
 
-  const { isScrollingUp } = useScrollUp({ initialState: true });
+  const { isScrollingUp, isAtTheTop } = useScrollDirection();
 
   return (
     <header
@@ -33,7 +33,9 @@ export default function Header({ locale }: Props) {
       }}
       className={cn(
         "z-30 flex items-center justify-between px-default lg:px-20 py-6 fixed top-0 left-0 right-0 w-screen transition-[transform,background-color] duration-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30",
-        isScrollingUp || isFocused ? "" : "-translate-y-52 md:translate-y-0"
+        isScrollingUp || isAtTheTop || isFocused
+          ? ""
+          : "-translate-y-52 md:translate-y-0"
       )}
     >
       <div className="container relative flex items-start xs:items-center justify-between h-full">

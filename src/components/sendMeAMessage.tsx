@@ -13,9 +13,15 @@ import {
   FormLabel,
   FormMessage
 } from "@/components/ui/Form";
+import { SECTIONS } from "@/constants";
+import { useIsVisible } from "@/hooks/useIsVisible";
+import { useScrollDirection } from "@/hooks/useScrollDirection";
+import { useScrollToNextElement } from "@/hooks/useScrollNext";
+import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
 import { sendContactEmail } from "@/server/sendContactEmail";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslations } from "next-intl";
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -61,9 +67,17 @@ export function SendMeAMessage() {
     }
   }
 
+  const ref = useRef(null);
+
+  const { isScrollingUp, isScrollingDown } = useScrollDirection();
+  const { isVisible } = useIsVisible(ref);
+  useScrollToPreviousElement(SECTIONS.SEE_MY_WORK, isScrollingUp, isVisible);
+  useScrollToNextElement(SECTIONS.CONTACT, isScrollingDown, isVisible);
+
   return (
     <section
-      id="send-me-a-message"
+      ref={ref}
+      id={SECTIONS.SEND_ME_A_MESSAGE}
       className="px-default md:h-screen max-w-default w-full flex flex-col justify-center py-20"
     >
       <div className="flex flex-col gap-8">

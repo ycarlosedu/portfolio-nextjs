@@ -1,13 +1,27 @@
+"use client";
+
 import { Typography } from "@/components/ui/Typography";
+import { SECTIONS } from "@/constants";
+import { useIsVisible } from "@/hooks/useIsVisible";
+import { useScrollDirection } from "@/hooks/useScrollDirection";
+import { useScrollToNextElement } from "@/hooks/useScrollNext";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useRef } from "react";
 
 export function Hero() {
   const t = useTranslations("HOME.HERO");
 
+  const ref = useRef(null);
+
+  const { isScrollingDown } = useScrollDirection();
+  const { isVisible } = useIsVisible(ref);
+  useScrollToNextElement(SECTIONS.WHAT_I_DO, isScrollingDown, isVisible);
+
   return (
     <section
-      id="hero"
+      ref={ref}
+      id={SECTIONS.HERO}
       className="px-default w-full flex items-center justify-center md:h-screen"
     >
       <div className="flex flex-col gap-8 pb-8 w-full max-w-default">

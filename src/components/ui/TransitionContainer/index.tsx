@@ -1,20 +1,21 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { HTMLMotionProps, motion } from "framer-motion";
+
 type Props = HTMLMotionProps<"main">;
 
 export function TransitionContainer({ children, className, ...props }: Props) {
   return (
     <motion.main
-      animate={{
-        opacity: 1,
-        x: 0,
-        filter: "blur(0px)"
-      }}
       initial={{
         opacity: 0.3,
         x: "200vw",
         filter: "blur(12px)"
+      }}
+      animate={{
+        opacity: 1,
+        x: 0,
+        filter: "blur(0px)"
       }}
       transition={{
         duration: 0.5,

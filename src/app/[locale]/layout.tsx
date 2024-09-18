@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import Header from "@/components/ui/Header";
+import { ScrollIndicator } from "@/components/ui/ScrollIndicator";
 import { Toaster } from "@/components/ui/Sonner";
 import { TooltipProvider } from "@/components/ui/Tooltip";
 import { locales } from "@/i18n";
@@ -121,6 +122,7 @@ export default function RootLayout({ children, params: { locale } }: Props) {
             <TooltipProvider delayDuration={50}>
               <Header locale={locale} />
               {children}
+              <ScrollIndicator />
             </TooltipProvider>
           </NextIntlClientProvider>
           <Toaster />

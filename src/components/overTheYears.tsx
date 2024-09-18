@@ -1,13 +1,29 @@
+"use client";
+
 import { Typography } from "@/components/ui/Typography";
+import { SECTIONS } from "@/constants";
+import { useIsVisible } from "@/hooks/useIsVisible";
+import { useScrollDirection } from "@/hooks/useScrollDirection";
+import { useScrollToNextElement } from "@/hooks/useScrollNext";
+import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useRef } from "react";
 
 export function OverTheYears() {
   const t = useTranslations("HOME.OVER_THE_YEARS");
 
+  const ref = useRef(null);
+
+  const { isScrollingUp, isScrollingDown } = useScrollDirection();
+  const { isVisible } = useIsVisible(ref);
+  useScrollToPreviousElement(SECTIONS.WHAT_I_DO, isScrollingUp, isVisible);
+  useScrollToNextElement(SECTIONS.SEE_MY_WORK, isScrollingDown, isVisible);
+
   return (
     <section
-      id="over-the-years"
+      ref={ref}
+      id={SECTIONS.OVER_THE_YEARS}
       className="px-default w-full md:h-screen flex items-center justify-center py-20"
     >
       <div className="flex gap-4 max-w-default lg:gap-28 justify-between items-center">
