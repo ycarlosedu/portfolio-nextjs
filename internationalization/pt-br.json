@@ -77,7 +77,8 @@
         }
       },
       "BUTTON": "ENVIAR",
-      "SUCCESS": "Mensagem enviada com sucesso!"
+      "SUCCESS": "Mensagem enviada com sucesso!",
+      "ERROR": "Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente."
     }
   },
   "CONTACT": {

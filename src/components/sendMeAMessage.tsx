@@ -13,6 +13,7 @@ import {
   FormLabel,
   FormMessage
 } from "@/components/ui/Form";
+import { sendContactEmail } from "@/server/sendContactEmail";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
@@ -30,7 +31,7 @@ const formSchema = z.object({
   message: z.string().min(10).max(MAX_MESSAGE_LENGTH)
 });
 
-type SendMeAMessageFormValues = z.infer<typeof formSchema>;
+export type SendMeAMessageFormValues = z.infer<typeof formSchema>;
 
 export function SendMeAMessage() {
   const t = useTranslations("HOME.SEND_ME_A_MESSAGE");
@@ -44,10 +45,20 @@ export function SendMeAMessage() {
     }
   });
 
-  function onSubmit(values: SendMeAMessageFormValues) {
-    console.log(values);
-    form.reset();
-    toast.success(t("SUCCESS"));
+  async function onSubmit(values: SendMeAMessageFormValues) {
+    try {
+      const response = await sendContactEmail(values);
+      if (response.error) {
+        throw new Error(response.error.message);
+      }
+
+      console.log("🚀 ~ onSubmit ~ response:", response);
+      form.reset();
+      toast.success(t("SUCCESS"));
+    } catch (error) {
+      console.log("🚀 ~ onSubmit ~ error:", error);
+      toast.error(t("ERROR"));
+    }
   }
 
   return (
