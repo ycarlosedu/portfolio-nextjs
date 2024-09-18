@@ -3,12 +3,13 @@ import { SECTIONS } from "@/constants";
 import useHash from "@/hooks/useHash";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { ComponentProps } from "react";
+import { ComponentProps, HTMLAttributeAnchorTarget } from "react";
 
 type LinkMenu = {
   icon: JSX.Element;
   href: string;
-  title: string;
+  name: string;
+  target?: HTMLAttributeAnchorTarget;
 };
 
 type Props = ComponentProps<"div"> & {
@@ -34,9 +35,10 @@ export function FloatingMenu({
       id="floating-menu"
       {...rest}
     >
-      {links.map(({ icon, href, title }) => (
+      {links.map(({ icon, href, name, target = "_self" }) => (
         <Link
           key={href}
+          target={target}
           href={href}
           data-active={hash === href || (href.includes(SECTIONS.HERO) && !hash)}
           className={cn(
@@ -44,7 +46,7 @@ export function FloatingMenu({
           )}
         >
           {icon}
-          <span className="sr-only">{title}</span>
+          <span className="sr-only">{name}</span>
         </Link>
       ))}
     </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { Typography } from "@/components/ui/Typography";
-import { SECTIONS } from "@/constants";
+import { SECTIONS, URL_SOCIALS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
@@ -43,41 +43,44 @@ export function Contact() {
           <ul className="flex flex-col gap-6">
             <li>
               <a
+                target="_blank"
                 className="break-all flex gap-3 items-center"
-                href="mailto:silvacarlosoliveira@outlook.com"
+                href={URL_SOCIALS.OUTLOOK.FULL}
               >
                 <EnvelopeSimple
                   size={24}
                   className="min-w-6 min-h-6"
                   weight="bold"
                 />
-                silvacarlosoliveira@outlook.com
+                {URL_SOCIALS.OUTLOOK.MINIFIED}
               </a>
             </li>
             <li>
               <a
+                target="_blank"
                 className="break-all flex gap-3 items-center"
-                href="https://github.com/ycarlosedu"
+                href={URL_SOCIALS.GITHUB.FULL}
               >
                 <GithubLogo
                   size={24}
                   className="min-w-6 min-h-6"
                   weight="bold"
                 />
-                github.com/ycarlosedu
+                {URL_SOCIALS.GITHUB.MINIFIED}
               </a>
             </li>
             <li>
               <a
+                target="_blank"
                 className="break-all flex gap-3 items-center"
-                href="https://www.linkedin.com/in/silvacarlosoliveira"
+                href={URL_SOCIALS.LINKEDIN.FULL}
               >
                 <LinkedinLogo
                   size={24}
                   className="min-w-6 min-h-6"
                   weight="bold"
                 />
-                linkedin.com/in/silvacarlosoliveira
+                {URL_SOCIALS.LINKEDIN.MINIFIED}
               </a>
             </li>
           </ul>

@@ -10,3 +10,18 @@ export enum SECTIONS {
   SEND_ME_A_MESSAGE = "send-me-a-message",
   CONTACT = "contact"
 }
+
+export const URL_SOCIALS = {
+  GITHUB: {
+    FULL: "https://github.com/ycarlosedu",
+    MINIFIED: "github.com/ycarlosedu"
+  },
+  LINKEDIN: {
+    FULL: "https://www.linkedin.com/in/silvacarlosoliveira/",
+    MINIFIED: "linkedin.com/in/silvacarlosoliveira"
+  },
+  OUTLOOK: {
+    FULL: "mailto:silvacarlosoliveira@outlook.com",
+    MINIFIED: "silvacarlosoliveira@outlook.com"
+  }
+};

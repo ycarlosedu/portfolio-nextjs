@@ -6,13 +6,16 @@ import { SendMeAMessage } from "@/components/sendMeAMessage";
 import { FloatingMenu } from "@/components/ui/FloatingMenu";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
 import { WhatIDo } from "@/components/whatIDo";
-import { SECTIONS } from "@/constants";
+import { SECTIONS, URL_SOCIALS } from "@/constants";
 import {
   AddressBook,
   ChatCircleText,
   CirclesThreePlus,
   Code,
+  EnvelopeSimple,
+  GithubLogo,
   House,
+  LinkedinLogo,
   Path
 } from "@phosphor-icons/react/dist/ssr";
 import { Metadata } from "next";
@@ -42,32 +45,53 @@ export async function generateMetadata({
   };
 }
 
+const socials = [
+  {
+    name: "Outlook",
+    icon: <EnvelopeSimple size={20} />,
+    href: URL_SOCIALS.OUTLOOK.FULL,
+    target: "_blank"
+  },
+  {
+    name: "GitHub",
+    icon: <GithubLogo size={20} />,
+    href: URL_SOCIALS.GITHUB.FULL,
+    target: "_blank"
+  },
+  {
+    name: "LinkedIn",
+    icon: <LinkedinLogo size={20} />,
+    href: URL_SOCIALS.LINKEDIN.FULL,
+    target: "_blank"
+  }
+];
+
 const sections = [
-  { icon: <House size={20} />, href: `#${SECTIONS.HERO}`, title: "Hero" },
+  { icon: <House size={20} />, href: `#${SECTIONS.HERO}`, name: "Hero" },
   {
     icon: <Code size={20} />,
     href: `#${SECTIONS.WHAT_I_DO}`,
-    title: "What I Do"
+    name: "What I Do"
   },
   {
     icon: <Path size={20} />,
     href: `#${SECTIONS.OVER_THE_YEARS}`,
-    title: "Over The Years"
+    name: "Over The Years"
   },
   {
     icon: <CirclesThreePlus size={20} />,
     href: `#${SECTIONS.SEE_MY_WORK}`,
-    title: "See My Work"
+    name: "See My Work"
   },
   {
     icon: <ChatCircleText size={20} />,
     href: `#${SECTIONS.SEND_ME_A_MESSAGE}`,
-    title: "Send Me A Message"
+    name: "Send Me A Message"
   },
   {
     icon: <AddressBook size={20} />,
     href: `#${SECTIONS.CONTACT}`,
-    title: "Contact"
+    name: "Contact"
   }
 ];
 
@@ -76,7 +100,7 @@ export default function Home({ params: { locale } }: Props) {
 
   return (
     <>
-      <FloatingMenu links={sections} className="hidden md:flex" />
+      <FloatingMenu links={socials} side="left" className="hidden 2xl:flex" />
       <TransitionContainer>
         <Hero />
         <WhatIDo />
@@ -85,6 +109,7 @@ export default function Home({ params: { locale } }: Props) {
         <SendMeAMessage />
         <Contact />
       </TransitionContainer>
+      <FloatingMenu links={sections} className="hidden md:flex" />
     </>
   );
 }
