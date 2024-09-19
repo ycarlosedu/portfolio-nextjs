@@ -51,6 +51,9 @@ export function SendMeAMessage() {
     }
   });
 
+  const isLoading = form.formState.isSubmitting;
+  console.log("🚀 ~ SendMeAMessage ~ form.formState:", form.formState);
+
   async function onSubmit(values: SendMeAMessageFormValues) {
     try {
       const response = await sendContactEmail(values);
@@ -153,8 +156,12 @@ export function SendMeAMessage() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="self-center">
-                {t("BUTTON")}
+              <Button
+                type="submit"
+                disabled={isLoading}
+                className="self-center"
+              >
+                {isLoading ? t("LOADING_BUTTON") : t("BUTTON")}
                 <ArrowRight size={16} weight="bold" />
               </Button>
             </form>
