@@ -67,7 +67,7 @@ const socials = [
 ];
 
 const sections = [
-  { icon: <House size={20} />, href: `#${SECTIONS.HERO}`, name: "Hero" },
+  { icon: <House size={20} />, href: `#${SECTIONS.HERO}`, name: "Home" },
   {
     icon: <Code size={20} />,
     href: `#${SECTIONS.WHAT_I_DO}`,
