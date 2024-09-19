@@ -6,9 +6,10 @@ export const codeProjects = [
     slug: CODE_PROJECTS.PERSONAL_WEBSITE,
     name: "PERSONAL_WEBSITE",
     title: "PERSONAL_WEBSITE.TITLE",
+    isPrivate: true,
     href: "carlossilva.vercel.app",
     internal_href: "/codes/personal-website" as Pages,
-    image: "/images/logo/full.svg",
+    image: "/images/logo/min.svg",
     alt: "PERSONAL_WEBSITE.ALT",
     images: [
       {
@@ -26,48 +27,26 @@ export const codeProjects = [
     ]
   },
   {
-    slug: CODE_PROJECTS.PERSONAL_WEBSITE,
-    name: "PERSONAL_WEBSITE",
-    title: "PERSONAL_WEBSITE.TITLE",
-    href: "carlossilva.vercel.app",
-    internal_href: "/codes/personal-website" as Pages,
-    image: "/images/logo/full.svg",
-    alt: "PERSONAL_WEBSITE.ALT",
+    slug: CODE_PROJECTS.ONNE,
+    name: "ONNE",
+    title: "ONNE.TITLE",
+    isPrivate: true,
+    href: "onne.site",
+    internal_href: "/codes/onne" as Pages,
+    image: "/images/projects/logos/onne.webp",
+    alt: "ONNE.ALT",
     images: [
       {
-        name: "PERSONAL_WEBSITE.TITLE",
-        image: "/images/projects/codes/personal-website/home-dark.png"
+        name: "ONNE.TITLE",
+        image: "/images/projects/codes/onne/home-portuguese.png"
       },
       {
-        name: "PERSONAL_WEBSITE.TITLE",
-        image: "/images/projects/codes/personal-website/home-light.png"
+        name: "ONNE.TITLE",
+        image: "/images/projects/codes/onne/our-solution-english.png"
       },
       {
-        name: "PERSONAL_WEBSITE.TITLE",
-        image: "/images/projects/codes/personal-website/what-i-do.png"
-      }
-    ]
-  },
-  {
-    slug: CODE_PROJECTS.PERSONAL_WEBSITE,
-    name: "PERSONAL_WEBSITE",
-    title: "PERSONAL_WEBSITE.TITLE",
-    href: "carlossilva.vercel.app",
-    internal_href: "/codes/personal-website" as Pages,
-    image: "/images/logo/full.svg",
-    alt: "PERSONAL_WEBSITE.ALT",
-    images: [
-      {
-        name: "PERSONAL_WEBSITE.TITLE",
-        image: "/images/projects/codes/personal-website/home-dark.png"
-      },
-      {
-        name: "PERSONAL_WEBSITE.TITLE",
-        image: "/images/projects/codes/personal-website/home-light.png"
-      },
-      {
-        name: "PERSONAL_WEBSITE.TITLE",
-        image: "/images/projects/codes/personal-website/what-i-do.png"
+        name: "ONNE.TITLE",
+        image: "/images/projects/codes/onne/contact-english.png"
       }
     ]
   }

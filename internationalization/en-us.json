@@ -98,6 +98,11 @@
       "PERSONAL_WEBSITE": {
         "TITLE": "My Personal Website",
         "ALT": "Carlos Silva Logo",
+        "ABOUT": "This is my personal portfolio. I created this site to showcase my work, share a little about myself, and showcase the technologies and tools I use. All of this in a pleasant, modern design.<br></br> The project is responsive and was designed with accessibility and usability in mind."
+      },
+      "ONNE": {
+        "TITLE": "ONNE",
+        "ALT": "ONNE Logo",
         "ABOUT": "Currently, a big problem that companies are facing is data protection laws. With this in mind, we thought of creating ONNE, a startup that aims to give us control over our own data.<br></br> We are developing an application that will allow you to have control over who has access to your data, and what data that is. When someone requests new data through our platform, you will receive a notification on your cell phone to approve or reject the request, choosing which data will be shared.<br></br> At any time, you can check the data sharing history and change these relationships at no cost.<br></br> With user data under our control, we only share with companies the data that they have received access to from their owners. This way, we maintain user privacy and control in accordance with the law.<br></br> Companies can access and request user data through our WEB portal or by integrating our APIs into their own applications.<br></br> The app and platform will be launched soon."
       }
     }
@@ -109,6 +114,11 @@
       "PERSONAL_WEBSITE": {
         "TITLE": "My Personal Website",
         "ALT": "Carlos Silva Logo",
+        "ABOUT": "This is my personal portfolio. I created this site to showcase my work, share a little about myself, and showcase the technologies and tools I use. All of this in a pleasant, modern design.<br></br> The project is responsive and was designed with accessibility and usability in mind."
+      },
+      "ONNE": {
+        "TITLE": "ONNE",
+        "ALT": "ONNE Logo",
         "ABOUT": "Currently, a big problem that companies are facing is data protection laws. With this in mind, we thought of creating ONNE, a startup that aims to give us control over our own data.<br></br> We are developing an application that will allow you to have control over who has access to your data, and what data that is. When someone requests new data through our platform, you will receive a notification on your cell phone to approve or reject the request, choosing which data will be shared.<br></br> At any time, you can check the data sharing history and change these relationships at no cost.<br></br> With user data under our control, we only share with companies the data that they have received access to from their owners. This way, we maintain user privacy and control in accordance with the law.<br></br> Companies can access and request user data through our WEB portal or by integrating our APIs into their own applications.<br></br> The app and platform will be launched soon."
       }
     }

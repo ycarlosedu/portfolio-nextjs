@@ -27,9 +27,11 @@ export const URL_SOCIALS = {
 };
 
 export enum CODE_PROJECTS {
-  PERSONAL_WEBSITE = "personal-website"
+  PERSONAL_WEBSITE = "personal-website",
+  ONNE = "onne"
 }
 
 export enum DESIGN_PROJECTS {
-  PERSONAL_WEBSITE = "personal-website"
+  PERSONAL_WEBSITE = "personal-website",
+  ONNE = "onne"
 }
