@@ -9,7 +9,8 @@ import {
   ArrowRight,
   FigmaLogo,
   GithubLogo,
-  Globe
+  Globe,
+  Lock
 } from "@phosphor-icons/react/dist/ssr";
 import { Button } from "./ui/Button";
 import Carousel from "./ui/Carousel";
@@ -31,30 +32,42 @@ export function ProjectImages({ project, projectType }: ProjectsProps) {
       />
 
       <div className="flex flex-wrap gap-2.5 items-center justify-center w-full">
-        <Button asChild>
-          <a href="#" target="_blank">
+        <Button asChild disabled={project.isWebsitePrivate}>
+          <a href={project.websiteHref} target="_blank">
             <Globe size={16} />
             WEBSITE
-            <ArrowRight size={16} />
+            {project.isWebsitePrivate ? (
+              <Lock size={16} />
+            ) : (
+              <ArrowRight size={16} />
+            )}
           </a>
         </Button>
 
         {projectType === PROJECT_TYPE.CODES && (
-          <Button asChild>
-            <a href="#" target="_blank">
+          <Button asChild disabled={project.isRepositoryPrivate}>
+            <a href={project.repositoryHref} target="_blank">
               <GithubLogo size={16} />
               GITHUB
-              <ArrowRight size={16} />
+              {project.isRepositoryPrivate ? (
+                <Lock size={16} />
+              ) : (
+                <ArrowRight size={16} />
+              )}
             </a>
           </Button>
         )}
 
         {projectType === PROJECT_TYPE.DESIGNS && (
-          <Button asChild>
-            <a href="#" target="_blank">
+          <Button asChild disabled={project.isDesignPrivate}>
+            <a href={project.designHref} target="_blank">
               <FigmaLogo size={16} />
               FIGMA
-              <ArrowRight size={16} />
+              {project.isDesignPrivate ? (
+                <Lock size={16} />
+              ) : (
+                <ArrowRight size={16} />
+              )}
             </a>
           </Button>
         )}

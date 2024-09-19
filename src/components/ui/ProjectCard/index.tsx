@@ -14,6 +14,12 @@ export type ProjectInfos = {
   image: string;
   alt: string;
   images: CarouselList;
+  isWebsitePrivate?: boolean;
+  websiteHref?: string;
+  isRepositoryPrivate?: boolean;
+  repositoryHref?: string;
+  isDesignPrivate?: boolean;
+  designHref?: string;
 };
 
 type ProjectCardProps = {
