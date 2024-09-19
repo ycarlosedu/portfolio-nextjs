@@ -4,24 +4,28 @@ import { Typography } from "@/components/ui/Typography";
 
 import { SECTIONS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
-import { useScrollDirection } from "@/hooks/useScrollDirection";
-import { useScrollToNextElement } from "@/hooks/useScrollNext";
-import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
+// import { useScrollDirection } from "@/hooks/useScrollDirection";
+// import { useScrollToNextElement } from "@/hooks/useScrollNext";
+// import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
 
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
 
+import useVisibleSectionStore from "@/store/visibleSectionStore";
 import { MessageForm } from "./messageForm";
 
 export function SendMeAMessage() {
   const t = useTranslations("HOME.SEND_ME_A_MESSAGE");
+  const { setVisibleSection } = useVisibleSectionStore();
 
   const ref = useRef(null);
 
-  const { isScrollingUp, isScrollingDown } = useScrollDirection();
+  // const { isScrollingUp, isScrollingDown } = useScrollDirection();
   const { isVisible } = useIsVisible(ref);
-  useScrollToPreviousElement(SECTIONS.SEE_MY_WORK, isScrollingUp, isVisible);
-  useScrollToNextElement(SECTIONS.CONTACT, isScrollingDown, isVisible);
+  isVisible && setVisibleSection(SECTIONS.SEND_ME_A_MESSAGE);
+
+  // useScrollToPreviousElement(SECTIONS.SEE_MY_WORK, isScrollingUp, isVisible);
+  // useScrollToNextElement(SECTIONS.CONTACT, isScrollingDown, isVisible);
 
   return (
     <section

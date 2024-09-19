@@ -3,20 +3,23 @@
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
-import { useScrollDirection } from "@/hooks/useScrollDirection";
-import { useScrollToNextElement } from "@/hooks/useScrollNext";
+// import { useScrollDirection } from "@/hooks/useScrollDirection";
+// import { useScrollToNextElement } from "@/hooks/useScrollNext";
+import useVisibleSectionStore from "@/store/visibleSectionStore";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
 
 export function Hero() {
   const t = useTranslations("HOME.HERO");
-
+  const { setVisibleSection } = useVisibleSectionStore();
   const ref = useRef(null);
 
-  const { isScrollingDown } = useScrollDirection();
+  // const { isScrollingDown } = useScrollDirection();
   const { isVisible } = useIsVisible(ref);
-  useScrollToNextElement(SECTIONS.WHAT_I_DO, isScrollingDown, isVisible);
+  isVisible && setVisibleSection(SECTIONS.HERO);
+
+  // useScrollToNextElement(SECTIONS.WHAT_I_DO, isScrollingDown, isVisible);
 
   return (
     <section

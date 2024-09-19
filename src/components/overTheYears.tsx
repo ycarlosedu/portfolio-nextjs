@@ -3,22 +3,26 @@
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
-import { useScrollDirection } from "@/hooks/useScrollDirection";
-import { useScrollToNextElement } from "@/hooks/useScrollNext";
-import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
+import useVisibleSectionStore from "@/store/visibleSectionStore";
+// import { useScrollDirection } from "@/hooks/useScrollDirection";
+// import { useScrollToNextElement } from "@/hooks/useScrollNext";
+// import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
 
 export function OverTheYears() {
   const t = useTranslations("HOME.OVER_THE_YEARS");
+  const { setVisibleSection } = useVisibleSectionStore();
 
   const ref = useRef(null);
 
-  const { isScrollingUp, isScrollingDown } = useScrollDirection();
+  // const { isScrollingUp, isScrollingDown } = useScrollDirection();
   const { isVisible } = useIsVisible(ref);
-  useScrollToPreviousElement(SECTIONS.WHAT_I_DO, isScrollingUp, isVisible);
-  useScrollToNextElement(SECTIONS.SEE_MY_WORK, isScrollingDown, isVisible);
+  isVisible && setVisibleSection(SECTIONS.OVER_THE_YEARS);
+
+  // useScrollToPreviousElement(SECTIONS.WHAT_I_DO, isScrollingUp, isVisible);
+  // useScrollToNextElement(SECTIONS.SEE_MY_WORK, isScrollingDown, isVisible);
 
   return (
     <section

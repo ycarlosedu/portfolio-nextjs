@@ -3,9 +3,10 @@
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
-import { useScrollDirection } from "@/hooks/useScrollDirection";
-import { useScrollToNextElement } from "@/hooks/useScrollNext";
-import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
+// import { useScrollDirection } from "@/hooks/useScrollDirection";
+// import { useScrollToNextElement } from "@/hooks/useScrollNext";
+// import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
+import useVisibleSectionStore from "@/store/visibleSectionStore";
 import { technologies } from "@/utils/carousel/technologies";
 import { tools } from "@/utils/carousel/tools";
 import { useTranslations } from "next-intl";
@@ -14,13 +15,16 @@ import Carousel from "./ui/Carousel";
 
 export function WhatIDo() {
   const t = useTranslations("HOME.WHAT_I_DO");
+  const { setVisibleSection } = useVisibleSectionStore();
 
   const ref = useRef(null);
 
-  const { isScrollingUp, isScrollingDown } = useScrollDirection();
+  // const { isScrollingUp, isScrollingDown } = useScrollDirection();
   const { isVisible } = useIsVisible(ref);
-  useScrollToPreviousElement(SECTIONS.HERO, isScrollingUp, isVisible);
-  useScrollToNextElement(SECTIONS.OVER_THE_YEARS, isScrollingDown, isVisible);
+  isVisible && setVisibleSection(SECTIONS.WHAT_I_DO);
+
+  // useScrollToPreviousElement(SECTIONS.HERO, isScrollingUp, isVisible);
+  // useScrollToNextElement(SECTIONS.OVER_THE_YEARS, isScrollingDown, isVisible);
 
   return (
     <section

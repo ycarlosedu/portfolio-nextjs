@@ -3,8 +3,9 @@
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS, URL_SOCIALS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
-import { useScrollDirection } from "@/hooks/useScrollDirection";
-import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
+// import { useScrollDirection } from "@/hooks/useScrollDirection";
+// import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
+import useVisibleSectionStore from "@/store/visibleSectionStore";
 import {
   EnvelopeSimple,
   GithubLogo,
@@ -18,16 +19,19 @@ import { TransitionLink } from "./ui/TransitionLink";
 
 export function Contact() {
   const t = useTranslations("CONTACT");
+  const { setVisibleSection } = useVisibleSectionStore();
 
   const ref = useRef(null);
 
-  const { isScrollingUp } = useScrollDirection();
+  // const { isScrollingUp } = useScrollDirection();
   const { isVisible } = useIsVisible(ref);
-  useScrollToPreviousElement(
-    SECTIONS.SEND_ME_A_MESSAGE,
-    isScrollingUp,
-    isVisible
-  );
+  isVisible && setVisibleSection(SECTIONS.CONTACT);
+
+  // useScrollToPreviousElement(
+  //   SECTIONS.SEND_ME_A_MESSAGE,
+  //   isScrollingUp,
+  //   isVisible
+  // );
 
   return (
     <section

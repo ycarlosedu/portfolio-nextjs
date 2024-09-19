@@ -1,7 +1,6 @@
 "use client";
-import { SECTIONS } from "@/constants";
-import useHash from "@/hooks/useHash";
 import { cn } from "@/lib/utils";
+import useVisibleSectionStore from "@/store/visibleSectionStore";
 import Link from "next/link";
 import { ComponentProps, HTMLAttributeAnchorTarget } from "react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../Tooltip";
@@ -24,7 +23,7 @@ export function FloatingMenu({
   className,
   ...rest
 }: Props) {
-  const hash = useHash();
+  const { visibleSection } = useVisibleSectionStore();
 
   return (
     <div
@@ -36,29 +35,29 @@ export function FloatingMenu({
       id="floating-menu"
       {...rest}
     >
-      {links.map(({ icon, href, name, target = "_self" }) => (
-        <Tooltip key={href}>
-          <TooltipTrigger asChild>
-            <Link
-              key={href}
-              target={target}
-              href={href}
-              data-active={
-                hash === href || (href.includes(SECTIONS.HERO) && !hash)
-              }
-              className={cn(
-                "flex items-center justify-center p-2 rounded-full data-active:bg-primary text-black dark:text-white hover:bg-gray-accent transition-all duration-300"
-              )}
-            >
-              {icon}
-              <span className="sr-only">{name}</span>
-            </Link>
-          </TooltipTrigger>
-          <TooltipContent side={side === "right" ? "left" : "right"}>
-            {name}
-          </TooltipContent>
-        </Tooltip>
-      ))}
+      {links.map(({ icon, href, name, target = "_self" }) => {
+        return (
+          <Tooltip key={href}>
+            <TooltipTrigger asChild>
+              <Link
+                key={href}
+                target={target}
+                href={href}
+                data-active={href.includes(visibleSection)}
+                className={cn(
+                  "flex items-center justify-center p-2 rounded-full data-active:bg-primary text-black dark:text-white hover:bg-gray-accent transition-all duration-300"
+                )}
+              >
+                {icon}
+                <span className="sr-only">{name}</span>
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent side={side === "right" ? "left" : "right"}>
+              {name}
+            </TooltipContent>
+          </Tooltip>
+        );
+      })}
     </div>
   );
 }
