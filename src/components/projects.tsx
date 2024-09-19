@@ -4,10 +4,11 @@ import { useTranslations } from "next-intl";
 
 import { ProjectCard, ProjectInfos } from "@/components/ui/ProjectCard";
 import { Typography } from "@/components/ui/Typography";
+import { PROJECT_TYPE } from "@/constants";
 
 type ProjectsProps = {
   projects: ProjectInfos[];
-  translations: "CODES" | "DESIGNS";
+  translations: PROJECT_TYPE;
 };
 
 export function Projects({ projects, translations }: ProjectsProps) {

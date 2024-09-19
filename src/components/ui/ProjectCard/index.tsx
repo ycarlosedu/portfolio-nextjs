@@ -1,5 +1,6 @@
 import { TransitionLink } from "@/components/ui/TransitionLink";
 import { Typography } from "@/components/ui/Typography";
+import { PROJECT_TYPE } from "@/constants";
 import { Pages } from "@/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -17,7 +18,7 @@ export type ProjectInfos = {
 
 type ProjectCardProps = {
   project: ProjectInfos;
-  translations: "CODES" | "DESIGNS";
+  translations: PROJECT_TYPE;
 };
 
 export function ProjectCard({ project, translations }: ProjectCardProps) {

@@ -1,16 +1,17 @@
 import { MessageForm } from "@/components/messageForm";
 import { Typography } from "@/components/ui/Typography";
+import { PROJECT_TYPE } from "@/constants";
 import { useTranslations } from "next-intl";
 
 type ProjectAboutProps = {
   projectName: string;
-  translations: "CODES" | "DESIGNS";
+  projectType: PROJECT_TYPE;
 };
 
-export function ProjectAbout({ projectName, translations }: ProjectAboutProps) {
+export function ProjectAbout({ projectName, projectType }: ProjectAboutProps) {
   const t = useTranslations(`PROJECT_ABOUT`);
   const translateProject = useTranslations(
-    `${translations}.PROJECTS.${projectName}`
+    `${projectType}.PROJECTS.${projectName}`
   );
 
   return (

@@ -26,6 +26,11 @@ export const URL_SOCIALS = {
   }
 };
 
+export enum PROJECT_TYPE {
+  CODES = "CODES",
+  DESIGNS = "DESIGNS"
+}
+
 export enum CODE_PROJECTS {
   PERSONAL_WEBSITE = "personal-website",
   ONNE = "onne"
