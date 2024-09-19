@@ -4,6 +4,7 @@ import { Pages } from "@/navigation";
 export const codeProjects = [
   {
     slug: CODE_PROJECTS.PERSONAL_WEBSITE,
+    name: "PERSONAL_WEBSITE",
     title: "PERSONAL_WEBSITE.TITLE",
     href: "carlossilva.vercel.app",
     internal_href: "/codes/personal-website" as Pages,
@@ -26,6 +27,7 @@ export const codeProjects = [
   },
   {
     slug: CODE_PROJECTS.PERSONAL_WEBSITE,
+    name: "PERSONAL_WEBSITE",
     title: "PERSONAL_WEBSITE.TITLE",
     href: "carlossilva.vercel.app",
     internal_href: "/codes/personal-website" as Pages,
@@ -48,6 +50,7 @@ export const codeProjects = [
   },
   {
     slug: CODE_PROJECTS.PERSONAL_WEBSITE,
+    name: "PERSONAL_WEBSITE",
     title: "PERSONAL_WEBSITE.TITLE",
     href: "carlossilva.vercel.app",
     internal_href: "/codes/personal-website" as Pages,

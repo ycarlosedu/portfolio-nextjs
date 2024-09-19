@@ -7,6 +7,7 @@ export const designProjects = [
     internal_href: "/designs/personal-website" as Pages,
     image: "/images/logo/full.svg",
     alt: "PERSONAL_WEBSITE.ALT",
+    about: "PERSONAL_WEBSITE.ABOUT",
     images: [
       {
         image: "/images/logo/full.svg",
@@ -24,6 +25,7 @@ export const designProjects = [
     internal_href: "/designs/personal-website" as Pages,
     image: "/images/logo/full.svg",
     alt: "PERSONAL_WEBSITE.ALT",
+    about: "PERSONAL_WEBSITE.ABOUT",
     images: [
       {
         image: "/images/logo/full.svg",
@@ -41,6 +43,7 @@ export const designProjects = [
     internal_href: "/designs/personal-website" as Pages,
     image: "/images/logo/full.svg",
     alt: "PERSONAL_WEBSITE.ALT",
+    about: "PERSONAL_WEBSITE.ABOUT",
     images: [
       {
         image: "/images/logo/full.svg",

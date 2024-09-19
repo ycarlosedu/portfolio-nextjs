@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import { Contact } from "@/components/contact";
+import { ProjectAbout } from "@/components/projectAbout";
 import { ProjectImages } from "@/components/projectImages";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
 import { CODE_PROJECTS } from "@/constants";
@@ -55,6 +56,7 @@ export default async function CodeProject({ params: { locale, slug } }: Props) {
   return (
     <TransitionContainer>
       <ProjectImages project={project} translations="CODES" />
+      <ProjectAbout projectName={project.name} translations="CODES" />
       <Contact />
     </TransitionContainer>
   );

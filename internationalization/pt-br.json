@@ -97,7 +97,8 @@
     "PROJECTS": {
       "PERSONAL_WEBSITE": {
         "TITLE": "Meu Site Pessoal",
-        "ALT": "Carlos Silva Logo"
+        "ALT": "Carlos Silva Logo",
+        "ABOUT": "Este é o meu site pessoal. Criei este site para mostrar meu trabalho e compartilhar um pouco sobre mim.<br></br> O projeto é responsivo e foi feito com foco na acessibilidade e usabilidade."
       }
     }
   },
@@ -107,8 +108,16 @@
     "PROJECTS": {
       "PERSONAL_WEBSITE": {
         "TITLE": "Meu Site Pessoal",
-        "ALT": "Carlos Silva Logo"
+        "ALT": "Carlos Silva Logo",
+        "ABOUT": "Este é o design do meu site pessoal. Criei este site para mostrar meu trabalho e compartilhar um pouco sobre mim.<br></br> O design é responsivo e foi feito com foco na acessibilidade e usabilidade."
       }
+    }
+  },
+  "PROJECT_ABOUT": {
+    "TITLE": "Sobre",
+    "FORM": {
+      "TITLE": "Vamos <span>trabalhar</span> juntos!",
+      "DESCRIPTION": "Gostou do meu trabalho e quer algo similar para a sua empresa? Claro, vamos fazer negócios!"
     }
   },
   "NOT_FOUND": {

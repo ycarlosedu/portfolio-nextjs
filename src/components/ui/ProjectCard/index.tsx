@@ -7,6 +7,7 @@ import { CarouselList } from "../Carousel";
 
 export type ProjectInfos = {
   title: string;
+  name: string;
   href: string;
   internal_href: Pages;
   image: string;
