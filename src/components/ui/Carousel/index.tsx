@@ -53,8 +53,8 @@ export default function Carousel({ list, imageClassName }: CarouselProps) {
               <Image
                 src={item.image}
                 alt={`Logo/Imagem do(a) ${item.name}`}
-                width={288}
-                height={144}
+                width={1244}
+                height={700}
                 className={cn("xl:w-[512px] xl:h-64", imageClassName)}
               />
             </div>

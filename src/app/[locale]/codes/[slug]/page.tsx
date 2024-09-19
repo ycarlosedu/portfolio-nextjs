@@ -8,12 +8,17 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
 import { codeProjects } from "../projects";
 
+export function generateStaticParams() {
+  return Object.values(CODE_PROJECTS).map((slug) => ({ slug }));
+}
+
 type Props = {
   params: {
     locale: string;
     slug: CODE_PROJECTS;
   };
 };
+
 export async function generateMetadata({
   params: { locale, slug }
 }: Props): Promise<Metadata> {

@@ -11,6 +11,7 @@ type Props = {
     locale: string;
   };
 };
+
 export async function generateMetadata({
   params: { locale }
 }: Props): Promise<Metadata> {
