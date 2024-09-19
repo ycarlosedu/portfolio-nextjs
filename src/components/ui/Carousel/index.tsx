@@ -6,6 +6,7 @@ import { EmblaCarouselType } from "embla-carousel";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 
+import { cn } from "@/lib/utils";
 import { DotButton, useDotButton } from "./dots";
 
 export type CarouselList = {
@@ -15,9 +16,10 @@ export type CarouselList = {
 
 type CarouselProps = {
   list: CarouselList;
+  imageClassName?: string;
 };
 
-export default function Carousel({ list }: CarouselProps) {
+export default function Carousel({ list, imageClassName }: CarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 3000 })
   ]);
@@ -50,10 +52,10 @@ export default function Carousel({ list }: CarouselProps) {
             <div key={item.name} className="embla__slide w-full">
               <Image
                 src={item.image}
-                alt={`Logo do(a) ${item.name}`}
+                alt={`Logo/Imagem do(a) ${item.name}`}
                 width={288}
                 height={144}
-                className="xl:w-[512px] xl:h-64"
+                className={cn("xl:w-[512px] xl:h-64", imageClassName)}
               />
             </div>
           ))}

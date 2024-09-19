@@ -25,3 +25,11 @@ export const URL_SOCIALS = {
     MINIFIED: "silvacarlosoliveira@outlook.com"
   }
 };
+
+export enum CODE_PROJECTS {
+  PERSONAL_WEBSITE = "personal-website"
+}
+
+export enum DESIGN_PROJECTS {
+  PERSONAL_WEBSITE = "personal-website"
+}

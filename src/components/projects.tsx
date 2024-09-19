@@ -2,11 +2,11 @@
 
 import { useTranslations } from "next-intl";
 
-import { ProjectCard, ProjectCardInfos } from "@/components/ui/ProjectCard";
+import { ProjectCard, ProjectInfos } from "@/components/ui/ProjectCard";
 import { Typography } from "@/components/ui/Typography";
 
 type ProjectsProps = {
-  projects: ProjectCardInfos[];
+  projects: ProjectInfos[];
   translations: "CODES" | "DESIGNS";
 };
 
@@ -26,7 +26,11 @@ export function Projects({ projects, translations }: ProjectsProps) {
 
       <div className="w-full flex flex-wrap justify-between gap-4 pt-8">
         {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+          <ProjectCard
+            key={project.title}
+            project={project}
+            translations={translations}
+          />
         ))}
       </div>
     </section>

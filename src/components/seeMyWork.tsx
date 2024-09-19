@@ -6,11 +6,11 @@ import { useIsVisible } from "@/hooks/useIsVisible";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { useScrollToNextElement } from "@/hooks/useScrollNext";
 import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
-import { Link } from "@/navigation";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
 import { Button } from "./ui/Button";
+import { TransitionLink } from "./ui/TransitionLink";
 
 export function SeeMyWork() {
   const t = useTranslations("HOME.SEE_MY_WORK");
@@ -48,10 +48,10 @@ export function SeeMyWork() {
             </Typography.P>
           </div>
           <Button asChild>
-            <Link href={"/codes"}>
+            <TransitionLink href={"/codes"}>
               {t("CODE_BUTTON")}
               <ArrowRight size={16} weight="bold" />
-            </Link>
+            </TransitionLink>
           </Button>
         </div>
 
@@ -72,10 +72,10 @@ export function SeeMyWork() {
             </Typography.P>
           </div>
           <Button asChild>
-            <Link href={"/designs"}>
+            <TransitionLink href={"/designs"}>
               {t("DESIGN_BUTTON")}
               <ArrowRight size={16} weight="bold" />
-            </Link>
+            </TransitionLink>
           </Button>
         </div>
       </div>

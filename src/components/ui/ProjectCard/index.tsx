@@ -3,21 +3,24 @@ import { Typography } from "@/components/ui/Typography";
 import { Pages } from "@/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { CarouselList } from "../Carousel";
 
-export type ProjectCardInfos = {
+export type ProjectInfos = {
   title: string;
   href: string;
   internal_href: Pages;
   image: string;
   alt: string;
+  images: CarouselList;
 };
 
 type ProjectCardProps = {
-  project: ProjectCardInfos;
+  project: ProjectInfos;
+  translations: "CODES" | "DESIGNS";
 };
 
-export function ProjectCard({ project }: ProjectCardProps) {
-  const t = useTranslations("CODES.PROJECTS");
+export function ProjectCard({ project, translations }: ProjectCardProps) {
+  const t = useTranslations(`${translations}.PROJECTS`);
 
   return (
     <TransitionLink

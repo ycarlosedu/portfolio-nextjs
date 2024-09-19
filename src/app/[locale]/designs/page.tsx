@@ -3,8 +3,8 @@ import { Metadata } from "next";
 import { Contact } from "@/components/contact";
 import { Projects } from "@/components/projects";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
-import { Pages } from "@/navigation";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { designProjects } from "./projects";
 
 type Props = {
   params: {
@@ -29,36 +29,12 @@ export async function generateMetadata({
   };
 }
 
-const projects = [
-  {
-    title: "PERSONAL_WEBSITE.TITLE",
-    href: "FIGMA",
-    internal_href: "/designs/personal-website" as Pages,
-    image: "/images/logo/full.svg",
-    alt: "PERSONAL_WEBSITE.ALT"
-  },
-  {
-    title: "PERSONAL_WEBSITE.TITLE",
-    href: "FIGMA",
-    internal_href: "/designs/personal-website" as Pages,
-    image: "/images/logo/full.svg",
-    alt: "PERSONAL_WEBSITE.ALT"
-  },
-  {
-    title: "PERSONAL_WEBSITE.TITLE",
-    href: "FIGMA",
-    internal_href: "/designs/personal-website" as Pages,
-    image: "/images/logo/full.svg",
-    alt: "PERSONAL_WEBSITE.ALT"
-  }
-];
-
 export default async function Designs({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   return (
     <TransitionContainer>
-      <Projects projects={projects} translations={"DESIGNS"} />
+      <Projects projects={designProjects} translations={"DESIGNS"} />
       <Contact />
     </TransitionContainer>
   );

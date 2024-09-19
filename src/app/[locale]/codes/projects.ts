@@ -1,0 +1,71 @@
+import { CODE_PROJECTS } from "@/constants";
+import { Pages } from "@/navigation";
+
+export const codeProjects = [
+  {
+    slug: CODE_PROJECTS.PERSONAL_WEBSITE,
+    title: "PERSONAL_WEBSITE.TITLE",
+    href: "carlossilva.vercel.app",
+    internal_href: "/codes/personal-website" as Pages,
+    image: "/images/logo/full.svg",
+    alt: "PERSONAL_WEBSITE.ALT",
+    images: [
+      {
+        name: "PERSONAL_WEBSITE.TITLE",
+        image: "/images/projects/codes/personal-website/home-dark.png"
+      },
+      {
+        name: "PERSONAL_WEBSITE.TITLE",
+        image: "/images/projects/codes/personal-website/home-light.png"
+      },
+      {
+        name: "PERSONAL_WEBSITE.TITLE",
+        image: "/images/projects/codes/personal-website/what-i-do.png"
+      }
+    ]
+  },
+  {
+    slug: CODE_PROJECTS.PERSONAL_WEBSITE,
+    title: "PERSONAL_WEBSITE.TITLE",
+    href: "carlossilva.vercel.app",
+    internal_href: "/codes/personal-website" as Pages,
+    image: "/images/logo/full.svg",
+    alt: "PERSONAL_WEBSITE.ALT",
+    images: [
+      {
+        name: "PERSONAL_WEBSITE.TITLE",
+        image: "/images/projects/codes/personal-website/home-dark.png"
+      },
+      {
+        name: "PERSONAL_WEBSITE.TITLE",
+        image: "/images/projects/codes/personal-website/home-light.png"
+      },
+      {
+        name: "PERSONAL_WEBSITE.TITLE",
+        image: "/images/projects/codes/personal-website/what-i-do.png"
+      }
+    ]
+  },
+  {
+    slug: CODE_PROJECTS.PERSONAL_WEBSITE,
+    title: "PERSONAL_WEBSITE.TITLE",
+    href: "carlossilva.vercel.app",
+    internal_href: "/codes/personal-website" as Pages,
+    image: "/images/logo/full.svg",
+    alt: "PERSONAL_WEBSITE.ALT",
+    images: [
+      {
+        name: "PERSONAL_WEBSITE.TITLE",
+        image: "/images/projects/codes/personal-website/home-dark.png"
+      },
+      {
+        name: "PERSONAL_WEBSITE.TITLE",
+        image: "/images/projects/codes/personal-website/home-light.png"
+      },
+      {
+        name: "PERSONAL_WEBSITE.TITLE",
+        image: "/images/projects/codes/personal-website/what-i-do.png"
+      }
+    ]
+  }
+];
