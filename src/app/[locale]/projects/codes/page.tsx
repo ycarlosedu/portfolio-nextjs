@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import { Contact } from "@/components/contact";
+import { Projects } from "@/components/projects";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
@@ -30,10 +31,11 @@ export async function generateMetadata({
 export default async function Codes({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
-  const t = await getTranslations("NOT_FOUND");
+  const t = await getTranslations("CODES");
 
   return (
     <TransitionContainer>
+      <Projects />
       <Contact />
     </TransitionContainer>
   );

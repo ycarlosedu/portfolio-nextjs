@@ -42,7 +42,7 @@ export default async function Contact({ params: { locale } }: Props) {
   const t = await getTranslations("NOT_FOUND");
 
   return (
-    <TransitionContainer className="flex flex-col gap-3 items-center justify-center text-center">
+    <TransitionContainer className="flex flex-col gap-3 items-center justify-center text-center px-default h-screen mt-0 pt-0">
       <Typography.P className="font-bold text-lg">404</Typography.P>
       <Typography.H1 className="">{t("TITLE")}</Typography.H1>
       <Typography.Muted className="">{t("MESSAGE")}</Typography.Muted>
