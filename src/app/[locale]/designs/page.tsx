@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { Contact } from "@/components/contact";
 import { Projects } from "@/components/projects";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
+import { PROJECT_TYPE } from "@/constants";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { designProjects } from "./projects";
 
@@ -34,7 +35,7 @@ export default async function Designs({ params: { locale } }: Props) {
 
   return (
     <TransitionContainer>
-      <Projects projects={designProjects} translations={"DESIGNS"} />
+      <Projects projects={designProjects} translations={PROJECT_TYPE.DESIGNS} />
       <Contact />
     </TransitionContainer>
   );
