@@ -97,12 +97,12 @@ export function Contact() {
               </TransitionLink>
             </li>
             <li>
-              <TransitionLink className="link" href="/projects/codes">
+              <TransitionLink className="link" href="/codes">
                 {t("PAGES.CODES")}
               </TransitionLink>
             </li>
             <li>
-              <TransitionLink className="link" href="/projects/designs">
+              <TransitionLink className="link" href="/designs">
                 {t("PAGES.DESIGNS")}
               </TransitionLink>
             </li>

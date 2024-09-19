@@ -52,7 +52,6 @@ export function SendMeAMessage() {
   });
 
   const isLoading = form.formState.isSubmitting;
-  console.log("🚀 ~ SendMeAMessage ~ form.formState:", form.formState);
 
   async function onSubmit(values: SendMeAMessageFormValues) {
     try {

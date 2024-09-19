@@ -48,7 +48,7 @@ export function SeeMyWork() {
             </Typography.P>
           </div>
           <Button asChild>
-            <Link href={"/projects/codes"}>
+            <Link href={"/codes"}>
               {t("CODE_BUTTON")}
               <ArrowRight size={16} weight="bold" />
             </Link>
@@ -72,7 +72,7 @@ export function SeeMyWork() {
             </Typography.P>
           </div>
           <Button asChild>
-            <Link href={"/projects/designs"}>
+            <Link href={"/designs"}>
               {t("DESIGN_BUTTON")}
               <ArrowRight size={16} weight="bold" />
             </Link>

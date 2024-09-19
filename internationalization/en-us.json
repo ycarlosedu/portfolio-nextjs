@@ -91,6 +91,26 @@
       "DESIGNS": "My Designs"
     }
   },
+  "CODES": {
+    "TITLE": "<span>Code</span> Projects",
+    "DESCRIPTION": "Some work I've done in the past.",
+    "PROJECTS": {
+      "PERSONAL_WEBSITE": {
+        "TITLE": "My Personal Website",
+        "ALT": "Carlos Silva Logo"
+      }
+    }
+  },
+  "DESIGNS": {
+    "TITLE": "<span>Design</span> Projects",
+    "DESCRIPTION": "Some prototypes I've done in the past.",
+    "PROJECTS": {
+      "PERSONAL_WEBSITE": {
+        "TITLE": "My Personal Website",
+        "ALT": "Carlos Silva Logo"
+      }
+    }
+  },
   "NOT_FOUND": {
     "TITLE": "Page not found",
     "MESSAGE": "Sorry, the page you are looking for could not be found or has been removed.",

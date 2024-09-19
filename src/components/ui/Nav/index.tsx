@@ -24,7 +24,7 @@ export default function Nav({ className, locale, ...props }: Props) {
         className="link"
         lang={locale}
         locale={locale}
-        href={"/projects/codes"}
+        href={`/codes`}
       >
         {t("CODES")}
       </TransitionLink>
@@ -32,7 +32,7 @@ export default function Nav({ className, locale, ...props }: Props) {
         className="link"
         lang={locale}
         locale={locale}
-        href={"/projects/designs"}
+        href={"/designs"}
       >
         {t("DESIGNS")}
       </TransitionLink>

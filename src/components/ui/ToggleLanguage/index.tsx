@@ -58,7 +58,7 @@ export function ToggleLanguage({ locale }: Props) {
               <TransitionLink
                 key={lang.code}
                 locale={lang.code}
-                href={`${urlWithoutLocale}` as Pages}
+                href={`/${urlWithoutLocale}` as Pages}
                 className="flex items-center justify-between w-full"
                 forceTransition
               >

@@ -91,6 +91,26 @@
       "DESIGNS": "Meus Designs"
     }
   },
+  "CODES": {
+    "TITLE": "Projetos de <span>Código</span>",
+    "DESCRIPTION": "Alguns trabalhos que fiz no passado.",
+    "PROJECTS": {
+      "PERSONAL_WEBSITE": {
+        "TITLE": "Meu Site Pessoal",
+        "ALT": "Carlos Silva Logo"
+      }
+    }
+  },
+  "DESIGNS": {
+    "TITLE": "Projetos de <span>Design</span>",
+    "DESCRIPTION": "Alguns protótipos que fiz no passado.",
+    "PROJECTS": {
+      "PERSONAL_WEBSITE": {
+        "TITLE": "Meu Site Pessoal",
+        "ALT": "Carlos Silva Logo"
+      }
+    }
+  },
   "NOT_FOUND": {
     "TITLE": "Página não encontrada",
     "MESSAGE": "Desculpe, a página que você está procurando não pôde ser encontrada ou foi removida.",
