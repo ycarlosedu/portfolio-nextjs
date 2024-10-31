@@ -3,9 +3,6 @@
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
-// import { useScrollDirection } from "@/hooks/useScrollDirection";
-// import { useScrollToNextElement } from "@/hooks/useScrollNext";
-// import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
 import useVisibleSectionStore from "@/store/visibleSectionStore";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
@@ -19,16 +16,8 @@ export function SeeMyWork() {
 
   const ref = useRef(null);
 
-  // const { isScrollingUp, isScrollingDown } = useScrollDirection();
   const { isVisible } = useIsVisible(ref);
   isVisible && setVisibleSection(SECTIONS.SEE_MY_WORK);
-
-  // useScrollToPreviousElement(SECTIONS.OVER_THE_YEARS, isScrollingUp, isVisible);
-  // useScrollToNextElement(
-  //   SECTIONS.SEND_ME_A_MESSAGE,
-  //   isScrollingDown,
-  //   isVisible
-  // );
 
   return (
     <section

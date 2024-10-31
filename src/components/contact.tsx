@@ -3,8 +3,6 @@
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS, URL_SOCIALS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
-// import { useScrollDirection } from "@/hooks/useScrollDirection";
-// import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
 import useVisibleSectionStore from "@/store/visibleSectionStore";
 import {
   EnvelopeSimple,
@@ -23,15 +21,8 @@ export function Contact() {
 
   const ref = useRef(null);
 
-  // const { isScrollingUp } = useScrollDirection();
   const { isVisible } = useIsVisible(ref);
   isVisible && setVisibleSection(SECTIONS.CONTACT);
-
-  // useScrollToPreviousElement(
-  //   SECTIONS.SEND_ME_A_MESSAGE,
-  //   isScrollingUp,
-  //   isVisible
-  // );
 
   return (
     <section

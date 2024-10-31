@@ -4,9 +4,6 @@ import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
 import useVisibleSectionStore from "@/store/visibleSectionStore";
-// import { useScrollDirection } from "@/hooks/useScrollDirection";
-// import { useScrollToNextElement } from "@/hooks/useScrollNext";
-// import { useScrollToPreviousElement } from "@/hooks/useScrollPrevious";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
@@ -17,18 +14,14 @@ export function OverTheYears() {
 
   const ref = useRef(null);
 
-  // const { isScrollingUp, isScrollingDown } = useScrollDirection();
   const { isVisible } = useIsVisible(ref);
   isVisible && setVisibleSection(SECTIONS.OVER_THE_YEARS);
-
-  // useScrollToPreviousElement(SECTIONS.WHAT_I_DO, isScrollingUp, isVisible);
-  // useScrollToNextElement(SECTIONS.SEE_MY_WORK, isScrollingDown, isVisible);
 
   return (
     <section
       ref={ref}
       id={SECTIONS.OVER_THE_YEARS}
-      className="px-default w-full md:h-screen flex items-center justify-center py-20"
+      className="px-default w-full min-h-screen xl:h-screen flex items-center justify-center py-20"
     >
       <div className="flex gap-4 max-w-default lg:gap-28 justify-between items-center">
         <div className="flex flex-col gap-4 md:w-1/2">

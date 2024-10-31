@@ -3,8 +3,6 @@
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
-// import { useScrollDirection } from "@/hooks/useScrollDirection";
-// import { useScrollToNextElement } from "@/hooks/useScrollNext";
 import useVisibleSectionStore from "@/store/visibleSectionStore";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -22,7 +20,7 @@ export function Hero() {
     <section
       ref={ref}
       id={SECTIONS.HERO}
-      className="px-default w-full flex items-center justify-center md:h-screen relative"
+      className="px-default w-full flex items-center justify-center min-h-screen xl:h-screen relative max-w-screen overflow-x-clip"
     >
       <Image
         className="hidden lg:block absolute top-28"
@@ -33,7 +31,7 @@ export function Hero() {
       />
       <div className="flex flex-col gap-8 pb-8 w-full max-w-default">
         <div className="flex flex-col gap-16 md:gap-0 md:flex-row md:items-center md:justify-between">
-          <div className="flex flex-col gap-3 max-w-[500px]">
+          <div className="flex flex-col gap-3 max-w-[400px] lg:max-w-[500px]">
             <Typography.H1 className="text-primary lg:text-7xl">
               Frontend Developer.
             </Typography.H1>
@@ -68,7 +66,15 @@ export function Hero() {
       </div>
 
       <Image
-        className="hidden md:block absolute -bottom-32 left-52"
+        className="md:hidden absolute -bottom-28 -left-14"
+        src="images/assets/triangle.svg"
+        width={132}
+        height={139}
+        alt="Triangle svg"
+      />
+
+      <Image
+        className="absolute -bottom-44 left-72 md:-bottom-20 md:left-28 xl:-bottom-32 xl:left-52"
         src="images/assets/x.svg"
         width={200}
         height={232}
@@ -76,7 +82,7 @@ export function Hero() {
       />
 
       <Image
-        className="hidden lg:block absolute bottom-0 right-52"
+        className="hidden lg:block absolute bottom-0 right-20 xl:right-52"
         src="images/assets/waves.svg"
         width={300}
         height={210}
