@@ -66,37 +66,42 @@ const socials = [
   }
 ];
 
-const sections = [
-  { icon: <House size={20} />, href: `#${SECTIONS.HERO}`, name: "Home" },
-  {
-    icon: <Code size={20} />,
-    href: `#${SECTIONS.WHAT_I_DO}`,
-    name: "What I Do"
-  },
-  {
-    icon: <Path size={20} />,
-    href: `#${SECTIONS.OVER_THE_YEARS}`,
-    name: "Over The Years"
-  },
-  {
-    icon: <CirclesThreePlus size={20} />,
-    href: `#${SECTIONS.SEE_MY_WORK}`,
-    name: "See My Work"
-  },
-  {
-    icon: <ChatCircleText size={20} />,
-    href: `#${SECTIONS.SEND_ME_A_MESSAGE}`,
-    name: "Send Me A Message"
-  },
-  {
-    icon: <AddressBook size={20} />,
-    href: `#${SECTIONS.CONTACT}`,
-    name: "Contact"
-  }
-];
-
-export default function Home({ params: { locale } }: Props) {
+export default async function Home({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "HOME" });
+
+  const sections = [
+    {
+      icon: <House size={20} />,
+      href: `#${SECTIONS.HERO}`,
+      name: t("SECTIONS.HERO")
+    },
+    {
+      icon: <Code size={20} />,
+      href: `#${SECTIONS.WHAT_I_DO}`,
+      name: t("SECTIONS.WHAT_I_DO")
+    },
+    {
+      icon: <Path size={20} />,
+      href: `#${SECTIONS.OVER_THE_YEARS}`,
+      name: t("SECTIONS.OVER_THE_YEARS")
+    },
+    {
+      icon: <CirclesThreePlus size={20} />,
+      href: `#${SECTIONS.SEE_MY_WORK}`,
+      name: t("SECTIONS.SEE_MY_WORK")
+    },
+    {
+      icon: <ChatCircleText size={20} />,
+      href: `#${SECTIONS.SEND_ME_A_MESSAGE}`,
+      name: t("SECTIONS.SEND_ME_A_MESSAGE")
+    },
+    {
+      icon: <AddressBook size={20} />,
+      href: `#${SECTIONS.CONTACT}`,
+      name: t("SECTIONS.CONTACT")
+    }
+  ];
 
   return (
     <>

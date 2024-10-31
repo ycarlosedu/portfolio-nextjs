@@ -111,7 +111,7 @@ export default function RootLayout({ children, params: { locale } }: Props) {
         <div itemScope itemType="https://schema.org/WebSite">
           <meta itemProp="url" content="https://carlossilva.vercel.app/" />
           <meta itemProp="name" content="Carlos Silva | Front-End Developer" />
-          <meta itemProp="alternateName" content="Carlos Silva Dev" />
+          <meta itemProp="alternateName" content="Carlos Silva Portfolio" />
         </div>
 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

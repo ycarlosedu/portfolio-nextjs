@@ -30,6 +30,14 @@
     "SYSTEM": "From my system"
   },
   "HOME": {
+    "SECTIONS": {
+      "HERO": "Home",
+      "WHAT_I_DO": "What I do",
+      "OVER_THE_YEARS": "Over the years",
+      "SEE_MY_WORK": "See my work",
+      "SEND_ME_A_MESSAGE": "Send me a message",
+      "CONTACT": "Contact"
+    },
     "HERO": {
       "SUBTITLE": "I like to build solid and scalable frontend projects with great user experiences.",
       "DESCRIPTION1": "Want to build a website the way you always dreamed of? I can help you make that happen.",
