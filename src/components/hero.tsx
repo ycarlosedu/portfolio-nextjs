@@ -66,7 +66,7 @@ export function Hero() {
       </div>
 
       <Image
-        className="md:hidden absolute -bottom-28 -left-14"
+        className="md:hidden z-10 absolute -bottom-28 -left-14"
         src="images/assets/triangle.svg"
         width={132}
         height={139}
@@ -74,7 +74,7 @@ export function Hero() {
       />
 
       <Image
-        className="absolute -bottom-44 left-72 md:-bottom-20 md:left-28 xl:-bottom-32 xl:left-52"
+        className="absolute z-10 -bottom-44 left-72 md:-bottom-20 md:left-28 xl:-bottom-32 xl:left-52"
         src="images/assets/x.svg"
         width={200}
         height={232}
