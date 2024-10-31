@@ -45,7 +45,7 @@ export function FloatingMenu({
                 href={href}
                 data-active={href.includes(visibleSection)}
                 className={cn(
-                  "flex items-center justify-center p-2 rounded-full data-active:bg-primary text-black dark:text-white hover:bg-gray-accent transition-all duration-300"
+                  "flex items-center justify-center p-2 rounded-full data-active:bg-primary data-active:text-white text-black dark:text-white hover:bg-gray-accent transition-all duration-300"
                 )}
               >
                 {icon}

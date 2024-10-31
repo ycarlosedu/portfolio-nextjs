@@ -35,26 +35,32 @@ export function WhatIDo() {
       <div className="max-w-default w-full flex flex-col md:flex-row md:justify-between gap-20 py-32">
         <div className="flex flex-col gap-8 md:w-1/2">
           <div className="flex flex-col gap-3">
-            <Typography.H2>{t("DEVELOPMENT")}</Typography.H2>
+            <Typography.H2 className="text-primary">
+              {t("DEVELOPMENT")}
+            </Typography.H2>
             <Typography.P className="h-40 lg:text-xl">
               {t("DEVELOPMENT_DESCRIPTION")}
             </Typography.P>
           </div>
           <div className="flex flex-col gap-3">
-            <Typography.H2>{t("TECHNOLOGIES")}</Typography.H2>
+            <Typography.H2 className="text-primary">
+              {t("TECHNOLOGIES")}
+            </Typography.H2>
             <Carousel list={technologies} />
           </div>
         </div>
 
         <div className="flex flex-col gap-8 md:w-1/2">
           <div className="flex flex-col gap-3">
-            <Typography.H2>{t("DESIGN")}</Typography.H2>
+            <Typography.H2 className="text-primary">
+              {t("DESIGN")}
+            </Typography.H2>
             <Typography.P className="h-40 lg:text-xl leading-6">
               {t("DESIGN_DESCRIPTION")}
             </Typography.P>
           </div>
           <div className="flex flex-col gap-3">
-            <Typography.H2>{t("TOOLS")}</Typography.H2>
+            <Typography.H2 className="text-primary">{t("TOOLS")}</Typography.H2>
             <Carousel list={tools} />
           </div>
         </div>

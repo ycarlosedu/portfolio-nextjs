@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import { Contact } from "@/components/contact";
 import { ProjectAbout } from "@/components/projectAbout";
 import { ProjectImages } from "@/components/projectImages";
+
+import { FloatingButton } from "@/components/ui/FloatingButton";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
 import { CODE_PROJECTS, PROJECT_TYPE } from "@/constants";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -45,22 +47,26 @@ export async function generateMetadata({
 }
 
 export default async function CodeProject({ params: { locale, slug } }: Props) {
+  unstable_setRequestLocale(locale);
   const project = codeProjects.find((project) => project.slug === slug);
 
   if (!project) {
     redirect("/404");
   }
 
-  unstable_setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "CODES" });
 
   return (
-    <TransitionContainer>
-      <ProjectImages project={project} projectType={PROJECT_TYPE.CODES} />
-      <ProjectAbout
-        projectName={project.name}
-        projectType={PROJECT_TYPE.CODES}
-      />
-      <Contact />
-    </TransitionContainer>
+    <>
+      <FloatingButton name={t("BACK_BUTTON")} href="/codes" />
+      <TransitionContainer>
+        <ProjectImages project={project} projectType={PROJECT_TYPE.CODES} />
+        <ProjectAbout
+          projectName={project.name}
+          projectType={PROJECT_TYPE.CODES}
+        />
+        <Contact />
+      </TransitionContainer>
+    </>
   );
 }

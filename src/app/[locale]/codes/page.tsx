@@ -2,6 +2,7 @@ import { Metadata } from "next";
 
 import { Contact } from "@/components/contact";
 import { Projects } from "@/components/projects";
+import { FloatingButton } from "@/components/ui/FloatingButton";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
 import { PROJECT_TYPE } from "@/constants";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -34,10 +35,15 @@ export async function generateMetadata({
 export default async function Codes({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
+  const t = await getTranslations({ locale, namespace: "CODES" });
+
   return (
-    <TransitionContainer>
-      <Projects projects={codeProjects} translations={PROJECT_TYPE.CODES} />
-      <Contact />
-    </TransitionContainer>
+    <>
+      <FloatingButton name={t("BACK_BUTTON")} href="/" />
+      <TransitionContainer>
+        <Projects projects={codeProjects} translations={PROJECT_TYPE.CODES} />
+        <Contact />
+      </TransitionContainer>
+    </>
   );
 }

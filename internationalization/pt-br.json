@@ -102,6 +102,7 @@
   "CODES": {
     "TITLE": "Projetos de <span>Código</span>",
     "DESCRIPTION": "Alguns trabalhos que fiz no passado.",
+    "BACK_BUTTON": "Voltar",
     "PROJECTS": {
       "PERSONAL_WEBSITE": {
         "TITLE": "Meu Site Pessoal",
@@ -118,6 +119,7 @@
   "DESIGNS": {
     "TITLE": "Projetos de <span>Design</span>",
     "DESCRIPTION": "Alguns protótipos que fiz no passado.",
+    "BACK_BUTTON": "Voltar",
     "PROJECTS": {
       "PERSONAL_WEBSITE": {
         "TITLE": "Meu Site Pessoal",
