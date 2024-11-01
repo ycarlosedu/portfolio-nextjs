@@ -37,22 +37,13 @@ export function Hero() {
             </Typography.H1>
             <Typography.P className="text-xl">{t("SUBTITLE")}</Typography.P>
           </div>
-          <div className="relative w-fit">
-            <Image
-              className="z-10 relative w-[288px] h-[460px]"
-              src="/images/profile.png"
-              width={288}
-              height={460}
-              alt="Carlos Silva Profile Image"
-            />
-            <Image
-              className="z-0 absolute w-[288px] h-[460px] -bottom-4 -right-4 2xl:-bottom-8 2xl:-right-8"
-              src="images/assets/tall-rectangle.svg"
-              width={288}
-              height={460}
-              alt="Rectangle svg"
-            />
-          </div>
+          <Image
+            className="shadow-default rounded-lg"
+            src="/images/profile.png"
+            width={288}
+            height={384}
+            alt="Carlos Silva Profile Image"
+          />
         </div>
 
         <div className="flex flex-col gap-3 md:flex-row md:gap-16">

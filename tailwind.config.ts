@@ -31,6 +31,9 @@ const config = {
       borderRadius: {
         "4xl": "2rem"
       },
+      boxShadow: {
+        default: "16px 16px 15px 0px rgba(0, 122, 255, 0.5)"
+      },
       keyframes: {
         scaleUpAndDown: {
           "0%, 100%": { transform: "scale(1)" },
