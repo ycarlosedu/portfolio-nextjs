@@ -105,7 +105,7 @@ export default function RootLayout({ children, params: { locale } }: Props) {
       <body
         className={cn(
           inter.className,
-          "w-full overflow-x-hidden bg-white dark:bg-gray-dark text-black dark:text-white antialiased"
+          "w-full overflow-x-hidden bg-white dark:bg-gray-dark text-black dark:text-white antialiased relative"
         )}
       >
         <div itemScope itemType="https://schema.org/WebSite">

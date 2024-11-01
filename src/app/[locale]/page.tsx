@@ -114,7 +114,11 @@ export default async function Home({ params: { locale } }: Props) {
         <SendMeAMessage />
         <Contact />
       </TransitionContainer>
-      <FloatingMenu links={sections} className="hidden md:flex" />
+      <FloatingMenu
+        links={sections}
+        className="hidden md:flex"
+        id="sections-menu"
+      />
     </>
   );
 }

@@ -32,7 +32,6 @@ export function FloatingMenu({
         side === "left" ? "left-4" : "right-4",
         className
       )}
-      id="floating-menu"
       {...rest}
     >
       {links.map(({ icon, href, name, target = "_self" }) => {

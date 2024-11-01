@@ -20,6 +20,10 @@ main {
   @apply transition-[opacity,transform,filter] duration-500 ease-in-out;
 }
 
+body {
+  @apply data-[scroll-locked]:!pr-2.5 [&>#sections-menu]:data-[scroll-locked]:right-[26px];
+}
+
 @layer components {
   .link {
     @apply w-fit border-b-2 border-transparent hover:border-primary transition-all flex gap-3 items-center;
@@ -85,17 +89,14 @@ main {
   }
 }
 
-/* width */
-z ::-webkit-scrollbar {
+::-webkit-scrollbar {
   @apply flex touch-none select-none z-20 h-full w-2.5;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   @apply hidden;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   @apply relative flex-1 rounded-full transition-all ease-in-out bg-zinc-200 hover:bg-zinc-400;
 }
