@@ -26,13 +26,15 @@ const config = {
     extend: {
       screens: {
         xs: "425px",
-        "2xl": "1400px"
+        "2xl": "1400px",
+        "3xl": "1600px"
       },
       borderRadius: {
         "4xl": "2rem"
       },
       boxShadow: {
-        default: "16px 16px 15px 0px rgba(0, 122, 255, 0.5)"
+        default: "16px 16px 15px 0px rgba(0, 122, 255, 0.5)",
+        top: "-16px -16px 15px 0px rgba(0, 122, 255, 0.5)"
       },
       keyframes: {
         scaleUpAndDown: {

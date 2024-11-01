@@ -65,7 +65,7 @@ export function Hero() {
       />
 
       <Image
-        className="absolute z-10 -bottom-44 left-72 md:-bottom-20 md:left-28 xl:-bottom-32 xl:left-52"
+        className="absolute z-10 -bottom-44 left-72 md:-bottom-20 md:left-28 xl:left-52"
         src="images/assets/x.svg"
         width={200}
         height={232}

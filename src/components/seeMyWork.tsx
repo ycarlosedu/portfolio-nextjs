@@ -75,7 +75,7 @@ export function SeeMyWork() {
       </div>
 
       <Image
-        className="absolute hidden md:block bottom-0 left-0"
+        className="absolute hidden 3xl:block bottom-0 left-0"
         src="/images/assets/double-circle.svg"
         width={200}
         height={210}
@@ -83,7 +83,7 @@ export function SeeMyWork() {
       />
 
       <Image
-        className="absolute hidden md:block bottom-1/2 -right-16"
+        className="absolute hidden 3xl:block bottom-1/2 -right-16"
         src="/images/assets/square.svg"
         width={200}
         height={210}

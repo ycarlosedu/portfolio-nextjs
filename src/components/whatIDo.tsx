@@ -26,14 +26,7 @@ export function WhatIDo() {
       id={SECTIONS.WHAT_I_DO}
       className="px-default w-full min-h-screen xl:h-screen bg-gray-light dark:bg-black flex items-center justify-center relative overflow-x-clip"
     >
-      <Image
-        className="hidden xl:block absolute min-h-screen bottom-0 top-0 right-[48%] -rotate-6"
-        src="images/assets/divisor-vertical.svg"
-        width={70}
-        height={1200}
-        alt="Vertical Divisor svg"
-      />
-      <div className="max-w-default w-full flex flex-col md:flex-row md:justify-between md:gap-20 py-32">
+      <div className="max-w-default w-full flex flex-col md:flex-row md:justify-between md:gap-20 py-32 relative">
         <div className="flex flex-col gap-8 md:w-1/2">
           <div className="flex flex-col gap-3">
             <Typography.H2 className="text-primary">
@@ -51,6 +44,13 @@ export function WhatIDo() {
           </div>
         </div>
 
+        <Image
+          className="hidden xl:block absolute h-full bottom-0 top-0 right-[48%] -rotate-6"
+          src="images/assets/divisor-vertical.svg"
+          width={70}
+          height={1200}
+          alt="Vertical Divisor svg"
+        />
         <Image
           className="md:hidden w-full max-h-[150px]"
           src="images/assets/divisor-horizontal.svg"

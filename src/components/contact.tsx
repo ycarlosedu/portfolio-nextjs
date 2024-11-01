@@ -28,10 +28,31 @@ export function Contact() {
     <section
       ref={ref}
       id={SECTIONS.CONTACT}
-      className="px-default md:h-screen w-full bg-gray-light dark:bg-black flex flex-col items-center justify-center py-4 gap-12"
+      className="px-default md:h-screen w-full bg-gray-light dark:bg-black flex flex-col items-center justify-center py-4 gap-12 relative overflow-clip"
     >
+      <Image
+        className="absolute top-8 left-0 md:top-20"
+        src="/images/assets/phone.svg"
+        width={200}
+        height={210}
+        alt="Phone svg"
+      />
+      <Image
+        className="absolute -top-10 -right-20 rotate-45"
+        src="/images/assets/waves-full.svg"
+        width={300}
+        height={210}
+        alt="Waves-full svg"
+      />
+      <Image
+        className="absolute hidden md:block top-32 right-1/4"
+        src="/images/assets/sparkles.svg"
+        width={200}
+        height={210}
+        alt="Sparkles svg"
+      />
       <div className="flex flex-col max-w-default w-full gap-12 pt-[300px] md:flex-row">
-        <div className="flex flex-col gap-6 p-8 rounded-4xl w-full bg-white dark:bg-gray-dark">
+        <div className="flex flex-col gap-6 p-8 rounded-4xl w-full bg-white dark:bg-gray-dark shadow-top">
           <Typography.H2 className="text-primary text-xl font-semibold">
             {t("SOCIAL_TITLE")}
           </Typography.H2>
@@ -81,7 +102,7 @@ export function Contact() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-6 p-8 rounded-4xl w-full bg-white dark:bg-gray-dark">
+        <div className="flex flex-col gap-6 p-8 rounded-4xl w-full bg-white dark:bg-gray-dark shadow-default">
           <Typography.H2 className="text-primary text-xl font-semibold">
             {t("PAGES.TITLE")}
           </Typography.H2>
@@ -114,6 +135,21 @@ export function Contact() {
           </Typography.P>
         </div>
       </footer>
+
+      <Image
+        className="absolute hidden lg:block -bottom-8 -left-16 rotate-45"
+        src="/images/assets/random-dots.svg"
+        width={200}
+        height={210}
+        alt="Random-dots svg"
+      />
+      <Image
+        className="absolute hidden lg:block -bottom-14 -right-14"
+        src="/images/assets/double-squares.svg"
+        width={200}
+        height={210}
+        alt="Double-squares svg"
+      />
     </section>
   );
 }
