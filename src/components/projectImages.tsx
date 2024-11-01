@@ -28,7 +28,7 @@ export function ProjectImages({ project, projectType }: ProjectsProps) {
       <Typography.H1 className="text-center">{t(project.title)}</Typography.H1>
       <Carousel
         list={project.images}
-        imageClassName="w-full xl:w-full xl:h-auto"
+        imageClassName="w-full xl:w-full xl:h-auto max-h-auto"
       />
 
       <div className="flex flex-wrap gap-2.5 items-center justify-center w-full">

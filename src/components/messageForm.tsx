@@ -24,16 +24,29 @@ import { Textarea } from "./ui/TextArea";
 const MAX_NAME_LENGTH = 100;
 const MAX_MESSAGE_LENGTH = 1000;
 
-const formSchema = z.object({
-  name: z.string().min(3).max(MAX_NAME_LENGTH),
-  email: z.string().email(),
-  message: z.string().min(10).max(MAX_MESSAGE_LENGTH)
-});
-
-export type SendMeAMessageFormValues = z.infer<typeof formSchema>;
+export type SendMeAMessageFormValues = {
+  name: string;
+  email: string;
+  message: string;
+};
 
 export function MessageForm() {
   const t = useTranslations("HOME.SEND_ME_A_MESSAGE");
+  const tSchema = useTranslations("FORM_ERRORS");
+
+  const formSchema = z.object({
+    name: z
+      .string()
+      .min(1, tSchema("REQUIRED"))
+      .min(3, tSchema("MIN_CHARACTERS"))
+      .max(MAX_NAME_LENGTH, tSchema("MAX_CHARACTERS")),
+    email: z.string().min(1, tSchema("REQUIRED")).email(tSchema("EMAIL")),
+    message: z
+      .string()
+      .min(1, tSchema("REQUIRED"))
+      .min(10, tSchema("MIN_CHARACTERS"))
+      .max(MAX_MESSAGE_LENGTH, tSchema("MAX_CHARACTERS"))
+  });
 
   const form = useForm<SendMeAMessageFormValues>({
     resolver: zodResolver(formSchema),
@@ -67,7 +80,7 @@ export function MessageForm() {
         onSubmit={form.handleSubmit(onSubmit)}
         className="flex flex-col gap-8 py-6 w-full max-w-[750px]"
       >
-        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between md:gap-12">
+        <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between md:gap-12">
           <FormField
             control={form.control}
             name="name"

@@ -144,5 +144,11 @@
     "TITLE": "Page not found",
     "MESSAGE": "Sorry, the page you are looking for could not be found or has been removed.",
     "BACK_HOME": "Back to home"
+  },
+  "FORM_ERRORS": {
+    "REQUIRED": "This field is required.",
+    "EMAIL": "Please enter a valid email address.",
+    "MIN_CHARACTERS": "Please enter more characters.",
+    "MAX_CHARACTERS": "Please enter fewer characters."
   }
 }

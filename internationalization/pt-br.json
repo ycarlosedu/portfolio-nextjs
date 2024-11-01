@@ -144,5 +144,11 @@
     "TITLE": "Página não encontrada",
     "MESSAGE": "Desculpe, a página que você está procurando não pôde ser encontrada ou foi removida.",
     "BACK_HOME": "Voltar para o início"
+  },
+  "FORM_ERRORS": {
+    "REQUIRED": "Este campo é obrigatório.",
+    "EMAIL": "Por favor, insira um endereço de e-mail válido.",
+    "MIN_CHARACTERS": "Por favor, insira mais caracteres.",
+    "MAX_CHARACTERS": "Por favor, insira menos caracteres."
   }
 }
