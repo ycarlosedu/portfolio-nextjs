@@ -133,5 +133,72 @@ export const codeProjects: ProjectInfos[] = [
         image: "/images/projects/codes/savebys/mobilia-bag-form.png"
       }
     ]
+  },
+  {
+    slug: CODE_PROJECTS.NEW_WAVE,
+    name: "NEW_WAVE",
+    title: "NEW_WAVE.TITLE",
+    isWebsitePrivate: false,
+    websiteHref: "https://newwavepasseiosnauticos.com.br",
+    isRepositoryPrivate: true,
+    href: "newwavepasseiosnauticos.com.br",
+    internal_href: "/codes/new-wave" as Pages,
+    image: "/images/projects/logos/new-wave.png",
+    alt: "NEW_WAVE.ALT",
+    images: [
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/login.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/painel-banners.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/home.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/painel-informacoes.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image:
+          "/images/projects/codes/new-wave/painel-informacoes-atualizadas.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/painel-duvidas.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/home-duvidas.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/painel-passeios.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/painel-passeios-editar.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/painel-passeios-deletar.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/home-passeios.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/painel-depoimentos.png"
+      },
+      {
+        name: "NEW_WAVE.TITLE",
+        image: "/images/projects/codes/new-wave/home-depoimentos.png"
+      }
+    ]
   }
 ];

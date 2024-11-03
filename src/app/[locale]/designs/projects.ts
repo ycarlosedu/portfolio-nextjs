@@ -1,7 +1,8 @@
+import { ProjectInfos } from "@/components/ui/ProjectCard";
 import { DESIGN_PROJECTS } from "@/constants";
 import { Pages } from "@/navigation";
 
-export const designProjects = [
+export const designProjects: ProjectInfos[] = [
   {
     slug: DESIGN_PROJECTS.PERSONAL_WEBSITE,
     name: "PERSONAL_WEBSITE",
@@ -13,9 +14,8 @@ export const designProjects = [
     designHref:
       "https://www.figma.com/design/p4eexDBogNL2YsgS6y0Z65/Portfolio?node-id=56-4079&t=37VJDAqqdxOCJWAL-1",
     internal_href: "/designs/personal-website" as Pages,
-    image: "/images/logo/full.svg",
+    image: "/images/logo/min.svg",
     alt: "PERSONAL_WEBSITE.ALT",
-    about: "PERSONAL_WEBSITE.ABOUT",
     images: [
       {
         name: "PERSONAL_WEBSITE.TITLE",
@@ -74,6 +74,64 @@ export const designProjects = [
       {
         name: "ONNE.TITLE",
         image: "/images/projects/codes/onne/contact.png"
+      }
+    ]
+  },
+  {
+    slug: DESIGN_PROJECTS.SAVEBYS,
+    name: "SAVEBYS",
+    title: "SAVEBYS.TITLE",
+    isWebsitePrivate: false,
+    websiteHref: "https://savebys.com",
+    isDesignPrivate: true,
+    href: "savebys.com",
+    internal_href: "/designs/savebys" as Pages,
+    image: "/images/projects/logos/savebys.svg",
+    alt: "SAVEBYS.ALT",
+    images: [
+      {
+        name: "SAVEBYS.TITLE",
+        image: "/images/projects/codes/savebys/home.png"
+      },
+      {
+        name: "SAVEBYS.TITLE",
+        image: "/images/projects/codes/savebys/home-how-it-works.png"
+      },
+      {
+        name: "SAVEBYS.TITLE",
+        image: "/images/projects/codes/savebys/home-supporters.png"
+      },
+      {
+        name: "SAVEBYS.TITLE",
+        image: "/images/projects/codes/savebys/about-us.png"
+      },
+      {
+        name: "SAVEBYS.TITLE",
+        image: "/images/projects/codes/savebys/mobilia.png"
+      },
+      {
+        name: "SAVEBYS.TITLE",
+        image: "/images/projects/codes/savebys/mobilia-form.png"
+      },
+      {
+        name: "SAVEBYS.TITLE",
+        image: "/images/projects/codes/savebys/mobilia-products.png"
+      },
+      {
+        name: "SAVEBYS.TITLE",
+        image: "/images/projects/codes/savebys/mobilia-products-filters.png"
+      },
+      {
+        name: "SAVEBYS.TITLE",
+        image: "/images/projects/codes/savebys/mobilia-product.png"
+      },
+      {
+        name: "SAVEBYS.TITLE",
+        image: "/images/projects/codes/savebys/mobilia-bag.png"
+      },
+      {
+        name: "SAVEBYS.TITLE",
+        image: "/images/projects/codes/savebys/mobilia-bag-form.png"
       }
     ]
   }

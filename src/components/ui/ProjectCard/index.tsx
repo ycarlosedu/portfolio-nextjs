@@ -1,13 +1,13 @@
 import { TransitionLink } from "@/components/ui/TransitionLink";
 import { Typography } from "@/components/ui/Typography";
-import { CODE_PROJECTS, PROJECT_TYPE } from "@/constants";
+import { CODE_PROJECTS, DESIGN_PROJECTS, PROJECT_TYPE } from "@/constants";
 import { Pages } from "@/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { CarouselList } from "../Carousel";
 
 export type ProjectInfos = {
-  slug: CODE_PROJECTS;
+  slug: CODE_PROJECTS | DESIGN_PROJECTS;
   title: string;
   name: string;
   href: string;

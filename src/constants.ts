@@ -34,7 +34,8 @@ export enum PROJECT_TYPE {
 export enum CODE_PROJECTS {
   PERSONAL_WEBSITE = "personal-website",
   ONNE = "onne",
-  SAVEBYS = "savebys"
+  SAVEBYS = "savebys",
+  NEW_WAVE = "new-wave"
 }
 
 export enum DESIGN_PROJECTS {
