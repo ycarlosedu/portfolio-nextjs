@@ -7,11 +7,12 @@ import { TransitionLink } from "@/components/ui/TransitionLink";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { cn } from "@/lib/utils";
 import { List } from "@phosphor-icons/react/dist/ssr";
-import Logo from "images/logo/full.svg";
+import LogoImage from "images/logo/full.svg";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "../Button";
+import { Logo } from "../Logo";
 
 type Props = {
   locale: string;
@@ -44,7 +45,7 @@ export default function Header({ locale }: Props) {
           href={"/"}
           aria-label={t("HOME_ARIA_LABEL")}
         >
-          <Image src={Logo} alt="Carlos Silva Logo" width={200} height={56} />
+          <Logo />
         </TransitionLink>
         <div className="flex items-center absolute xs:relative top-0 right-0 gap-4 flex-col-reverse xs:flex-row h-fit">
           <ToggleTheme />
@@ -58,7 +59,7 @@ export default function Header({ locale }: Props) {
             <SheetContent className="flex flex-col justify-between items-center">
               <Nav className="flex-col items-start w-full" locale={locale} />
               <Image
-                src={Logo}
+                src={LogoImage}
                 alt="Carlos Silva Logo"
                 width={200}
                 height={56}
