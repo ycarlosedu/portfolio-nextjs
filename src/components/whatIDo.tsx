@@ -40,7 +40,10 @@ export function WhatIDo() {
             <Typography.H2 className="text-primary">
               {t("TECHNOLOGIES")}
             </Typography.H2>
-            <Carousel list={technologies} imageClassName="max-h-64" />
+            <Carousel
+              list={technologies}
+              imageClassName="max-h-64 md:w-[512px]"
+            />
           </div>
         </div>
 
@@ -70,7 +73,7 @@ export function WhatIDo() {
           </div>
           <div className="flex flex-col gap-3">
             <Typography.H2 className="text-primary">{t("TOOLS")}</Typography.H2>
-            <Carousel list={tools} imageClassName="max-h-64" />
+            <Carousel list={tools} imageClassName="max-h-64 md:w-[512px]" />
           </div>
         </div>
       </div>

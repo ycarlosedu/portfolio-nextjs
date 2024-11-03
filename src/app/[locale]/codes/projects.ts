@@ -16,15 +16,23 @@ export const codeProjects = [
     images: [
       {
         name: "PERSONAL_WEBSITE.TITLE",
-        image: "/images/projects/codes/personal-website/home-dark.png"
+        image: "/images/projects/codes/personal-website/hero-dark.png"
       },
       {
         name: "PERSONAL_WEBSITE.TITLE",
-        image: "/images/projects/codes/personal-website/home-light.png"
+        image: "/images/projects/codes/personal-website/hero-light.png"
       },
       {
         name: "PERSONAL_WEBSITE.TITLE",
-        image: "/images/projects/codes/personal-website/what-i-do.png"
+        image: "/images/projects/codes/personal-website/hero-light-pt.png"
+      },
+      {
+        name: "PERSONAL_WEBSITE.TITLE",
+        image: "/images/projects/codes/personal-website/carousels.png"
+      },
+      {
+        name: "PERSONAL_WEBSITE.TITLE",
+        image: "/images/projects/codes/personal-website/form.png"
       }
     ]
   },
@@ -42,15 +50,27 @@ export const codeProjects = [
     images: [
       {
         name: "ONNE.TITLE",
-        image: "/images/projects/codes/onne/home-portuguese.png"
+        image: "/images/projects/codes/onne/home.png"
       },
       {
         name: "ONNE.TITLE",
-        image: "/images/projects/codes/onne/our-solution-english.png"
+        image: "/images/projects/codes/onne/home-pt.png"
       },
       {
         name: "ONNE.TITLE",
-        image: "/images/projects/codes/onne/contact-english.png"
+        image: "/images/projects/codes/onne/home-for-you.png"
+      },
+      {
+        name: "ONNE.TITLE",
+        image: "/images/projects/codes/onne/home-for-your-company.png"
+      },
+      {
+        name: "ONNE.TITLE",
+        image: "/images/projects/codes/onne/about-us.png"
+      },
+      {
+        name: "ONNE.TITLE",
+        image: "/images/projects/codes/onne/contact.png"
       }
     ]
   }
