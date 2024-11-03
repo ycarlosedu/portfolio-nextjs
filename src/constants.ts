@@ -33,10 +33,12 @@ export enum PROJECT_TYPE {
 
 export enum CODE_PROJECTS {
   PERSONAL_WEBSITE = "personal-website",
-  ONNE = "onne"
+  ONNE = "onne",
+  SAVEBYS = "savebys"
 }
 
 export enum DESIGN_PROJECTS {
   PERSONAL_WEBSITE = "personal-website",
-  ONNE = "onne"
+  ONNE = "onne",
+  SAVEBYS = "savebys"
 }

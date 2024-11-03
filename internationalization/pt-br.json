@@ -113,6 +113,11 @@
         "TITLE": "ONNE",
         "ALT": "ONNE Logo",
         "ABOUT": "Atualmente, um grande problema que as empresas enfrentam são as leis de proteção de dados. Pensando nisso, pensamos em criar a ONNE, uma startup que visa nos dar controle sobre nossos próprios dados.<br></br> Estamos desenvolvendo um aplicativo que permitirá que você tenha controle sobre quem tem acesso aos seus dados, e quais dados são esses. Quando alguém solicitar novos dados por meio de nossa plataforma, você receberá uma notificação em seu celular para aprovar ou rejeitar a solicitação, escolhendo quais dados serão compartilhados.<br></br> A qualquer momento, você pode verificar o histórico de compartilhamento de dados e alterar essas relações sem nenhum custo.<br></br> Com os dados dos usuários sob nosso controle, compartilhamos com as empresas apenas os dados aos quais elas receberam acesso de seus proprietários. Dessa forma, mantemos a privacidade e o controle dos usuários de acordo com a lei.<br></br> As empresas podem acessar e solicitar dados dos usuários por meio de nosso portal WEB ou integrando nossas APIs em seus próprios aplicativos.<br></br> O aplicativo e a plataforma serão lançados em breve."
+      },
+      "SAVEBYS": {
+        "TITLE": "SAVEBYS",
+        "ALT": "SAVEBYS Logo",
+        "ABOUT": "A SAVEBYS foi desenvolvida para apoiar empreendedores que enfrentam desafios significativos na recuperação após crises causadas por fatores externos, como desastres naturais. A plataforma conecta pessoas físicas e jurídicas dispostas a oferecer suporte financeiro ou material, facilitando uma recuperação sustentável, ágil e robusta. <br></br> Atualmente, estamos formando parcerias com empresas que desejam ajudar empreendedores a se reerguerem. Já realizamos campanhas de doações de móveis, produtos, alimentos e dinheiro, impactando positivamente a vida de muitos. <br></br>Em breve, lançaremos nossa plataforma de marketplace social, onde empresas em dificuldades poderão comprar e vender produtos com descontos especiais, promovendo a colaboração e a solidariedade dentro da comunidade."
       }
     }
   },

@@ -43,13 +43,10 @@ export default function Carousel({ list, imageClassName }: CarouselProps) {
 
   return (
     <div className="embla">
-      <div
-        className="embla__viewport flex flex-col items-center justify-center gap-6"
-        ref={emblaRef}
-      >
+      <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {list.map((item) => (
-            <div key={item.name} className="embla__slide w-full">
+            <div key={item.name} className="embla__slide">
               <Image
                 src={item.image}
                 alt={`Logo/Imagem do(a) ${item.name}`}

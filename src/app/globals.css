@@ -38,7 +38,7 @@ body {
   }
 
   .embla__viewport {
-    @apply overflow-x-hidden relative w-full;
+    @apply overflow-x-hidden relative w-full flex flex-col items-center justify-center gap-6;
   }
 
   .embla__container {
@@ -47,7 +47,7 @@ body {
 
   .embla__slide {
     flex: 0 0 100%;
-    @apply min-w-0 flex flex-col justify-center items-center;
+    @apply min-w-0 flex flex-col justify-center items-center w-full px-4;
   }
 
   .embla__controls {
