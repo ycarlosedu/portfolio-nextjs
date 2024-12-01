@@ -21,6 +21,7 @@ export type ProjectInfos = {
   repositoryHref?: string;
   isDesignPrivate?: boolean;
   designHref?: string;
+  isMobile?: boolean;
 };
 
 type ProjectCardProps = {
@@ -42,14 +43,22 @@ export function ProjectCard({ project, translations }: ProjectCardProps) {
           alt={t(project.alt)}
           width={192}
           height={183}
-          className="h-full w-auto"
+          className="h-full w-auto rounded-3xl"
         />
       </div>
       <div className="flex flex-col gap-2">
         <Typography.H3 className="text-primary text-base font-normal">
           {t(project.title)}
         </Typography.H3>
-        <span className="font-semibold">{project.href}</span>
+        <a
+          href={`https://${project.href}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold hover:underline flex items-center gap-1"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {project.href}
+        </a>
       </div>
     </TransitionLink>
   );

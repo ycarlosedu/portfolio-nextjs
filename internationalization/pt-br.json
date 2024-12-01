@@ -114,6 +114,11 @@
         "ALT": "Carlos Silva Logo",
         "ABOUT": "Bem-vindo ao meu portfólio! Criei este site para compartilhar meu trabalho e mostrar uma visão mais profunda sobre quem sou e o que faço. Aqui, você encontrará uma seleção dos meus projetos mais significativos, refletindo minha paixão e dedicação ao desenvolvimento de software e design. <br></br>Meu objetivo é não apenas exibir minhas habilidades, mas também conectar-me com outras pessoas que compartilham interesses semelhantes. Acredito que cada projeto é uma oportunidade de aprendizado e crescimento, e estou sempre em busca de novos desafios. <br></br>Sinta-se à vontade para explorar meu trabalho e entrar em contato se quiser conversar mais sobre qualquer projeto ou ideia. Estou animado para compartilhar minha jornada com você!"
       },
+      "DEBUG_COFFEE": {
+        "TITLE": "Debug Café",
+        "ALT": "Debug Café Logo",
+        "ABOUT": "O Debug Café é um projeto que criei para um trabalho da faculdade onde deveríamos desenvolvedor uma aplicação completa, contendo prototipação, front-end, back-end e banco de dados. A ideia que tive foi um app de uma cafeteria delivery, onde o usuário pode se cadastrar, adicionar seu endereço, cartões de crédito, buscar produtos, adicionar ao carrinho, fazer pedidos, acompanhar a entrega e depois deixar sua avaliação. <br></br>Atualmente o projeto ainda é apenas uma simulação, então todos os pedidos realizados não são cobrados, nem entregues. <br></br> O projeto foi desenvolvido com React Native, TypeScript, Nest, Prisma e está disponível tanto na versão web quanto mobile. Você pode criar uma conta e testar agora mesmo acessando o website ou instalando o apk disponibilizado no repositório do github."
+      },
       "ONNE": {
         "TITLE": "ONNE",
         "ALT": "ONNE Logo",

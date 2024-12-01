@@ -9,6 +9,10 @@ export const pathnames = {
   "/": "/",
   "/codes": "/codes",
   "/codes/personal-website": "/codes/personal-website",
+  "/codes/onne": "/codes/onne",
+  "/codes/savebys": "/codes/savebys",
+  "/codes/new-wave": "/codes/new-wave",
+  "/codes/debug-coffee": "/codes/debug-coffee",
   "/designs": "/designs",
   "/designs/personal-website": "/designs/personal-website"
 } satisfies Pathnames<typeof locales>;

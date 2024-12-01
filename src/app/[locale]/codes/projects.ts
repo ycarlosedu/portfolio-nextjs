@@ -38,6 +38,66 @@ export const codeProjects: ProjectInfos[] = [
     ]
   },
   {
+    slug: CODE_PROJECTS.DEBUG_COFFEE,
+    name: "DEBUG_COFFEE",
+    title: "DEBUG_COFFEE.TITLE",
+    isWebsitePrivate: false,
+    websiteHref: "https://debug-cafe.vercel.app",
+    isRepositoryPrivate: false,
+    repositoryHref: "https://github.com/ycarlosedu/debug-cafe-app",
+    href: "debug-cafe.vercel.app",
+    internal_href: "/codes/debug-coffee" as Pages,
+    image: "/images/projects/logos/debug-coffee.png",
+    alt: "DEBUG_COFFEE.ALT",
+    isMobile: true,
+    images: [
+      {
+        name: "DEBUG_COFFEE.TITLE",
+        image: "/images/projects/codes/debug-coffee/login.webp"
+      },
+      {
+        name: "DEBUG_COFFEE.TITLE",
+        image: "/images/projects/codes/debug-coffee/home.webp"
+      },
+      {
+        name: "DEBUG_COFFEE.TITLE",
+        image: "/images/projects/codes/debug-coffee/search.webp"
+      },
+      {
+        name: "DEBUG_COFFEE.TITLE",
+        image: "/images/projects/codes/debug-coffee/product-details.webp"
+      },
+      {
+        name: "DEBUG_COFFEE.TITLE",
+        image: "/images/projects/codes/debug-coffee/profile.webp"
+      },
+      {
+        name: "DEBUG_COFFEE.TITLE",
+        image: "/images/projects/codes/debug-coffee/cart.webp"
+      },
+      {
+        name: "DEBUG_COFFEE.TITLE",
+        image: "/images/projects/codes/debug-coffee/order-details.webp"
+      },
+      {
+        name: "DEBUG_COFFEE.TITLE",
+        image: "/images/projects/codes/debug-coffee/profile-manager.webp"
+      },
+      {
+        name: "DEBUG_COFFEE.TITLE",
+        image: "/images/projects/codes/debug-coffee/order-delivered.webp"
+      },
+      {
+        name: "DEBUG_COFFEE.TITLE",
+        image: "/images/projects/codes/debug-coffee/order-feedback.webp"
+      },
+      {
+        name: "DEBUG_COFFEE.TITLE",
+        image: "/images/projects/codes/debug-coffee/my-orders-delivered.webp"
+      }
+    ]
+  },
+  {
     slug: CODE_PROJECTS.ONNE,
     name: "ONNE",
     title: "ONNE.TITLE",

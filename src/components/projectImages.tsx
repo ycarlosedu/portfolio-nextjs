@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { ProjectInfos } from "@/components/ui/ProjectCard";
 import { Typography } from "@/components/ui/Typography";
 import { PROJECT_TYPE } from "@/constants";
+import { cn } from "@/lib/utils";
 import {
   ArrowRight,
   FigmaLogo,
@@ -12,8 +13,18 @@ import {
   Globe,
   Lock
 } from "@phosphor-icons/react/dist/ssr";
+import { cva } from "class-variance-authority";
 import { Button } from "./ui/Button";
 import Carousel from "./ui/Carousel";
+
+const imagesVariants = cva("rounded-xl mx-4", {
+  variants: {
+    isMobile: {
+      true: "h-[650px] w-auto",
+      false: "w-full h-auto"
+    }
+  }
+});
 
 type ProjectsProps = {
   project: ProjectInfos;
@@ -28,7 +39,7 @@ export function ProjectImages({ project, projectType }: ProjectsProps) {
       <Typography.H1 className="text-center">{t(project.title)}</Typography.H1>
       <Carousel
         list={project.images}
-        imageClassName="w-full rounded-xl mx-4 h-auto"
+        imageClassName={cn(imagesVariants({ isMobile: project.isMobile }))}
       />
 
       <div className="flex flex-wrap gap-2.5 items-center justify-center w-full">
