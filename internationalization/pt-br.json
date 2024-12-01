@@ -19,7 +19,11 @@
   },
   "HEADER": {
     "HOME_ARIA_LABEL": "Ir para a página inicial",
-    "SHEET_ARIA_LABEL": "Abrir menu de navegação lateral",
+    "SHEET": {
+      "ARIA_LABEL": "Abrir menu de navegação",
+      "TITLE": "Menu de navegação",
+      "DESCRIPTION": "Navegue pelas páginas do site."
+    },
     "HOME": "Início",
     "CODES": "Projetos",
     "DESIGNS": "Designs"

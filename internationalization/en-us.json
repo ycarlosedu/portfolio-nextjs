@@ -19,7 +19,11 @@
   },
   "HEADER": {
     "HOME_ARIA_LABEL": "Go to the home page",
-    "SHEET_ARIA_LABEL": "Open the navigation side menu",
+    "SHEET": {
+      "ARIA_LABEL": "Open the navigation side menu",
+      "TITLE": "Navigation Menu",
+      "DESCRIPTION": "Navigate through the site pages"
+    },
     "HOME": "Home",
     "CODES": "Projects",
     "DESIGNS": "Designs"

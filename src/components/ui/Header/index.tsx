@@ -1,6 +1,13 @@
 "use client";
 import Nav from "@/components/ui/Nav";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/Sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger
+} from "@/components/ui/Sheet";
 import { ToggleLanguage } from "@/components/ui/ToggleLanguage";
 import { ToggleTheme } from "@/components/ui/ToggleTheme";
 import { TransitionLink } from "@/components/ui/TransitionLink";
@@ -54,18 +61,24 @@ export default function Header({ locale }: Props) {
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
                 <List className="h-[1.2rem] w-[1.2rem]" />
-                <span className="sr-only">{t("SHEET_ARIA_LABEL")}</span>
+                <span className="sr-only">{t("SHEET.ARIA_LABEL")}</span>
               </Button>
             </SheetTrigger>
-            <SheetContent className="flex flex-col justify-between items-center">
-              <Nav className="flex-col items-start w-full" locale={locale} />
-              <Image
-                src={LogoImage}
-                alt="Carlos Silva Logo"
-                width={200}
-                height={56}
-                className="h-auto"
-              />
+            <SheetContent className="flex flex-col items-center">
+              <SheetHeader>
+                <SheetTitle>{t("SHEET.TITLE")}</SheetTitle>
+                <SheetDescription>{t("SHEET.DESCRIPTION")}</SheetDescription>
+              </SheetHeader>
+              <div className="flex flex-col justify-between items-center w-full h-full">
+                <Nav className="flex-col items-start w-full" locale={locale} />
+                <Image
+                  src={LogoImage}
+                  alt="Carlos Silva Logo"
+                  width={200}
+                  height={56}
+                  className="h-auto"
+                />
+              </div>
             </SheetContent>
           </Sheet>
         </div>
