@@ -26,7 +26,10 @@ export function ProjectImages({ project, projectType }: ProjectsProps) {
   return (
     <section className="px-default md:min-h-screen max-w-default w-full flex flex-col items-center gap-8 md:pt-32 pb-20">
       <Typography.H1 className="text-center">{t(project.title)}</Typography.H1>
-      <Carousel list={project.images} imageClassName="w-full rounded-xl mx-4" />
+      <Carousel
+        list={project.images}
+        imageClassName="w-full rounded-xl mx-4 h-auto"
+      />
 
       <div className="flex flex-wrap gap-2.5 items-center justify-center w-full">
         <Button asChild disabled={project.isWebsitePrivate}>

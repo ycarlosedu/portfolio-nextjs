@@ -2,27 +2,18 @@
 
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
-import { useIsVisible } from "@/hooks/useIsVisible";
-import useVisibleSectionStore from "@/store/visibleSectionStore";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useRef } from "react";
 import { Button } from "./ui/Button";
 import { TransitionLink } from "./ui/TransitionLink";
 
 export function SeeMyWork() {
   const t = useTranslations("HOME.SEE_MY_WORK");
-  const { setVisibleSection } = useVisibleSectionStore();
-
-  const ref = useRef(null);
-
-  const { isVisible } = useIsVisible(ref);
-  isVisible && setVisibleSection(SECTIONS.SEE_MY_WORK);
 
   return (
     <section
-      ref={ref}
+      data-observe-visibility="true"
       id={SECTIONS.SEE_MY_WORK}
       className="px-default w-full md:h-screen bg-gray-light dark:bg-black flex flex-col items-center justify-center py-20 relative overflow-x-clip"
     >
@@ -75,7 +66,7 @@ export function SeeMyWork() {
       </div>
 
       <Image
-        className="absolute hidden 3xl:block bottom-0 left-0"
+        className="absolute hidden 3xl:block bottom-0 left-0 h-auto"
         src="/images/assets/double-circle.svg"
         width={200}
         height={210}
@@ -83,7 +74,7 @@ export function SeeMyWork() {
       />
 
       <Image
-        className="absolute hidden 3xl:block bottom-1/2 -right-16"
+        className="absolute hidden 3xl:block bottom-1/2 -right-16 h-auto"
         src="/images/assets/square.svg"
         width={200}
         height={210}

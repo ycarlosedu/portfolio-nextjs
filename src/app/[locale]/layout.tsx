@@ -3,11 +3,13 @@ import Header from "@/components/ui/Header";
 import { ScrollIndicator } from "@/components/ui/ScrollIndicator";
 import { Toaster } from "@/components/ui/Sonner";
 import { TooltipProvider } from "@/components/ui/Tooltip";
+import { IS_DEV_MODE } from "@/constants";
 import { locales } from "@/i18n";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/Theme";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { VercelToolbar } from "@vercel/toolbar/next";
 import type { Metadata } from "next";
 import {
   AbstractIntlMessages,
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://carlossilva.vercel.app/images/logo/full.webp",
-        width: 280,
-        height: 250
+        url: "https://carlossilva.vercel.app/images/logo/open-graph-full.webp",
+        width: 1200,
+        height: 630
       }
     ]
   },
@@ -129,6 +131,7 @@ export default function RootLayout({ children, params: { locale } }: Props) {
         </ThemeProvider>
 
         {/* Vercel */}
+        {IS_DEV_MODE && <VercelToolbar />}
         <SpeedInsights />
         <Analytics />
       </body>

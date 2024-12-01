@@ -1,31 +1,38 @@
-import { RefObject, useEffect, useState } from "react";
+import { SECTIONS } from "@/constants";
+import useVisibleSectionStore from "@/store/visibleSectionStore";
+import { useEffect } from "react";
 
-export function useIsVisible(ref: RefObject<HTMLElement>, rootMargin = "0px") {
-  const [isVisible, setIsVisible] = useState(false);
+export function useIsVisible() {
+  const { setVisibleSection } = useVisibleSectionStore();
 
   useEffect(() => {
-    const element = ref.current;
-    if (!element) return;
+    const targets = document.querySelectorAll(
+      "[data-observe-visibility='true']"
+    );
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+        entry.isIntersecting && setVisibleSection(entry.target.id as SECTIONS);
       },
       {
-        root: null,
-        rootMargin,
-        threshold: 0.95
+        root: null, // viewport
+        rootMargin: "0px", // no margin
+        threshold: 0.95 // 95% of target visible
       }
     );
 
-    observer.observe(element);
+    if (targets) {
+      targets.forEach((target) => {
+        observer.observe(target);
+      });
+    }
 
     return () => {
-      if (element) {
-        observer.unobserve(element);
+      if (targets) {
+        targets.forEach((target) => {
+          observer.unobserve(target);
+        });
       }
     };
-  }, [ref, rootMargin]);
-
-  return { isVisible };
+  }, [setVisibleSection]);
 }

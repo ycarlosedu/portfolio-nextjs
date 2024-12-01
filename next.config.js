@@ -1,6 +1,7 @@
 const createNextIntlPlugin = require("next-intl/plugin");
 
 const withNextIntl = createNextIntlPlugin();
+const withVercelToolbar = require("@vercel/toolbar/plugins/next")();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -16,4 +17,4 @@ const nextConfig = {
   }
 };
 
-module.exports = withNextIntl(nextConfig);
+module.exports = withVercelToolbar(withNextIntl(nextConfig));

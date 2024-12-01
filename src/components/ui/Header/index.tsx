@@ -54,6 +54,7 @@ export default function Header({ locale }: Props) {
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
                 <List className="h-[1.2rem] w-[1.2rem]" />
+                <span className="sr-only">{t("SHEET_ARIA_LABEL")}</span>
               </Button>
             </SheetTrigger>
             <SheetContent className="flex flex-col justify-between items-center">
@@ -63,6 +64,7 @@ export default function Header({ locale }: Props) {
                 alt="Carlos Silva Logo"
                 width={200}
                 height={56}
+                className="h-auto"
               />
             </SheetContent>
           </Sheet>

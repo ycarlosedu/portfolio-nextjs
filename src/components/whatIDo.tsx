@@ -2,27 +2,18 @@
 
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
-import { useIsVisible } from "@/hooks/useIsVisible";
-import useVisibleSectionStore from "@/store/visibleSectionStore";
 import { technologies } from "@/utils/carousel/technologies";
 import { tools } from "@/utils/carousel/tools";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useRef } from "react";
 import Carousel from "./ui/Carousel";
 
 export function WhatIDo() {
   const t = useTranslations("HOME.WHAT_I_DO");
-  const { setVisibleSection } = useVisibleSectionStore();
-
-  const ref = useRef(null);
-
-  const { isVisible } = useIsVisible(ref);
-  isVisible && setVisibleSection(SECTIONS.WHAT_I_DO);
 
   return (
     <section
-      ref={ref}
+      data-observe-visibility="true"
       id={SECTIONS.WHAT_I_DO}
       className="px-default w-full min-h-screen xl:h-screen bg-gray-light dark:bg-black flex items-center justify-center relative overflow-x-clip"
     >
@@ -55,7 +46,7 @@ export function WhatIDo() {
           alt="Vertical Divisor svg"
         />
         <Image
-          className="md:hidden w-full max-h-[150px]"
+          className="md:hidden w-full max-h-[150px] h-auto"
           src="images/assets/divisor-horizontal.svg"
           width={768}
           height={70}
@@ -79,7 +70,7 @@ export function WhatIDo() {
       </div>
 
       <Image
-        className="absolute -bottom-16 md:bottom-0 -right-8"
+        className="absolute -bottom-16 md:bottom-0 -right-8 h-auto"
         src="images/assets/rain.svg"
         width={151}
         height={159}

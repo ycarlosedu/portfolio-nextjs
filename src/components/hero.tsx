@@ -3,27 +3,22 @@
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
-import useVisibleSectionStore from "@/store/visibleSectionStore";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useRef } from "react";
 
 export function Hero() {
   const t = useTranslations("HOME.HERO");
-  const { setVisibleSection } = useVisibleSectionStore();
-  const ref = useRef(null);
 
-  const { isVisible } = useIsVisible(ref);
-  isVisible && setVisibleSection(SECTIONS.HERO);
+  useIsVisible();
 
   return (
     <section
-      ref={ref}
+      data-observe-visibility="true"
       id={SECTIONS.HERO}
       className="px-default w-full flex items-center justify-center min-h-screen xl:h-screen relative max-w-screen overflow-x-clip"
     >
       <Image
-        className="hidden lg:block absolute top-28"
+        className="hidden lg:block absolute top-28 h-auto"
         src="images/assets/triangle.svg"
         width={200}
         height={210}
@@ -38,7 +33,7 @@ export function Hero() {
             <Typography.P className="text-xl">{t("SUBTITLE")}</Typography.P>
           </div>
           <Image
-            className="shadow-default rounded-lg"
+            className="shadow-default rounded-lg h-auto"
             src="/images/profile.png"
             width={288}
             height={384}
@@ -57,7 +52,7 @@ export function Hero() {
       </div>
 
       <Image
-        className="md:hidden z-10 absolute -bottom-28 -left-14"
+        className="md:hidden z-10 absolute -bottom-28 -left-14 h-auto"
         src="images/assets/triangle.svg"
         width={132}
         height={139}
@@ -65,7 +60,7 @@ export function Hero() {
       />
 
       <Image
-        className="absolute z-10 -bottom-44 left-72 md:-bottom-20 md:left-28 xl:left-52"
+        className="absolute z-10 -bottom-44 left-72 md:-bottom-20 md:left-28 xl:left-52 h-auto"
         src="images/assets/x.svg"
         width={200}
         height={232}
@@ -73,7 +68,7 @@ export function Hero() {
       />
 
       <Image
-        className="hidden lg:block absolute bottom-0 right-20 xl:right-52"
+        className="hidden lg:block absolute bottom-0 right-20 xl:right-52 h-auto"
         src="images/assets/waves.svg"
         width={300}
         height={210}

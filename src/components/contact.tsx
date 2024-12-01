@@ -2,8 +2,6 @@
 
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS, URL_SOCIALS } from "@/constants";
-import { useIsVisible } from "@/hooks/useIsVisible";
-import useVisibleSectionStore from "@/store/visibleSectionStore";
 import {
   EnvelopeSimple,
   GithubLogo,
@@ -12,40 +10,33 @@ import {
 import Logo from "images/logo/full.svg";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useRef } from "react";
 import { TransitionLink } from "./ui/TransitionLink";
 
 export function Contact() {
   const t = useTranslations("CONTACT");
-  const { setVisibleSection } = useVisibleSectionStore();
-
-  const ref = useRef(null);
-
-  const { isVisible } = useIsVisible(ref);
-  isVisible && setVisibleSection(SECTIONS.CONTACT);
 
   return (
     <section
-      ref={ref}
+      data-observe-visibility="true"
       id={SECTIONS.CONTACT}
       className="px-default md:h-screen w-full bg-gray-light dark:bg-black flex flex-col items-center justify-center py-4 gap-12 relative overflow-clip"
     >
       <Image
-        className="absolute top-8 left-0 md:top-20"
+        className="absolute top-8 left-0 md:top-20 h-auto"
         src="/images/assets/phone.svg"
         width={200}
         height={210}
         alt="Phone svg"
       />
       <Image
-        className="absolute -top-10 -right-20 rotate-45"
+        className="absolute -top-10 -right-20 rotate-45 h-auto"
         src="/images/assets/waves-full.svg"
         width={300}
         height={210}
         alt="Waves-full svg"
       />
       <Image
-        className="absolute hidden md:block top-32 right-1/4"
+        className="absolute hidden md:block top-32 right-1/4 h-auto"
         src="/images/assets/sparkles.svg"
         width={200}
         height={210}
@@ -129,7 +120,13 @@ export function Contact() {
       <footer className="flex flex-col gap-12 max-w-default w-full">
         <hr className="h-[2px] w-full bg-black" />
         <div className="flex flex-col items-center justify-center gap-12 md:flex-row md:items-center">
-          <Image src={Logo} alt="Carlos Silva Logo" width={200} height={56} />
+          <Image
+            src={Logo}
+            alt="Carlos Silva Logo"
+            width={200}
+            height={56}
+            className="h-auto"
+          />
           <Typography.P className="text-center">
             Copyright ©2024 Carlos Eduardo Oliveira da Silva
           </Typography.P>
@@ -137,14 +134,14 @@ export function Contact() {
       </footer>
 
       <Image
-        className="absolute hidden lg:block -bottom-8 -left-16 rotate-45"
+        className="absolute hidden lg:block -bottom-8 -left-16 rotate-45 h-auto"
         src="/images/assets/random-dots.svg"
         width={200}
         height={210}
         alt="Random-dots svg"
       />
       <Image
-        className="absolute hidden lg:block -bottom-14 -right-14"
+        className="absolute hidden lg:block -bottom-14 -right-14 h-auto"
         src="/images/assets/double-squares.svg"
         width={200}
         height={210}

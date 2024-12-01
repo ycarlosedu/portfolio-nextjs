@@ -3,52 +3,43 @@
 import { Typography } from "@/components/ui/Typography";
 
 import { SECTIONS } from "@/constants";
-import { useIsVisible } from "@/hooks/useIsVisible";
 import { useTranslations } from "next-intl";
-import { useRef } from "react";
 
-import useVisibleSectionStore from "@/store/visibleSectionStore";
 import Image from "next/image";
 import { MessageForm } from "./messageForm";
 
 export function SendMeAMessage() {
   const t = useTranslations("HOME.SEND_ME_A_MESSAGE");
-  const { setVisibleSection } = useVisibleSectionStore();
-
-  const ref = useRef(null);
-
-  const { isVisible } = useIsVisible(ref);
-  isVisible && setVisibleSection(SECTIONS.SEND_ME_A_MESSAGE);
 
   return (
     <section
-      ref={ref}
+      data-observe-visibility="true"
       id={SECTIONS.SEND_ME_A_MESSAGE}
       className="px-default md:h-screen max-w-screen w-full flex flex-col justify-center py-20 relative overflow-x-clip"
     >
       <Image
-        className="absolute hidden 2xl:block top-40 left-20"
+        className="absolute hidden 2xl:block top-40 left-20 h-auto"
         src="/images/assets/x.svg"
         width={200}
         height={232}
         alt="X svg"
       />
       <Image
-        className="absolute hidden 2xl:block top-28 right-[5%]"
+        className="absolute hidden 2xl:block top-28 right-[5%] h-auto"
         src="/images/assets/half-circle.svg"
         width={200}
         height={210}
         alt="Half-circle svg"
       />
       <Image
-        className="absolute hidden lg:block top-2/3 right-6"
+        className="absolute hidden lg:block top-2/3 right-6 h-auto"
         src="/images/assets/triangle.svg"
         width={200}
         height={210}
         alt="Triangle svg"
       />
       <Image
-        className="absolute hidden lg:block bottom-0 -left-20"
+        className="absolute hidden lg:block bottom-0 -left-20 h-auto"
         src="/images/assets/divider.svg"
         width={250}
         height={210}

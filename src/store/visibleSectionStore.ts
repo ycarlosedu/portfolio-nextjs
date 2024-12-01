@@ -14,7 +14,6 @@ type Store = InitialState & {
 const useVisibleSectionStore = create<Store>((set, get) => ({
   ...initialState,
   setVisibleSection: (sectionName) => {
-    if (get().visibleSection === sectionName) return;
     set({
       visibleSection: sectionName
     });

@@ -2,6 +2,8 @@ export const sleep = (ms: number) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
+export const IS_DEV_MODE = process.env.NODE_ENV === "development";
+
 export enum SECTIONS {
   HERO = "hero",
   WHAT_I_DO = "what-i-do",
