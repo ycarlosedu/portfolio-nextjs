@@ -12,6 +12,19 @@ export const codeProjects: ProjectInfos[] = [
     href: "carlossilva.vercel.app",
     internal_href: "/codes/personal-website" as Pages,
     image: "/images/logo/min.svg",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+      "Shadcn UI",
+      "Zod",
+      "React Hook Form",
+      "Zustand",
+      "Framer Motion",
+      "Phosphor Icons"
+    ],
     images: [
       {
         name: "HERO_DARK",
@@ -46,6 +59,20 @@ export const codeProjects: ProjectInfos[] = [
     internal_href: "/codes/debug-coffee" as Pages,
     image: "/images/projects/logos/debug-coffee.png",
     isMobile: true,
+    technologies: [
+      "React Native",
+      "TypeScript",
+      "NativeWind",
+      "Expo",
+      "Node.js",
+      "NestJS",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "Vercel",
+      "Zod",
+      "Zustand"
+    ],
     images: [
       {
         name: "LOGIN",
@@ -102,6 +129,19 @@ export const codeProjects: ProjectInfos[] = [
     href: "onne.site",
     internal_href: "/codes/onne" as Pages,
     image: "/images/projects/logos/onne.webp",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Radix UI",
+      "Vercel",
+      "Tanstack Query",
+      "Yup",
+      "Formik",
+      "Zustand",
+      "Phosphor Icons"
+    ],
     images: [
       {
         name: "HOME",
@@ -139,6 +179,20 @@ export const codeProjects: ProjectInfos[] = [
     href: "savebys.com",
     internal_href: "/codes/savebys" as Pages,
     image: "/images/projects/logos/savebys.svg",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Vercel",
+      "Sentry",
+      "Tanstack Query",
+      "Yup",
+      "Formik",
+      "Zustand",
+      "Phosphor Icons"
+    ],
     images: [
       {
         name: "HOME",
@@ -195,6 +249,16 @@ export const codeProjects: ProjectInfos[] = [
     href: "newwavepasseiosnauticos.com.br",
     internal_href: "/codes/new-wave" as Pages,
     image: "/images/projects/logos/new-wave.png",
+    technologies: [
+      "PHP",
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "MySQL",
+      "Bootstrap",
+      "jQuery",
+      "Font Awesome"
+    ],
     images: [
       {
         name: "LOGIN",

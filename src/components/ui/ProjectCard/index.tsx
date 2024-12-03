@@ -20,6 +20,7 @@ export type ProjectInfos = {
   isDesignPrivate?: boolean;
   designHref?: string;
   isMobile?: boolean;
+  technologies?: string[];
 };
 
 type ProjectCardProps = {
@@ -57,6 +58,18 @@ export function ProjectCard({ project, translations }: ProjectCardProps) {
         >
           {project.href}
         </a>
+        {Boolean(project.technologies?.length) && (
+          <div className="flex gap-4 items-center flex-wrap w-full">
+            {project.technologies?.slice(0, 3).map((tech) => (
+              <span
+                key={tech}
+                className="text-white dark:text-black text-xs bg-primary py-1 px-2 rounded-full"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </TransitionLink>
   );
