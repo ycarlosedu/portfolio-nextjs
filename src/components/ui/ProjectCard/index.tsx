@@ -51,7 +51,7 @@ export function ProjectCard({ project, translations }: ProjectCardProps) {
           {t(project.title)}
         </Typography.H3>
         <a
-          href={`https://${project.href}`}
+          href={project.websiteHref}
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold hover:underline flex items-center gap-1"
