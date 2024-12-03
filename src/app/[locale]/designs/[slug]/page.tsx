@@ -30,11 +30,14 @@ export async function generateMetadata({
     redirect("/404");
   }
 
-  const t = await getTranslations({ locale, namespace: "METADATA.DESIGNS" });
+  const t = await getTranslations({
+    locale,
+    namespace: `DESIGNS.PROJECTS.${project.name}`
+  });
 
   return {
-    title: t("TITLE"),
-    description: t("DESCRIPTION"),
+    title: t("TITLE") + " (Design) | Carlos Silva",
+    description: t("ABOUT"),
     alternates: {
       canonical: `https://carlossilva.vercel.app/pt-br/designs/${slug}`,
       languages: {

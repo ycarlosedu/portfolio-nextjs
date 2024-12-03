@@ -28,7 +28,7 @@ export function Projects({ projects, translations }: ProjectsProps) {
       <div className="w-full flex flex-wrap justify-between gap-4 pt-8">
         {projects.map((project) => (
           <ProjectCard
-            key={project.title}
+            key={project.name}
             project={project}
             translations={translations}
           />

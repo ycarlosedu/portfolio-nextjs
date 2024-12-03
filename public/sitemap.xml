@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+                      http://www.w3.org/1999/xhtml http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br/codes</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us/codes"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br/codes/personal-website</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us/codes/personal-website"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br/codes/debug-coffee</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us/codes/debug-coffee"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br/codes/onne</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us/codes/onne"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br/codes/savebys</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us/codes/savebys"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br/codes/new-wave</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us/codes/new-wave"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br/designs</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us/designs"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br/designs/personal-website</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us/designs/personal-website"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br/designs/debug-coffee</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us/designs/debug-coffee"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br/designs/onne</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us/designs/onne"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://carlossilva.vercel.app/pt-br/designs/savebys</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://carlossilva.vercel.app/en-us/designs/savebys"
+    />
+
+    <lastmod>2024-12-03</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.8</priority>
+  </url>
+</urlset>
