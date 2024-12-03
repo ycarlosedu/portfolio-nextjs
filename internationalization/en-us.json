@@ -112,27 +112,83 @@
       "PERSONAL_WEBSITE": {
         "TITLE": "My Personal Website",
         "ALT": "Carlos Silva Logo",
-        "ABOUT": "Welcome to my portfolio! I created this site to share my work and show a deeper insight into who I am and what I do. Here, you'll find a selection of my most significant projects, reflecting my passion and dedication to software development and design. <br></br>My goal is not only to showcase my skills but also to connect with others who share similar interests. I believe that each project is an opportunity for learning and growth, and I’m always seeking new challenges. <br></br>Feel free to explore my work and reach out if you’d like to discuss any project or idea. I’m excited to share my journey with you!"
+        "ABOUT": "Welcome to my portfolio! I created this site to share my work and show a deeper insight into who I am and what I do. Here, you'll find a selection of my most significant projects, reflecting my passion and dedication to software development and design. <br></br>My goal is not only to showcase my skills but also to connect with others who share similar interests. I believe that each project is an opportunity for learning and growth, and I’m always seeking new challenges. <br></br>Feel free to explore my work and reach out if you’d like to discuss any project or idea. I’m excited to share my journey with you!",
+        "IMAGES": {
+          "HERO_DARK": "Home Page (Dark)",
+          "HERO_LIGHT": "Home Page (Light)",
+          "HERO_LIGHT_PT": "Home Page (PT-BR)",
+          "CAROUSELS": "Carousels",
+          "FORM": "Contact Form"
+        }
       },
       "DEBUG_COFFEE": {
         "TITLE": "Debug Coffee",
         "ALT": "Debug Coffee Logo",
-        "ABOUT": "Debug Café is a project I created for a college assignment where we had to develop a complete application, containing prototyping, front-end, back-end and database. The idea I had was an app for a delivery coffee shop, where the user can register, add their address, credit cards, search for products, add to cart, place orders, track the delivery and then leave their review. <br></br>Currently the project is still just a simulation, so all orders placed are not charged or delivered. <br></br> The project was developed with React Native, TypeScript, Nest, Prisma and is available in both web and mobile versions. You can create an account and test it right now by accessing the website or installing the apk available in the github repository."
+        "ABOUT": "Debug Café is a project I created for a college assignment where we had to develop a complete application, containing prototyping, front-end, back-end and database. The idea I had was an app for a delivery coffee shop, where the user can register, add their address, credit cards, search for products, add to cart, place orders, track the delivery and then leave their review. <br></br>Currently the project is still just a simulation, so all orders placed are not charged or delivered. <br></br> The project was developed with React Native, TypeScript, Nest, Prisma and is available in both web and mobile versions. You can create an account and test it right now by accessing the website or installing the apk available in the github repository.",
+        "IMAGES": {
+          "LOGIN": "Login Page",
+          "HOME": "Home Page",
+          "SEARCH": "Search Page",
+          "PRODUCT_DETAILS": "Product Details Page",
+          "PROFILE": "Profile Page",
+          "CART": "Cart Page",
+          "ORDER_DETAILS": "Order Details Page",
+          "PROFILE_MANAGER": "Profile Page (Manager)",
+          "ORDER_DELIVERED": "Order Page (Delivered)",
+          "ORDER_FEEDBACK": "Order Feedback Page",
+          "MY_ORDERS_DELIVERED": "My Orders Page (Delivered)"
+        }
       },
       "ONNE": {
         "TITLE": "ONNE",
         "ALT": "ONNE Logo",
-        "ABOUT": "Currently, a big problem that companies are facing is data protection laws. With this in mind, we thought of creating ONNE, a startup that aims to give us control over our own data. <br></br>We are developing an application that will allow you to have control over who has access to your data, and what data that is. When someone requests new data through our platform, you will receive a notification on your cell phone to approve or reject the request, choosing which data will be shared.<br></br> At any time, you can check the data sharing history and change these relationships at no cost.<br></br> With user data under our control, we only share with companies the data that they have received access to from their owners. This way, we maintain user privacy and control in accordance with the law.<br></br> Companies can access and request user data through our WEB portal or by integrating our APIs into their own applications.<br></br> The app and platform will be launched soon."
+        "ABOUT": "Currently, a big problem that companies are facing is data protection laws. With this in mind, we thought of creating ONNE, a startup that aims to give us control over our own data. <br></br>We are developing an application that will allow you to have control over who has access to your data, and what data that is. When someone requests new data through our platform, you will receive a notification on your cell phone to approve or reject the request, choosing which data will be shared.<br></br> At any time, you can check the data sharing history and change these relationships at no cost.<br></br> With user data under our control, we only share with companies the data that they have received access to from their owners. This way, we maintain user privacy and control in accordance with the law.<br></br> Companies can access and request user data through our WEB portal or by integrating our APIs into their own applications.<br></br> The app and platform will be launched soon.",
+        "IMAGES": {
+          "HOME": "Home Page",
+          "HOME_PT": "Home Page (PT-BR)",
+          "HOME_FOR_YOU": "Home Page (For You)",
+          "HOME_FOR_YOUR_COMPANY": "Home Page (For Your Company)",
+          "ABOUT_US": "About Us Page",
+          "CONTACT": "Contact Form"
+        }
       },
       "SAVEBYS": {
         "TITLE": "SAVEBYS",
         "ALT": "SAVEBYS Logo",
-        "ABOUT": "SAVEBYS was developed to support entrepreneurs who face significant challenges in recovering from crises caused by external factors, such as natural disasters. The platform connects individuals and businesses willing to provide financial or material support, facilitating a sustainable, agile, and robust recovery. <br></br>Currently, we are forming partnerships with companies that want to help entrepreneurs get back on their feet. We have already carried out donation campaigns for furniture, products, food, and money, positively impacting many lives. <br></br>Soon, we will launch our social marketplace platform, where struggling businesses will be able to buy and sell products at special discounts, promoting collaboration and solidarity within the community."
+        "ABOUT": "SAVEBYS was developed to support entrepreneurs who face significant challenges in recovering from crises caused by external factors, such as natural disasters. The platform connects individuals and businesses willing to provide financial or material support, facilitating a sustainable, agile, and robust recovery. <br></br>Currently, we are forming partnerships with companies that want to help entrepreneurs get back on their feet. We have already carried out donation campaigns for furniture, products, food, and money, positively impacting many lives. <br></br>Soon, we will launch our social marketplace platform, where struggling businesses will be able to buy and sell products at special discounts, promoting collaboration and solidarity within the community.",
+        "IMAGES": {
+          "HOME": "Home Page",
+          "HOW_IT_WORKS": "How It Works",
+          "SUPPORTERS": "Supporters",
+          "ABOUT_US": "About Us Page",
+          "MOBILIA": "Solidarity Furniture Campaign",
+          "MOBILIA_FORM": "Form to be a Donator at Solidarity Furniture Campaign",
+          "MOBILIA_PRODUCTS": "Solidarity Furniture Products",
+          "MOBILIA_PRODUCTS_FILTERS": "Products Filters",
+          "MOBILIA_PRODUCT": "Product Details",
+          "MOBILIA_BAG": "Selected Products Bag",
+          "MOBILIA_BAG_FORM": "Form to Receive the Products"
+        }
       },
       "NEW_WAVE": {
         "TITLE": "New Wave Nautical Tours",
         "ALT": "New Wave Logo",
-        "ABOUT": "This project started as a simple Landing Page, but the client had a small issue: whenever they wanted to change the page's content, they needed someone to update the project’s code, which cost time and money. So, I added a control panel to the site, where the client can modify the text, images, icons, and information on the homepage without needing a developer. <br></br>In this project, besides working on the front-end, I was also responsible for creating the back-end and all its APIs, using PHP and MySQL to store the site information."
+        "ABOUT": "This project started as a simple Landing Page, but the client had a small issue: whenever they wanted to change the page's content, they needed someone to update the project’s code, which cost time and money. So, I added a control panel to the site, where the client can modify the text, images, icons, and information on the homepage without needing a developer. <br></br>In this project, besides working on the front-end, I was also responsible for creating the back-end and all its APIs, using PHP and MySQL to store the site information.",
+        "IMAGES": {
+          "LOGIN": "Login Page",
+          "PANEL_BANNERS": "Control Panel - Banners",
+          "HOME": "Home Page",
+          "PANEL_INFOS": "Control Panel - Infos",
+          "PANEL_INFOS_UPDATED": "Control Panel - Infos (Updated)",
+          "PANEL_FAQS": "Control Panel - FAQs",
+          "HOME_FAQS": "Home Page - FAQs",
+          "PANEL_TOURS": "Control Panel - Tours",
+          "PANEL_TOURS_CREATE": "Control Panel - Create Tour",
+          "PANEL_TOURS_DELETE": "Control Panel - Delete Tour",
+          "HOME_TOURS": "Home Page - Tours",
+          "PANEL_TESTIMONIALS": "Control Panel - Testimonials",
+          "HOME_TESTIMONIALS": "Home Page - Testimonials"
+        }
       }
     }
   },

@@ -14,7 +14,10 @@ export const pathnames = {
   "/codes/new-wave": "/codes/new-wave",
   "/codes/debug-coffee": "/codes/debug-coffee",
   "/designs": "/designs",
-  "/designs/personal-website": "/designs/personal-website"
+  "/designs/personal-website": "/designs/personal-website",
+  "/designs/onne": "/designs/onne",
+  "/designs/savebys": "/designs/savebys",
+  "/designs/debug-coffee": "/designs/debug-coffee"
 } satisfies Pathnames<typeof locales>;
 
 export type Pages = keyof typeof pathnames;

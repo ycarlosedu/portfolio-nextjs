@@ -8,12 +8,10 @@ import { CarouselList } from "../Carousel";
 
 export type ProjectInfos = {
   slug: CODE_PROJECTS | DESIGN_PROJECTS;
-  title: string;
   name: string;
   href: string;
   internal_href: Pages;
   image: string;
-  alt: string;
   images: CarouselList;
   isWebsitePrivate?: boolean;
   websiteHref?: string;
@@ -30,7 +28,7 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project, translations }: ProjectCardProps) {
-  const t = useTranslations(`${translations}.PROJECTS`);
+  const t = useTranslations(`${translations}.PROJECTS.${project.name}`);
 
   return (
     <TransitionLink
@@ -40,7 +38,7 @@ export function ProjectCard({ project, translations }: ProjectCardProps) {
       <div className="flex items-center h-[247px] p-8 justify-center bg-gray-light dark:bg-black">
         <Image
           src={project.image}
-          alt={t(project.alt)}
+          alt={t("ALT")}
           width={192}
           height={183}
           className="h-full w-auto rounded-3xl"
@@ -48,7 +46,7 @@ export function ProjectCard({ project, translations }: ProjectCardProps) {
       </div>
       <div className="flex flex-col gap-2">
         <Typography.H3 className="text-primary text-base font-normal">
-          {t(project.title)}
+          {t("TITLE")}
         </Typography.H3>
         <a
           href={project.websiteHref}

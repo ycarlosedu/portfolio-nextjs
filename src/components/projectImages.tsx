@@ -32,14 +32,20 @@ type ProjectsProps = {
 };
 
 export function ProjectImages({ project, projectType }: ProjectsProps) {
-  const t = useTranslations(`${projectType}.PROJECTS`);
+  const t = useTranslations(`${projectType}.PROJECTS.${project.name}`);
+
+  const imagesTranslated = project.images.map((image) => ({
+    name: t(`IMAGES.${image.name}`),
+    image: image.image
+  }));
 
   return (
     <section className="px-default md:min-h-screen max-w-default w-full flex flex-col items-center gap-8 md:pt-32 pb-20">
-      <Typography.H1 className="text-center">{t(project.title)}</Typography.H1>
+      <Typography.H1 className="text-center">{t("TITLE")}</Typography.H1>
       <Carousel
-        list={project.images}
+        list={imagesTranslated}
         imageClassName={cn(imagesVariants({ isMobile: project.isMobile }))}
+        showImageDescription
       />
 
       <div className="flex flex-wrap gap-2.5 items-center justify-center w-full">

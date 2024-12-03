@@ -6,33 +6,31 @@ export const codeProjects: ProjectInfos[] = [
   {
     slug: CODE_PROJECTS.PERSONAL_WEBSITE,
     name: "PERSONAL_WEBSITE",
-    title: "PERSONAL_WEBSITE.TITLE",
     isWebsitePrivate: false,
     websiteHref: "https://carlossilva.vercel.app",
     isRepositoryPrivate: true,
     href: "carlossilva.vercel.app",
     internal_href: "/codes/personal-website" as Pages,
     image: "/images/logo/min.svg",
-    alt: "PERSONAL_WEBSITE.ALT",
     images: [
       {
-        name: "PERSONAL_WEBSITE.TITLE",
+        name: "HERO_DARK",
         image: "/images/projects/codes/personal-website/hero-dark.png"
       },
       {
-        name: "PERSONAL_WEBSITE.TITLE",
+        name: "HERO_LIGHT",
         image: "/images/projects/codes/personal-website/hero-light.png"
       },
       {
-        name: "PERSONAL_WEBSITE.TITLE",
+        name: "HERO_LIGHT_PT",
         image: "/images/projects/codes/personal-website/hero-light-pt.png"
       },
       {
-        name: "PERSONAL_WEBSITE.TITLE",
+        name: "CAROUSELS",
         image: "/images/projects/codes/personal-website/carousels.png"
       },
       {
-        name: "PERSONAL_WEBSITE.TITLE",
+        name: "FORM",
         image: "/images/projects/codes/personal-website/form.png"
       }
     ]
@@ -40,7 +38,6 @@ export const codeProjects: ProjectInfos[] = [
   {
     slug: CODE_PROJECTS.DEBUG_COFFEE,
     name: "DEBUG_COFFEE",
-    title: "DEBUG_COFFEE.TITLE",
     isWebsitePrivate: false,
     websiteHref: "https://debug-cafe.vercel.app",
     isRepositoryPrivate: false,
@@ -48,51 +45,50 @@ export const codeProjects: ProjectInfos[] = [
     href: "debug-cafe.vercel.app",
     internal_href: "/codes/debug-coffee" as Pages,
     image: "/images/projects/logos/debug-coffee.png",
-    alt: "DEBUG_COFFEE.ALT",
     isMobile: true,
     images: [
       {
-        name: "DEBUG_COFFEE.TITLE",
+        name: "LOGIN",
         image: "/images/projects/codes/debug-coffee/login.webp"
       },
       {
-        name: "DEBUG_COFFEE.TITLE",
+        name: "HOME",
         image: "/images/projects/codes/debug-coffee/home.webp"
       },
       {
-        name: "DEBUG_COFFEE.TITLE",
+        name: "SEARCH",
         image: "/images/projects/codes/debug-coffee/search.webp"
       },
       {
-        name: "DEBUG_COFFEE.TITLE",
+        name: "PRODUCT_DETAILS",
         image: "/images/projects/codes/debug-coffee/product-details.webp"
       },
       {
-        name: "DEBUG_COFFEE.TITLE",
-        image: "/images/projects/codes/debug-coffee/profile.webp"
-      },
-      {
-        name: "DEBUG_COFFEE.TITLE",
+        name: "CART",
         image: "/images/projects/codes/debug-coffee/cart.webp"
       },
       {
-        name: "DEBUG_COFFEE.TITLE",
+        name: "ORDER_DETAILS",
         image: "/images/projects/codes/debug-coffee/order-details.webp"
       },
       {
-        name: "DEBUG_COFFEE.TITLE",
+        name: "PROFILE",
+        image: "/images/projects/codes/debug-coffee/profile.webp"
+      },
+      {
+        name: "PROFILE_MANAGER",
         image: "/images/projects/codes/debug-coffee/profile-manager.webp"
       },
       {
-        name: "DEBUG_COFFEE.TITLE",
+        name: "ORDER_DELIVERED",
         image: "/images/projects/codes/debug-coffee/order-delivered.webp"
       },
       {
-        name: "DEBUG_COFFEE.TITLE",
+        name: "ORDER_FEEDBACK",
         image: "/images/projects/codes/debug-coffee/order-feedback.webp"
       },
       {
-        name: "DEBUG_COFFEE.TITLE",
+        name: "MY_ORDERS_DELIVERED",
         image: "/images/projects/codes/debug-coffee/my-orders-delivered.webp"
       }
     ]
@@ -100,37 +96,35 @@ export const codeProjects: ProjectInfos[] = [
   {
     slug: CODE_PROJECTS.ONNE,
     name: "ONNE",
-    title: "ONNE.TITLE",
     isWebsitePrivate: false,
     websiteHref: "https://onne.site",
     isRepositoryPrivate: true,
     href: "onne.site",
     internal_href: "/codes/onne" as Pages,
     image: "/images/projects/logos/onne.webp",
-    alt: "ONNE.ALT",
     images: [
       {
-        name: "ONNE.TITLE",
+        name: "HOME",
         image: "/images/projects/codes/onne/home.png"
       },
       {
-        name: "ONNE.TITLE",
+        name: "HOME_PT",
         image: "/images/projects/codes/onne/home-pt.png"
       },
       {
-        name: "ONNE.TITLE",
+        name: "HOME_FOR_YOU",
         image: "/images/projects/codes/onne/home-for-you.png"
       },
       {
-        name: "ONNE.TITLE",
+        name: "HOME_FOR_YOUR_COMPANY",
         image: "/images/projects/codes/onne/home-for-your-company.png"
       },
       {
-        name: "ONNE.TITLE",
+        name: "ABOUT_US",
         image: "/images/projects/codes/onne/about-us.png"
       },
       {
-        name: "ONNE.TITLE",
+        name: "CONTACT",
         image: "/images/projects/codes/onne/contact.png"
       }
     ]
@@ -138,7 +132,6 @@ export const codeProjects: ProjectInfos[] = [
   {
     slug: CODE_PROJECTS.SAVEBYS,
     name: "SAVEBYS",
-    title: "SAVEBYS.TITLE",
     isWebsitePrivate: false,
     websiteHref: "https://savebys.com",
     isRepositoryPrivate: false,
@@ -146,50 +139,49 @@ export const codeProjects: ProjectInfos[] = [
     href: "savebys.com",
     internal_href: "/codes/savebys" as Pages,
     image: "/images/projects/logos/savebys.svg",
-    alt: "SAVEBYS.ALT",
     images: [
       {
-        name: "SAVEBYS.TITLE",
+        name: "HOME",
         image: "/images/projects/codes/savebys/home.png"
       },
       {
-        name: "SAVEBYS.TITLE",
+        name: "HOW_IT_WORKS",
         image: "/images/projects/codes/savebys/home-how-it-works.png"
       },
       {
-        name: "SAVEBYS.TITLE",
+        name: "SUPPORTERS",
         image: "/images/projects/codes/savebys/home-supporters.png"
       },
       {
-        name: "SAVEBYS.TITLE",
+        name: "ABOUT_US",
         image: "/images/projects/codes/savebys/about-us.png"
       },
       {
-        name: "SAVEBYS.TITLE",
+        name: "MOBILIA",
         image: "/images/projects/codes/savebys/mobilia.png"
       },
       {
-        name: "SAVEBYS.TITLE",
+        name: "MOBILIA_FORM",
         image: "/images/projects/codes/savebys/mobilia-form.png"
       },
       {
-        name: "SAVEBYS.TITLE",
+        name: "MOBILIA_PRODUCTS",
         image: "/images/projects/codes/savebys/mobilia-products.png"
       },
       {
-        name: "SAVEBYS.TITLE",
+        name: "MOBILIA_PRODUCTS_FILTERS",
         image: "/images/projects/codes/savebys/mobilia-products-filters.png"
       },
       {
-        name: "SAVEBYS.TITLE",
+        name: "MOBILIA_PRODUCT",
         image: "/images/projects/codes/savebys/mobilia-product.png"
       },
       {
-        name: "SAVEBYS.TITLE",
+        name: "MOBILIA_BAG",
         image: "/images/projects/codes/savebys/mobilia-bag.png"
       },
       {
-        name: "SAVEBYS.TITLE",
+        name: "MOBILIA_BAG_FORM",
         image: "/images/projects/codes/savebys/mobilia-bag-form.png"
       }
     ]
@@ -197,66 +189,64 @@ export const codeProjects: ProjectInfos[] = [
   {
     slug: CODE_PROJECTS.NEW_WAVE,
     name: "NEW_WAVE",
-    title: "NEW_WAVE.TITLE",
     isWebsitePrivate: false,
     websiteHref: "https://newwavepasseiosnauticos.com.br",
     isRepositoryPrivate: true,
     href: "newwavepasseiosnauticos.com.br",
     internal_href: "/codes/new-wave" as Pages,
     image: "/images/projects/logos/new-wave.png",
-    alt: "NEW_WAVE.ALT",
     images: [
       {
-        name: "NEW_WAVE.TITLE",
+        name: "LOGIN",
         image: "/images/projects/codes/new-wave/login.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "PANEL_BANNERS",
         image: "/images/projects/codes/new-wave/painel-banners.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "HOME",
         image: "/images/projects/codes/new-wave/home.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "PANEL_INFOS",
         image: "/images/projects/codes/new-wave/painel-informacoes.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "PANEL_INFOS_UPDATED",
         image:
           "/images/projects/codes/new-wave/painel-informacoes-atualizadas.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "PANEL_FAQS",
         image: "/images/projects/codes/new-wave/painel-duvidas.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "HOME_FAQS",
         image: "/images/projects/codes/new-wave/home-duvidas.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "PANEL_TOURS",
         image: "/images/projects/codes/new-wave/painel-passeios.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "PANEL_TOURS_CREATE",
         image: "/images/projects/codes/new-wave/painel-passeios-editar.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "PANEL_TOURS_DELETE",
         image: "/images/projects/codes/new-wave/painel-passeios-deletar.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "HOME_TOURS",
         image: "/images/projects/codes/new-wave/home-passeios.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "PANEL_TESTIMONIALS",
         image: "/images/projects/codes/new-wave/painel-depoimentos.png"
       },
       {
-        name: "NEW_WAVE.TITLE",
+        name: "HOME_TESTIMONIALS",
         image: "/images/projects/codes/new-wave/home-depoimentos.png"
       }
     ]

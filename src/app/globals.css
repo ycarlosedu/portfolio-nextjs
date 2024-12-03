@@ -47,7 +47,7 @@ body {
 
   .embla__slide {
     flex: 0 0 100%;
-    @apply min-w-0 flex flex-col justify-center items-center w-full px-4;
+    @apply min-w-0 flex flex-col justify-center items-center w-full px-4 relative;
   }
 
   .embla__controls {

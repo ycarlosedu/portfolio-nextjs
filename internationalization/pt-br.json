@@ -112,27 +112,83 @@
       "PERSONAL_WEBSITE": {
         "TITLE": "Meu Site Pessoal",
         "ALT": "Carlos Silva Logo",
-        "ABOUT": "Bem-vindo ao meu portfólio! Criei este site para compartilhar meu trabalho e mostrar uma visão mais profunda sobre quem sou e o que faço. Aqui, você encontrará uma seleção dos meus projetos mais significativos, refletindo minha paixão e dedicação ao desenvolvimento de software e design. <br></br>Meu objetivo é não apenas exibir minhas habilidades, mas também conectar-me com outras pessoas que compartilham interesses semelhantes. Acredito que cada projeto é uma oportunidade de aprendizado e crescimento, e estou sempre em busca de novos desafios. <br></br>Sinta-se à vontade para explorar meu trabalho e entrar em contato se quiser conversar mais sobre qualquer projeto ou ideia. Estou animado para compartilhar minha jornada com você!"
+        "ABOUT": "Bem-vindo ao meu portfólio! Criei este site para compartilhar meu trabalho e mostrar uma visão mais profunda sobre quem sou e o que faço. Aqui, você encontrará uma seleção dos meus projetos mais significativos, refletindo minha paixão e dedicação ao desenvolvimento de software e design. <br></br>Meu objetivo é não apenas exibir minhas habilidades, mas também conectar-me com outras pessoas que compartilham interesses semelhantes. Acredito que cada projeto é uma oportunidade de aprendizado e crescimento, e estou sempre em busca de novos desafios. <br></br>Sinta-se à vontade para explorar meu trabalho e entrar em contato se quiser conversar mais sobre qualquer projeto ou ideia. Estou animado para compartilhar minha jornada com você!",
+        "IMAGES": {
+          "HERO_DARK": "Página Inicial (Escuro)",
+          "HERO_LIGHT": "Página Inicial (Claro)",
+          "HERO_LIGHT_PT": "Página Inicial (PT-BR)",
+          "CAROUSELS": "Carrosséis",
+          "FORM": "Formulário de Contato"
+        }
       },
       "DEBUG_COFFEE": {
         "TITLE": "Debug Café",
         "ALT": "Debug Café Logo",
-        "ABOUT": "O Debug Café é um projeto que criei para um trabalho da faculdade onde deveríamos desenvolvedor uma aplicação completa, contendo prototipação, front-end, back-end e banco de dados. A ideia que tive foi um app de uma cafeteria delivery, onde o usuário pode se cadastrar, adicionar seu endereço, cartões de crédito, buscar produtos, adicionar ao carrinho, fazer pedidos, acompanhar a entrega e depois deixar sua avaliação. <br></br>Atualmente o projeto ainda é apenas uma simulação, então todos os pedidos realizados não são cobrados, nem entregues. <br></br> O projeto foi desenvolvido com React Native, TypeScript, Nest, Prisma e está disponível tanto na versão web quanto mobile. Você pode criar uma conta e testar agora mesmo acessando o website ou instalando o apk disponibilizado no repositório do github."
+        "ABOUT": "O Debug Café é um projeto que criei para um trabalho da faculdade onde deveríamos desenvolvedor uma aplicação completa, contendo prototipação, front-end, back-end e banco de dados. A ideia que tive foi um app de uma cafeteria delivery, onde o usuário pode se cadastrar, adicionar seu endereço, cartões de crédito, buscar produtos, adicionar ao carrinho, fazer pedidos, acompanhar a entrega e depois deixar sua avaliação. <br></br>Atualmente o projeto ainda é apenas uma simulação, então todos os pedidos realizados não são cobrados, nem entregues. <br></br> O projeto foi desenvolvido com React Native, TypeScript, Nest, Prisma e está disponível tanto na versão web quanto mobile. Você pode criar uma conta e testar agora mesmo acessando o website ou instalando o apk disponibilizado no repositório do github.",
+        "IMAGES": {
+          "LOGIN": "Página de Login",
+          "HOME": "Página Inicial",
+          "SEARCH": "Página de Busca",
+          "PRODUCT_DETAILS": "Página de Detalhes do Produto",
+          "PROFILE": "Página de Perfil",
+          "CART": "Página do Carrinho",
+          "ORDER_DETAILS": "Página de Detalhes do Pedido",
+          "PROFILE_MANAGER": "Página de Perfil (Supervisor)",
+          "ORDER_DELIVERED": "Página de Pedido (Entregue)",
+          "ORDER_FEEDBACK": "Página de Avaliação do Pedido",
+          "MY_ORDERS_DELIVERED": "Página de Meus Pedidos (Entregue)"
+        }
       },
       "ONNE": {
         "TITLE": "ONNE",
         "ALT": "ONNE Logo",
-        "ABOUT": "Atualmente, um grande problema que as empresas enfrentam são as leis de proteção de dados. Pensando nisso, pensamos em criar a ONNE, uma startup que visa nos dar controle sobre nossos próprios dados.<br></br> Estamos desenvolvendo um aplicativo que permitirá que você tenha controle sobre quem tem acesso aos seus dados, e quais dados são esses. Quando alguém solicitar novos dados por meio de nossa plataforma, você receberá uma notificação em seu celular para aprovar ou rejeitar a solicitação, escolhendo quais dados serão compartilhados.<br></br> A qualquer momento, você pode verificar o histórico de compartilhamento de dados e alterar essas relações sem nenhum custo.<br></br> Com os dados dos usuários sob nosso controle, compartilhamos com as empresas apenas os dados aos quais elas receberam acesso de seus proprietários. Dessa forma, mantemos a privacidade e o controle dos usuários de acordo com a lei.<br></br> As empresas podem acessar e solicitar dados dos usuários por meio de nosso portal WEB ou integrando nossas APIs em seus próprios aplicativos.<br></br> O aplicativo e a plataforma serão lançados em breve."
+        "ABOUT": "Atualmente, um grande problema que as empresas enfrentam são as leis de proteção de dados. Pensando nisso, pensamos em criar a ONNE, uma startup que visa nos dar controle sobre nossos próprios dados.<br></br> Estamos desenvolvendo um aplicativo que permitirá que você tenha controle sobre quem tem acesso aos seus dados, e quais dados são esses. Quando alguém solicitar novos dados por meio de nossa plataforma, você receberá uma notificação em seu celular para aprovar ou rejeitar a solicitação, escolhendo quais dados serão compartilhados.<br></br> A qualquer momento, você pode verificar o histórico de compartilhamento de dados e alterar essas relações sem nenhum custo.<br></br> Com os dados dos usuários sob nosso controle, compartilhamos com as empresas apenas os dados aos quais elas receberam acesso de seus proprietários. Dessa forma, mantemos a privacidade e o controle dos usuários de acordo com a lei.<br></br> As empresas podem acessar e solicitar dados dos usuários por meio de nosso portal WEB ou integrando nossas APIs em seus próprios aplicativos.<br></br> O aplicativo e a plataforma serão lançados em breve.",
+        "IMAGES": {
+          "HOME": "Página Inicial",
+          "HOME_PT": "Página Inicial (PT-BR)",
+          "HOME_FOR_YOU": "Página Inicial (Para Você)",
+          "HOME_FOR_YOUR_COMPANY": "Página Inicial (Para Sua Empresa)",
+          "ABOUT_US": "Sobre Nós",
+          "CONTACT": "Formulário de Contato"
+        }
       },
       "SAVEBYS": {
         "TITLE": "SAVEBYS",
         "ALT": "SAVEBYS Logo",
-        "ABOUT": "A SAVEBYS foi desenvolvida para apoiar empreendedores que enfrentam desafios significativos na recuperação após crises causadas por fatores externos, como desastres naturais. A plataforma conecta pessoas físicas e jurídicas dispostas a oferecer suporte financeiro ou material, facilitando uma recuperação sustentável, ágil e robusta. <br></br> Atualmente, estamos formando parcerias com empresas que desejam ajudar empreendedores a se reerguerem. Já realizamos campanhas de doações de móveis, produtos, alimentos e dinheiro, impactando positivamente a vida de muitos. <br></br>Em breve, lançaremos nossa plataforma de marketplace social, onde empresas em dificuldades poderão comprar e vender produtos com descontos especiais, promovendo a colaboração e a solidariedade dentro da comunidade."
+        "ABOUT": "A SAVEBYS foi desenvolvida para apoiar empreendedores que enfrentam desafios significativos na recuperação após crises causadas por fatores externos, como desastres naturais. A plataforma conecta pessoas físicas e jurídicas dispostas a oferecer suporte financeiro ou material, facilitando uma recuperação sustentável, ágil e robusta. <br></br> Atualmente, estamos formando parcerias com empresas que desejam ajudar empreendedores a se reerguerem. Já realizamos campanhas de doações de móveis, produtos, alimentos e dinheiro, impactando positivamente a vida de muitos. <br></br>Em breve, lançaremos nossa plataforma de marketplace social, onde empresas em dificuldades poderão comprar e vender produtos com descontos especiais, promovendo a colaboração e a solidariedade dentro da comunidade.",
+        "IMAGES": {
+          "HOME": "Página Inicial",
+          "HOW_IT_WORKS": "Como Funciona",
+          "SUPPORTERS": "Apoiadores",
+          "ABOUT_US": "Página Sobre Nós",
+          "MOBILIA": "Campanha Mobília Solidária",
+          "MOBILIA_FORM": "Formulário para ser Doador na Mobília Solidária",
+          "MOBILIA_PRODUCTS": "Produtos da Mobília Solidária",
+          "MOBILIA_PRODUCTS_FILTERS": "Filtros de Produtos",
+          "MOBILIA_PRODUCT": "Detalhes do Produto",
+          "MOBILIA_BAG": "Sacola de Móveis Selecionados",
+          "MOBILIA_BAG_FORM": "Formulário para Receber os Móveis"
+        }
       },
       "NEW_WAVE": {
         "TITLE": "New Wave Passeios Náuticos",
         "ALT": "New Wave Logo",
-        "ABOUT": "Este projeto era uma simples Landing Page, mas o cliente estava com um pequeno problema: sempre que ele quisesse alterar o conteúdo da página, precisava de alguém para alterar o código do projeto, o que gerava gastos de tempo e dinheiro. Foi então que adicionei um painel de controle ao site, onde ele pode alterar o texto, as imagens, ícones e informações disponíveis na página inicial, sem precisar de um desenvolvedor. <br></br> Neste projeto, além de atuar no front-end, também fui o responsável por criar o back-end e todas as suas APIs, utilizando PHP e MySQL para armazenar as informações do site."
+        "ABOUT": "Este projeto era uma simples Landing Page, mas o cliente estava com um pequeno problema: sempre que ele quisesse alterar o conteúdo da página, precisava de alguém para alterar o código do projeto, o que gerava gastos de tempo e dinheiro. Foi então que adicionei um painel de controle ao site, onde ele pode alterar o texto, as imagens, ícones e informações disponíveis na página inicial, sem precisar de um desenvolvedor. <br></br> Neste projeto, além de atuar no front-end, também fui o responsável por criar o back-end e todas as suas APIs, utilizando PHP e MySQL para armazenar as informações do site.",
+        "IMAGES": {
+          "LOGIN": "Página de Login",
+          "PANEL_BANNERS": "Painel de Controle - Banners",
+          "HOME": "Página Inicial",
+          "PANEL_INFOS": "Painel de Controle - Informações",
+          "PANEL_INFOS_UPDATED": "Painel de Controle - Informações (Atualizadas)",
+          "PANEL_FAQS": "Painel de Controle - Perguntas Frequentes",
+          "HOME_FAQS": "Página Inicial - Perguntas Frequentes",
+          "PANEL_TOURS": "Painel de Controle - Passeios",
+          "PANEL_TOURS_CREATE": "Painel de Controle - Criar Passeio",
+          "PANEL_TOURS_DELETE": "Painel de Controle - Deletar Passeio",
+          "HOME_TOURS": "Página Inicial - Passeios",
+          "PANEL_TESTIMONIALS": "Painel de Controle - Depoimentos",
+          "HOME_TESTIMONIALS": "Página Inicial - Depoimentos"
+        }
       }
     }
   },
@@ -144,22 +200,63 @@
       "PERSONAL_WEBSITE": {
         "TITLE": "Meu Site Pessoal",
         "ALT": "Carlos Silva Logo",
-        "ABOUT": "Bem-vindo ao meu portfólio! Criei este site para compartilhar meu trabalho e mostrar uma visão mais profunda sobre quem sou e o que faço. Aqui, você encontrará uma seleção dos meus projetos mais significativos, refletindo minha paixão e dedicação ao desenvolvimento de software e design. <br></br>Meu objetivo é não apenas exibir minhas habilidades, mas também conectar-me com outras pessoas que compartilham interesses semelhantes. Acredito que cada projeto é uma oportunidade de aprendizado e crescimento, e estou sempre em busca de novos desafios. <br></br>Sinta-se à vontade para explorar meu trabalho e entrar em contato se quiser conversar mais sobre qualquer projeto ou ideia. Estou animado para compartilhar minha jornada com você!"
+        "ABOUT": "Bem-vindo ao meu portfólio! Criei este site para compartilhar meu trabalho e mostrar uma visão mais profunda sobre quem sou e o que faço. Aqui, você encontrará uma seleção dos meus projetos mais significativos, refletindo minha paixão e dedicação ao desenvolvimento de software e design. <br></br>Meu objetivo é não apenas exibir minhas habilidades, mas também conectar-me com outras pessoas que compartilham interesses semelhantes. Acredito que cada projeto é uma oportunidade de aprendizado e crescimento, e estou sempre em busca de novos desafios. <br></br>Sinta-se à vontade para explorar meu trabalho e entrar em contato se quiser conversar mais sobre qualquer projeto ou ideia. Estou animado para compartilhar minha jornada com você!",
+        "IMAGES": {
+          "HERO_DARK": "Página Inicial (Escuro)",
+          "HERO_LIGHT": "Página Inicial (Claro)",
+          "HERO_LIGHT_PT": "Página Inicial (PT-BR)",
+          "CAROUSELS": "Carrosséis",
+          "FORM": "Formulário de Contato"
+        }
       },
       "DEBUG_COFFEE": {
         "TITLE": "Debug Café",
         "ALT": "Debug Café Logo",
-        "ABOUT": "O Debug Café é um projeto que criei para um trabalho da faculdade onde deveríamos desenvolvedor uma aplicação completa, contendo prototipação, front-end, back-end e banco de dados. A ideia que tive foi um app de uma cafeteria delivery, onde o usuário pode se cadastrar, adicionar seu endereço, cartões de crédito, buscar produtos, adicionar ao carrinho, fazer pedidos, acompanhar a entrega e depois deixar sua avaliação. <br></br>Atualmente o projeto ainda é apenas uma simulação, então todos os pedidos realizados não são cobrados, nem entregues. <br></br> O projeto foi desenvolvido com React Native, TypeScript, Nest, Prisma e está disponível tanto na versão web quanto mobile. Você pode criar uma conta e testar agora mesmo acessando o website ou instalando o apk disponibilizado no repositório do github."
+        "ABOUT": "O Debug Café é um projeto que criei para um trabalho da faculdade onde deveríamos desenvolvedor uma aplicação completa, contendo prototipação, front-end, back-end e banco de dados. A ideia que tive foi um app de uma cafeteria delivery, onde o usuário pode se cadastrar, adicionar seu endereço, cartões de crédito, buscar produtos, adicionar ao carrinho, fazer pedidos, acompanhar a entrega e depois deixar sua avaliação. <br></br>Atualmente o projeto ainda é apenas uma simulação, então todos os pedidos realizados não são cobrados, nem entregues. <br></br> O projeto foi desenvolvido com React Native, TypeScript, Nest, Prisma e está disponível tanto na versão web quanto mobile. Você pode criar uma conta e testar agora mesmo acessando o website ou instalando o apk disponibilizado no repositório do github.",
+        "IMAGES": {
+          "LOGIN": "Página de Login",
+          "HOME": "Página Inicial",
+          "SEARCH": "Página de Busca",
+          "PRODUCT_DETAILS": "Página de Detalhes do Produto",
+          "PROFILE": "Página de Perfil",
+          "CART": "Página do Carrinho",
+          "ORDER_DETAILS": "Página de Detalhes do Pedido",
+          "PROFILE_MANAGER": "Página de Perfil (Supervisor)",
+          "ORDER_DELIVERED": "Página de Pedido (Entregue)",
+          "ORDER_FEEDBACK": "Página de Avaliação do Pedido",
+          "MY_ORDERS_DELIVERED": "Página de Meus Pedidos (Entregue)"
+        }
       },
       "ONNE": {
         "TITLE": "ONNE",
         "ALT": "ONNE Logo",
-        "ABOUT": "Atualmente, um grande problema que as empresas enfrentam são as leis de proteção de dados. Pensando nisso, pensamos em criar a ONNE, uma startup que visa nos dar controle sobre nossos próprios dados.<br></br> Estamos desenvolvendo um aplicativo que permitirá que você tenha controle sobre quem tem acesso aos seus dados, e quais dados são esses. Quando alguém solicitar novos dados por meio de nossa plataforma, você receberá uma notificação em seu celular para aprovar ou rejeitar a solicitação, escolhendo quais dados serão compartilhados.<br></br> A qualquer momento, você pode verificar o histórico de compartilhamento de dados e alterar essas relações sem nenhum custo.<br></br> Com os dados dos usuários sob nosso controle, compartilhamos com as empresas apenas os dados aos quais elas receberam acesso de seus proprietários. Dessa forma, mantemos a privacidade e o controle dos usuários de acordo com a lei.<br></br> As empresas podem acessar e solicitar dados dos usuários por meio de nosso portal WEB ou integrando nossas APIs em seus próprios aplicativos.<br></br> O aplicativo e a plataforma serão lançados em breve."
+        "ABOUT": "Atualmente, um grande problema que as empresas enfrentam são as leis de proteção de dados. Pensando nisso, pensamos em criar a ONNE, uma startup que visa nos dar controle sobre nossos próprios dados.<br></br> Estamos desenvolvendo um aplicativo que permitirá que você tenha controle sobre quem tem acesso aos seus dados, e quais dados são esses. Quando alguém solicitar novos dados por meio de nossa plataforma, você receberá uma notificação em seu celular para aprovar ou rejeitar a solicitação, escolhendo quais dados serão compartilhados.<br></br> A qualquer momento, você pode verificar o histórico de compartilhamento de dados e alterar essas relações sem nenhum custo.<br></br> Com os dados dos usuários sob nosso controle, compartilhamos com as empresas apenas os dados aos quais elas receberam acesso de seus proprietários. Dessa forma, mantemos a privacidade e o controle dos usuários de acordo com a lei.<br></br> As empresas podem acessar e solicitar dados dos usuários por meio de nosso portal WEB ou integrando nossas APIs em seus próprios aplicativos.<br></br> O aplicativo e a plataforma serão lançados em breve.",
+        "IMAGES": {
+          "HOME": "Página Inicial",
+          "HOME_PT": "Página Inicial (PT-BR)",
+          "HOME_FOR_YOU": "Página Inicial (Para Você)",
+          "HOME_FOR_YOUR_COMPANY": "Página Inicial (Para Sua Empresa)",
+          "ABOUT_US": "Sobre Nós",
+          "CONTACT": "Formulário de Contato"
+        }
       },
       "SAVEBYS": {
         "TITLE": "SAVEBYS",
         "ALT": "SAVEBYS Logo",
-        "ABOUT": "A SAVEBYS foi desenvolvida para apoiar empreendedores que enfrentam desafios significativos na recuperação após crises causadas por fatores externos, como desastres naturais. A plataforma conecta pessoas físicas e jurídicas dispostas a oferecer suporte financeiro ou material, facilitando uma recuperação sustentável, ágil e robusta. <br></br> Atualmente, estamos formando parcerias com empresas que desejam ajudar empreendedores a se reerguerem. Já realizamos campanhas de doações de móveis, produtos, alimentos e dinheiro, impactando positivamente a vida de muitos. <br></br>Em breve, lançaremos nossa plataforma de marketplace social, onde empresas em dificuldades poderão comprar e vender produtos com descontos especiais, promovendo a colaboração e a solidariedade dentro da comunidade."
+        "ABOUT": "A SAVEBYS foi desenvolvida para apoiar empreendedores que enfrentam desafios significativos na recuperação após crises causadas por fatores externos, como desastres naturais. A plataforma conecta pessoas físicas e jurídicas dispostas a oferecer suporte financeiro ou material, facilitando uma recuperação sustentável, ágil e robusta. <br></br> Atualmente, estamos formando parcerias com empresas que desejam ajudar empreendedores a se reerguerem. Já realizamos campanhas de doações de móveis, produtos, alimentos e dinheiro, impactando positivamente a vida de muitos. <br></br>Em breve, lançaremos nossa plataforma de marketplace social, onde empresas em dificuldades poderão comprar e vender produtos com descontos especiais, promovendo a colaboração e a solidariedade dentro da comunidade.",
+        "IMAGES": {
+          "HOME": "Página Inicial",
+          "HOW_IT_WORKS": "Como Funciona",
+          "SUPPORTERS": "Apoiadores",
+          "ABOUT_US": "Sobre Nós",
+          "MOBILIA": "Campanha Mobília Solidária",
+          "MOBILIA_FORM": "Formulário para ser Doador na Mobília Solidária",
+          "MOBILIA_PRODUCTS": "Produtos da Mobília Solidária",
+          "MOBILIA_PRODUCTS_FILTERS": "Filtros de Produtos",
+          "MOBILIA_PRODUCT": "Detalhes do Produto",
+          "MOBILIA_BAG": "Sacola de Móveis Selecionados",
+          "MOBILIA_BAG_FORM": "Formulário para Receber os Móveis"
+        }
       }
     }
   },

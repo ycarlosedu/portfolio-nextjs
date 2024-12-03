@@ -17,9 +17,14 @@ export type CarouselList = {
 type CarouselProps = {
   list: CarouselList;
   imageClassName?: string;
+  showImageDescription?: boolean;
 };
 
-export default function Carousel({ list, imageClassName }: CarouselProps) {
+export default function Carousel({
+  list,
+  imageClassName,
+  showImageDescription = false
+}: CarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 3000 })
   ]);
@@ -47,6 +52,11 @@ export default function Carousel({ list, imageClassName }: CarouselProps) {
         <div className="embla__container">
           {list.map((item) => (
             <div key={item.name} className="embla__slide">
+              {showImageDescription && (
+                <span className="text-center top-1 text-sm text-black dark:text-white bg-white/80 dark:bg-black/80 p-1 absolute rounded-lg">
+                  {item.name}
+                </span>
+              )}
               <Image
                 src={item.image}
                 alt={`Logo/Imagem do(a) ${item.name}`}
