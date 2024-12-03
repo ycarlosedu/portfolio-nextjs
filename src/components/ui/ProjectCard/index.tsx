@@ -4,6 +4,7 @@ import { CODE_PROJECTS, DESIGN_PROJECTS, PROJECT_TYPE } from "@/constants";
 import { Pages } from "@/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Badge from "../Badge";
 import { CarouselList } from "../Carousel";
 
 export type ProjectInfos = {
@@ -53,21 +54,16 @@ export function ProjectCard({ project, translations }: ProjectCardProps) {
           href={project.websiteHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold hover:underline flex items-center gap-1"
+          className="font-semibold hover:underline flex items-center gap-1 w-fit"
           onClick={(e) => e.stopPropagation()}
         >
           {project.href}
         </a>
         {Boolean(project.technologies?.length) && (
-          <div className="flex gap-4 items-center flex-wrap w-full">
-            {project.technologies?.slice(0, 3).map((tech) => (
-              <span
-                key={tech}
-                className="text-white dark:text-black text-xs bg-primary py-1 px-2 rounded-full"
-              >
-                {tech}
-              </span>
-            ))}
+          <div className="flex gap-2 items-center flex-wrap w-full">
+            {project.technologies
+              ?.slice(0, 3)
+              .map((tech) => <Badge key={tech}>{tech}</Badge>)}
           </div>
         )}
       </div>

@@ -5,6 +5,7 @@ import { ProjectAbout } from "@/components/projectAbout";
 import { ProjectImages } from "@/components/projectImages";
 
 import { FloatingButton } from "@/components/ui/FloatingButton";
+import TechnologiesCarousel from "@/components/ui/TechnologiesCarousel";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
 import { CODE_PROJECTS, PROJECT_TYPE } from "@/constants";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -64,6 +65,7 @@ export default async function CodeProject({ params: { locale, slug } }: Props) {
       <FloatingButton name={t("BACK_BUTTON")} href="/codes" />
       <TransitionContainer>
         <ProjectImages project={project} projectType={PROJECT_TYPE.CODES} />
+        <TechnologiesCarousel list={project.technologies} />
         <ProjectAbout
           projectName={project.name}
           projectType={PROJECT_TYPE.CODES}

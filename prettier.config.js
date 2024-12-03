@@ -1,4 +1,5 @@
 module.exports = {
   plugins: ["prettier-plugin-tailwindcss"],
-  tailwindFunctions: ["tv"]
+  tailwindAttributes: ["className"],
+  tailwindFunctions: ["tva"]
 };

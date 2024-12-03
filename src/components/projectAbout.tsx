@@ -15,7 +15,7 @@ export function ProjectAbout({ projectName, projectType }: ProjectAboutProps) {
   );
 
   return (
-    <section className="px-default md:min-h-screen w-full flex flex-col items-center py-16">
+    <section className="px-default md:min-h-screen w-full flex flex-col items-center py-10">
       <div className="flex flex-col gap-16 w-full max-w-default">
         <div className="flex flex-col gap-4">
           <Typography.H2 className="text-7xl text-primary">

@@ -40,7 +40,7 @@ export function ProjectImages({ project, projectType }: ProjectsProps) {
   }));
 
   return (
-    <section className="px-default md:min-h-screen max-w-default w-full flex flex-col items-center gap-8 md:pt-32 pb-20">
+    <section className="px-default md:min-h-screen max-w-default w-full flex flex-col items-center gap-8 md:pt-32 pb-10">
       <Typography.H1 className="text-center">{t("TITLE")}</Typography.H1>
       <Carousel
         list={imagesTranslated}
