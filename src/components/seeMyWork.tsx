@@ -15,7 +15,7 @@ export function SeeMyWork() {
     <section
       data-observe-visibility="true"
       id={SECTIONS.SEE_MY_WORK}
-      className="px-default w-full md:h-screen bg-gray-light dark:bg-black flex flex-col items-center justify-center py-20 relative overflow-x-clip"
+      className="px-default w-full 2xl:h-screen bg-gray-light dark:bg-black flex flex-col items-center justify-center py-20 relative overflow-x-clip"
     >
       <div className="bg-white dark:bg-gray-dark flex flex-col gap-8 w-full max-w-default md:h-[622px] md:flex-row md:justify-between md:gap-0 shadow-default">
         <div className="flex flex-col p-4 gap-16 md:w-full md:justify-center md:p-10 lg:p-20">
@@ -66,7 +66,7 @@ export function SeeMyWork() {
       </div>
 
       <Image
-        className="absolute hidden 3xl:block bottom-0 left-0 h-auto"
+        className="absolute hidden 3xl:block bottom-0 left-0 h-auto z-10"
         src="/images/assets/double-circle.svg"
         width={200}
         height={210}

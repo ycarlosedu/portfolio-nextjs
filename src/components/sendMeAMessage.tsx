@@ -15,7 +15,7 @@ export function SendMeAMessage() {
     <section
       data-observe-visibility="true"
       id={SECTIONS.SEND_ME_A_MESSAGE}
-      className="px-default md:h-screen max-w-screen w-full flex flex-col justify-center py-20 relative overflow-x-clip"
+      className="px-default 2xl:h-screen max-w-screen w-full flex flex-col justify-center py-20 relative overflow-x-clip"
     >
       <Image
         className="absolute hidden 2xl:block top-40 left-20 h-auto"

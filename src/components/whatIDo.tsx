@@ -15,11 +15,11 @@ export function WhatIDo() {
     <section
       data-observe-visibility="true"
       id={SECTIONS.WHAT_I_DO}
-      className="px-default w-full min-h-screen xl:h-screen bg-gray-light dark:bg-black flex items-center justify-center relative overflow-x-clip"
+      className="px-default w-full min-h-screen 2xl:h-screen bg-gray-light dark:bg-black flex items-center justify-center relative overflow-x-clip"
     >
       <div className="max-w-default w-full flex flex-col md:flex-row md:justify-between md:gap-20 py-32 relative">
         <div className="flex flex-col gap-8 md:w-1/2">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 z-20">
             <Typography.H2 className="text-primary">
               {t("DEVELOPMENT")}
             </Typography.H2>

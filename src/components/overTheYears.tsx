@@ -12,7 +12,7 @@ export function OverTheYears() {
     <section
       data-observe-visibility="true"
       id={SECTIONS.OVER_THE_YEARS}
-      className="px-default w-full min-h-screen xl:h-screen flex items-center justify-center py-20 relative overflow-x-clip"
+      className="px-default w-full min-h-screen 2xl:h-screen flex items-center justify-center py-20 relative overflow-x-clip"
     >
       <Image
         className="absolute z-10 -bottom-7 -left-36 md:-top-32 md:-left-2 h-auto"

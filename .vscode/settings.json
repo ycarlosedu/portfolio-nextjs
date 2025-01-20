@@ -8,5 +8,8 @@
   },
   "tailwindCSS.experimental.classRegex": [
     ["tva\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
-  ]
+  ],
+  "i18n-ally.localesPaths": ["internationalization"],
+  "i18n-ally.sourceLanguage": "english",
+  "i18n-ally.keystyle": "nested"
 }

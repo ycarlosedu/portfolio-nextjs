@@ -19,7 +19,7 @@ export function Contact() {
     <section
       data-observe-visibility="true"
       id={SECTIONS.CONTACT}
-      className="px-default md:h-screen w-full bg-gray-light dark:bg-black flex flex-col items-center justify-center py-4 gap-12 relative overflow-clip"
+      className="px-default 2xl:h-screen w-full bg-gray-light dark:bg-black flex flex-col items-center justify-center py-4 gap-12 relative overflow-clip"
     >
       <Image
         className="absolute top-8 left-0 md:top-20 h-auto"

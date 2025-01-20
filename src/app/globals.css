@@ -10,6 +10,7 @@ html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
   scroll-snap-type: y mandatory;
+  scrollbar-gutter: stable both-edges;
 }
 
 hr {
@@ -20,8 +21,12 @@ main {
   @apply transition-[opacity,transform,filter] duration-500 ease-in-out;
 }
 
+#body {
+  --removed-body-scroll-bar-size: 10px !important;
+}
+
 body {
-  @apply data-[scroll-locked]:!pr-2.5 [&>#sections-menu]:data-[scroll-locked]:right-[26px];
+  @apply [&>#sections-menu]:data-[scroll-locked]:right-[26px];
 }
 
 @layer components {

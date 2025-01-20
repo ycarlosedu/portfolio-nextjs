@@ -105,6 +105,7 @@ export default function RootLayout({ children, params: { locale } }: Props) {
   return (
     <html lang={locale}>
       <body
+        id="body"
         className={cn(
           inter.className,
           "w-full overflow-x-hidden bg-white dark:bg-gray-dark text-black dark:text-white antialiased relative"
