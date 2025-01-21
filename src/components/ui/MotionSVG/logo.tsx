@@ -9,7 +9,7 @@ export function MotionSVGLogo() {
   useEffect(() => {
     setTimeout(() => {
       setHasLoaded(true);
-    }, 1000);
+    }, 2000);
   }, []);
 
   return (
@@ -29,7 +29,7 @@ export function MotionSVGLogo() {
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
-          duration: 1,
+          duration: 2,
           ease: "easeInOut"
         }}
         strokeDasharray="0 1"
@@ -40,7 +40,7 @@ export function MotionSVGLogo() {
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
-          duration: 1,
+          duration: 2,
           ease: "easeInOut"
         }}
         strokeDasharray="0 1"
@@ -52,7 +52,7 @@ export function MotionSVGLogo() {
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
-          duration: 1,
+          duration: 2,
           ease: "easeInOut"
         }}
         strokeDasharray="0 1"
@@ -64,7 +64,7 @@ export function MotionSVGLogo() {
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
-          duration: 1,
+          duration: 2,
           ease: "easeInOut"
         }}
         strokeDasharray="0 1"
@@ -76,7 +76,7 @@ export function MotionSVGLogo() {
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
-          duration: 1,
+          duration: 2,
           ease: "easeInOut"
         }}
         strokeDasharray="0 1"
@@ -88,7 +88,7 @@ export function MotionSVGLogo() {
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
-          duration: 1,
+          duration: 2,
           ease: "easeInOut"
         }}
         strokeDasharray="0 1"
@@ -100,7 +100,7 @@ export function MotionSVGLogo() {
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
-          duration: 1,
+          duration: 2,
           ease: "easeInOut"
         }}
         strokeDasharray="0 1"
@@ -112,7 +112,7 @@ export function MotionSVGLogo() {
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
-          duration: 1,
+          duration: 2,
           ease: "easeInOut"
         }}
         strokeDasharray="0 1"
@@ -124,7 +124,7 @@ export function MotionSVGLogo() {
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
-          duration: 1,
+          duration: 2,
           ease: "easeInOut"
         }}
         strokeDasharray="0 1"
@@ -136,7 +136,7 @@ export function MotionSVGLogo() {
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
-          duration: 1,
+          duration: 2,
           ease: "easeInOut"
         }}
         strokeDasharray="0 1"
@@ -148,7 +148,7 @@ export function MotionSVGLogo() {
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
-          duration: 1,
+          duration: 2,
           ease: "easeInOut"
         }}
         strokeDasharray="0 1"

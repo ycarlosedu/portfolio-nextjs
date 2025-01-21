@@ -64,6 +64,28 @@ const config = {
         draw: {
           "0%": { "stroke-dasharray": "0, 200", "stroke-dashoffset": "200" },
           "100%": { "stroke-dasharray": "200, 200", "stroke-dashoffset": "0" }
+        },
+        "float-side": {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(-10px)" }
+        },
+        "float-shadow": {
+          "0%,100%": {
+            "box-shadow":
+              "0 0 #0000, 0 0 #0000, 16px 16px 15px 0px rgba(0, 122, 255, 0.5);"
+          },
+          "25%": {
+            "box-shadow":
+              "0 0 #0000, 0 0 #0000, 16px -16px 15px 0px rgba(0, 122, 255, 0.5);"
+          },
+          "50%": {
+            "box-shadow":
+              "0 0 #0000, 0 0 #0000, -16px -16px 15px 0px rgba(0, 122, 255, 0.5);"
+          },
+          "75%": {
+            "box-shadow":
+              "0 0 #0000, 0 0 #0000, -16px 16px 15px 0px rgba(0, 122, 255, 0.5);"
+          }
         }
       },
       animation: {
@@ -76,7 +98,9 @@ const config = {
         "scale-down": "scale-down 5s ease-in-out infinite",
         rotate: "rotate 20s linear infinite",
         float: "float 3s ease-in-out infinite",
-        draw: "draw 2s linear forwards"
+        draw: "draw 2s linear forwards",
+        "float-side": "float-side 3s ease-in-out infinite",
+        "float-shadow": "float-shadow 10s ease-in-out infinite"
       }
     }
   },

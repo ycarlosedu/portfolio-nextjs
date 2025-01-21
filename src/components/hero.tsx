@@ -33,7 +33,7 @@ export function Hero() {
             <Typography.P className="text-xl">{t("SUBTITLE")}</Typography.P>
           </div>
           <Image
-            className="shadow-default rounded-lg h-auto"
+            className="animate-float-shadow rounded-lg h-auto"
             src="/images/profile.png"
             width={288}
             height={384}
@@ -68,7 +68,7 @@ export function Hero() {
       />
 
       <Image
-        className="hidden lg:block absolute bottom-0 right-20 xl:right-52 h-auto animate-draw"
+        className="hidden lg:block absolute bottom-0 right-20 xl:right-52 h-auto animate-float-side"
         src="images/assets/waves.svg"
         width={300}
         height={210}
