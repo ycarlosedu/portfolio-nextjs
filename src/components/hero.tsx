@@ -18,7 +18,7 @@ export function Hero() {
       className="px-default md:pt-28 w-full flex items-center justify-center min-h-screen 2xl:h-screen relative max-w-screen overflow-x-clip"
     >
       <Image
-        className="hidden lg:block absolute top-28 h-auto"
+        className="hidden lg:block absolute top-28 h-auto animate-float"
         src="images/assets/triangle.svg"
         width={200}
         height={210}
@@ -60,7 +60,7 @@ export function Hero() {
       />
 
       <Image
-        className="absolute z-10 -bottom-44 left-72 md:-bottom-32 md:left-28 2xl:left-52 h-auto"
+        className="absolute z-10 -bottom-44 left-72 md:-bottom-32 md:left-28 2xl:left-52 h-auto animate-scale-down"
         src="images/assets/x.svg"
         width={200}
         height={232}
@@ -68,7 +68,7 @@ export function Hero() {
       />
 
       <Image
-        className="hidden lg:block absolute bottom-0 right-20 xl:right-52 h-auto"
+        className="hidden lg:block absolute bottom-0 right-20 xl:right-52 h-auto animate-draw"
         src="images/assets/waves.svg"
         width={300}
         height={210}

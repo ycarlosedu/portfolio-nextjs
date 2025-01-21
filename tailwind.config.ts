@@ -37,10 +37,6 @@ const config = {
         top: "-16px -16px 15px 0px rgba(0, 122, 255, 0.5)"
       },
       keyframes: {
-        scaleUpAndDown: {
-          "0%, 100%": { transform: "scale(1)" },
-          "50%": { transform: "scale(1.3)" }
-        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" }
@@ -48,6 +44,26 @@ const config = {
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" }
+        },
+        "scale-up": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" }
+        },
+        "scale-down": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(0.9)" }
+        },
+        rotate: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" }
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" }
+        },
+        draw: {
+          "0%": { "stroke-dasharray": "0, 200", "stroke-dashoffset": "200" },
+          "100%": { "stroke-dasharray": "200, 200", "stroke-dashoffset": "0" }
         }
       },
       animation: {
@@ -56,7 +72,11 @@ const config = {
         "enter-spinning": "spin 0.5s linear",
         "enter-pulse": "pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1)",
         "enter-bounce": "bounce 0.5s",
-        "scale-up-and-down": "scaleUpAndDown 0.5s"
+        "scale-up": "scale-up 5s ease-in-out infinite",
+        "scale-down": "scale-down 5s ease-in-out infinite",
+        rotate: "rotate 20s linear infinite",
+        float: "float 3s ease-in-out infinite",
+        draw: "draw 2s linear forwards"
       }
     }
   },

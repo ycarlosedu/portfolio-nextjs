@@ -22,7 +22,7 @@ export function OverTheYears() {
         alt="Divider svg"
       />
       <Image
-        className="absolute z-10 -bottom-10 -right-12 md:top-6 md:right-0 h-auto"
+        className="absolute z-10 -bottom-10 -right-12 md:top-6 md:right-0 h-auto animate-rotate"
         src="images/assets/half-circles2.svg"
         width={146}
         height={154}
@@ -70,7 +70,7 @@ export function OverTheYears() {
       </div>
 
       <Image
-        className="absolute z-10 hidden md:block -bottom-32 left-0 h-auto"
+        className="absolute z-10 hidden md:block -bottom-32 left-0 h-auto animate-scale-down"
         src="images/assets/circles.svg"
         width={200}
         height={210}

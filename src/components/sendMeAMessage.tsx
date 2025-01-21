@@ -18,7 +18,7 @@ export function SendMeAMessage() {
       className="px-default 2xl:h-screen max-w-screen w-full flex flex-col justify-center py-20 relative overflow-x-clip"
     >
       <Image
-        className="absolute hidden 2xl:block top-40 left-20 h-auto"
+        className="absolute hidden 2xl:block top-40 left-20 h-auto animate-scale-down"
         src="/images/assets/x.svg"
         width={200}
         height={232}
@@ -32,7 +32,7 @@ export function SendMeAMessage() {
         alt="Half-circle svg"
       />
       <Image
-        className="absolute hidden lg:block top-2/3 right-6 h-auto"
+        className="absolute hidden lg:block top-2/3 right-6 h-auto animate-float"
         src="/images/assets/triangle.svg"
         width={200}
         height={210}
