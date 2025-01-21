@@ -19,7 +19,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "../Button";
-import { Logo } from "../Logo";
+import { MotionSVG } from "../MotionSVG";
 
 type Props = {
   locale: string;
@@ -52,7 +52,7 @@ export default function Header({ locale }: Props) {
           href={"/"}
           aria-label={t("HOME_ARIA_LABEL")}
         >
-          <Logo />
+          <MotionSVG.Logo />
         </TransitionLink>
         <div className="flex items-center absolute xs:relative top-0 right-0 gap-4 flex-col-reverse xs:flex-row h-fit">
           <ToggleTheme />
