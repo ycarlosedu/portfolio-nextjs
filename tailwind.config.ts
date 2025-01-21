@@ -53,6 +53,11 @@ const config = {
           "0%, 100%": { transform: "scale(1)" },
           "50%": { transform: "scale(0.9)" }
         },
+        "half-rotate": {
+          "0%,100%": { transform: "rotate(0deg) scale(1)" },
+          "33%": { transform: "rotate(60deg) scale(0.8)" },
+          "66%": { transform: "rotate(-60deg) scale(0.8)" }
+        },
         rotate: {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" }
@@ -96,6 +101,7 @@ const config = {
         "enter-bounce": "bounce 0.5s",
         "scale-up": "scale-up 5s ease-in-out infinite",
         "scale-down": "scale-down 5s ease-in-out infinite",
+        "half-rotate": "half-rotate 20s linear infinite",
         rotate: "rotate 20s linear infinite",
         float: "float 3s ease-in-out infinite",
         draw: "draw 2s linear forwards",

@@ -32,13 +32,15 @@ export function Hero() {
             </Typography.H1>
             <Typography.P className="text-xl">{t("SUBTITLE")}</Typography.P>
           </div>
-          <Image
-            className="animate-float-shadow rounded-lg h-auto"
-            src="/images/profile.png"
-            width={288}
-            height={384}
-            alt="Carlos Silva Profile Image"
-          />
+          <div className="animate-float-shadow transition-transform hover:rotate-3">
+            <Image
+              className="rounded-lg h-auto transition-all duration-300 grayscale hover:grayscale-0 hover:scale-105"
+              src="/images/profile.webp"
+              width={288}
+              height={384}
+              alt="Carlos Silva Profile Image"
+            />
+          </div>
         </div>
 
         <div className="flex flex-col gap-3 md:flex-row md:gap-16 z-20">
