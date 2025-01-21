@@ -101,7 +101,7 @@ export const designProjects: ProjectInfos[] = [
     name: "ONNE",
     isWebsitePrivate: false,
     websiteHref: "https://onne.site",
-    href: "https://onne.site",
+    href: "onne.site",
     isDesignPrivate: true,
     internal_href: "/designs/onne" as Pages,
     image: "/images/projects/logos/onne.webp",

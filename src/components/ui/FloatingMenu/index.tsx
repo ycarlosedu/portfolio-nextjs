@@ -28,8 +28,8 @@ export function FloatingMenu({
   return (
     <div
       className={cn(
-        `p-1 fixed z-20 bottom-4 border-2 border-black dark:border-white rounded-full bg-white dark:bg-black flex flex-col gap-2 items-center justify-center`,
-        side === "left" ? "left-4" : "right-4",
+        `p-1 fixed z-20 w-12 bottom-4 border-2 border-black dark:border-white rounded-full bg-white dark:bg-black flex flex-col gap-2 items-center justify-center`,
+        side === "left" ? "left-4" : "left-[calc(100vw-4rem)]",
         className
       )}
       {...rest}
