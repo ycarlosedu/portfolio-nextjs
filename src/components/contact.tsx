@@ -22,7 +22,7 @@ export function Contact() {
       className="px-default 2xl:h-screen w-full bg-gray-light dark:bg-black flex flex-col items-center justify-center py-4 gap-12 relative overflow-clip"
     >
       <Image
-        className="absolute top-8 left-0 md:top-20 h-auto"
+        className="absolute top-8 left-0 md:top-24 h-auto animate-ring-phone"
         src="/images/assets/phone.svg"
         width={200}
         height={210}
@@ -36,7 +36,7 @@ export function Contact() {
         alt="Waves-full svg"
       />
       <Image
-        className="absolute hidden md:block top-32 right-1/4 h-auto"
+        className="absolute hidden md:block top-10 lg:top-32 right-1/4 h-auto animate-rotate"
         src="/images/assets/sparkles.svg"
         width={200}
         height={210}
@@ -141,7 +141,7 @@ export function Contact() {
         alt="Random-dots svg"
       />
       <Image
-        className="absolute hidden lg:block -bottom-14 -right-14 h-auto"
+        className="absolute hidden lg:block -bottom-14 -right-14 h-auto animate-scale-down"
         src="/images/assets/double-squares.svg"
         width={200}
         height={210}

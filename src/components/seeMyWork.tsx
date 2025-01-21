@@ -66,7 +66,7 @@ export function SeeMyWork() {
       </div>
 
       <Image
-        className="absolute hidden 3xl:block bottom-0 left-0 h-auto z-10 animate-draw"
+        className="absolute hidden 3xl:block bottom-0 left-0 h-auto z-10"
         src="/images/assets/double-circle.svg"
         width={200}
         height={210}

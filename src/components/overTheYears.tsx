@@ -63,7 +63,7 @@ export function OverTheYears() {
         <Image
           src="/images/over-the-years.svg"
           alt="An illustration showing the companies that Carlos worked with over the years"
-          className="hidden w-1/2 md:block h-auto"
+          className="hidden w-1/2 md:block h-auto animate-float"
           width={500}
           height={700}
         />

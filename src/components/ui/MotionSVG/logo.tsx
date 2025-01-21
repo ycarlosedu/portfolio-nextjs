@@ -20,7 +20,7 @@ export function MotionSVGLogo() {
       width="200"
       height="56"
       className={cn(
-        "[&>path]:stroke-primary [&>path]:fill-transparent [&>path]:stroke-4 [&>path]:transition-colors [&>path]:duration-300",
+        "[&>path]:stroke-primary [&>path]:fill-transparent [&>path]:stroke-4 [&>path]:transition-colors [&>path]:duration-300 hover:scale-105 transition-all duration-300",
         hasLoaded &&
           "[&>path]:fill-primary [&>path]:stroke-white [&>path]:dark:stroke-black"
       )}

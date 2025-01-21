@@ -66,10 +66,6 @@ const config = {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" }
         },
-        draw: {
-          "0%": { "stroke-dasharray": "0, 200", "stroke-dashoffset": "200" },
-          "100%": { "stroke-dasharray": "200, 200", "stroke-dashoffset": "0" }
-        },
         "float-side": {
           "0%, 100%": { transform: "translateX(0)" },
           "50%": { transform: "translateX(-10px)" }
@@ -91,6 +87,14 @@ const config = {
             "box-shadow":
               "0 0 #0000, 0 0 #0000, -16px 16px 15px 0px rgba(0, 122, 255, 0.5);"
           }
+        },
+        "pulse-shadow": {
+          "0%, 100%": { "box-shadow": "0 0 0 0 rgba(0, 122, 255, 0.5)" },
+          "50%": { "box-shadow": "0 0 0 10px rgba(0, 122, 255, 0)" }
+        },
+        "ring-phone": {
+          "0%, 10%, 20%, 30%, 40%, 100%": { transform: "rotate(0deg)" },
+          "5%, 15%, 25%, 35%": { transform: "rotate(10deg)" }
         }
       },
       animation: {
@@ -102,11 +106,12 @@ const config = {
         "scale-up": "scale-up 5s ease-in-out infinite",
         "scale-down": "scale-down 5s ease-in-out infinite",
         "half-rotate": "half-rotate 20s linear infinite",
-        rotate: "rotate 20s linear infinite",
+        rotate: "rotate 45s linear infinite",
         float: "float 3s ease-in-out infinite",
-        draw: "draw 2s linear forwards",
         "float-side": "float-side 3s ease-in-out infinite",
-        "float-shadow": "float-shadow 10s ease-in-out infinite"
+        "float-shadow": "float-shadow 10s ease-in-out infinite",
+        "pulse-shadow": "pulse-shadow 2s ease-in-out infinite",
+        "ring-phone": "ring-phone 5s ease-in-out infinite"
       }
     }
   },
