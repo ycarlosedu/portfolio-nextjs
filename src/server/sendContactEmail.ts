@@ -1,7 +1,5 @@
 "use server";
-
-import { ContactEmailTemplate } from "@/components/email/contact";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
 export type ContactEmailValues = {
   name: string;
@@ -9,22 +7,45 @@ export type ContactEmailValues = {
   message: string;
 };
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  host: process.env.SMTP_SERVER_HOST,
+  port: 587,
+  secure: true,
+  auth: {
+    user: process.env.SMTP_SERVER_USERNAME,
+    pass: process.env.SMTP_SERVER_PASSWORD
+  }
+});
 
 export async function sendContactEmail(values: ContactEmailValues) {
   try {
-    const { data, error } = await resend.emails.send({
+    await transporter.verify();
+  } catch (error) {
+    console.error(
+      "Something Went Wrong",
+      process.env.SMTP_SERVER_USERNAME,
+      process.env.SMTP_SERVER_PASSWORD,
+      error
+    );
+    return JSON.parse(JSON.stringify({ error, status: 500 }));
+  }
+
+  try {
+    const info = await transporter.sendMail({
       from: `${values.name} <${values.email}>`,
-      to: ["silvacarlosoliveira@outlook.com"],
+      to: [process.env.SITE_MAIL_RECEIVER!],
       subject: "Nova mensagem de contato em seu site",
-      react: ContactEmailTemplate(values)
+      html: `<div>
+      <h1>Olá Carlos!</h1>
+      <p>
+        Você recebeu uma nova mensagem de ${values.name} (${values.email}):
+      </p>
+      <p>${values.message}</p>
+    </div>`
     });
 
-    if (error) {
-      return JSON.parse(JSON.stringify({ error, status: 500 }));
-    }
-
-    return JSON.parse(JSON.stringify(data));
+    return JSON.parse(JSON.stringify(info));
   } catch (error) {
     return JSON.parse(JSON.stringify({ error, status: 500 }));
   }

@@ -1,7 +1,7 @@
 "use server";
 import { ContactEmailValues } from "@/server/sendContactEmail";
 
-export async function ContactEmailTemplate({
+export function ContactEmailTemplate({
   name,
   email,
   message
