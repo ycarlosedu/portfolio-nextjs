@@ -213,17 +213,10 @@
         "ALT": "Debug Café Logo",
         "ABOUT": "O Debug Café é um projeto que criei para um trabalho da faculdade onde deveríamos desenvolvedor uma aplicação completa, contendo prototipação, front-end, back-end e banco de dados. A ideia que tive foi um app de uma cafeteria delivery, onde o usuário pode se cadastrar, adicionar seu endereço, cartões de crédito, buscar produtos, adicionar ao carrinho, fazer pedidos, acompanhar a entrega e depois deixar sua avaliação. <br></br>Atualmente o projeto ainda é apenas uma simulação, então todos os pedidos realizados não são cobrados, nem entregues. <br></br> O projeto foi desenvolvido com React Native, TypeScript, Nest, Prisma e está disponível tanto na versão web quanto mobile. Você pode criar uma conta e testar agora mesmo acessando o website ou instalando o apk disponibilizado no repositório do github.",
         "IMAGES": {
-          "LOGIN": "Página de Login",
-          "HOME": "Página Inicial",
-          "SEARCH": "Página de Busca",
-          "PRODUCT_DETAILS": "Página de Detalhes do Produto",
-          "PROFILE": "Página de Perfil",
-          "CART": "página do carrinho",
-          "ORDER_DETAILS": "Página de Detalhes do Pedido",
-          "PROFILE_MANAGER": "Página de Perfil (Supervisor)",
-          "ORDER_DELIVERED": "Página de Pedido (Entregue)",
-          "ORDER_FEEDBACK": "Página de Avaliação do Pedido",
-          "MY_ORDERS_DELIVERED": "Página de Meus Pedidos (Entregue)"
+          "WIREFRAME": "Wireframe",
+          "MOCKUP": "Mockup (Primeiras Páginas)",
+          "MOCKUP_REST": "Mockup (Últimas Páginas)",
+          "COMPONENTS": "Guia de Estilos"
         }
       },
       "ONNE": {

@@ -44,51 +44,22 @@ export const designProjects: ProjectInfos[] = [
       "https://www.figma.com/design/p4eexDBogNL2YsgS6y0Z65/Portfolio?node-id=56-4079&t=37VJDAqqdxOCJWAL-1",
     internal_href: "/designs/debug-coffee" as Pages,
     image: "/images/projects/logos/debug-coffee.png",
-    isMobile: true,
     images: [
       {
-        name: "LOGIN",
-        image: "/images/projects/codes/debug-coffee/login.webp"
+        name: "WIREFRAME",
+        image: "/images/projects/designs/debug-coffee/wireframe.png"
       },
       {
-        name: "HOME",
-        image: "/images/projects/codes/debug-coffee/home.webp"
+        name: "MOCKUP",
+        image: "/images/projects/designs/debug-coffee/mockup.png"
       },
       {
-        name: "SEARCH",
-        image: "/images/projects/codes/debug-coffee/search.webp"
+        name: "MOCKUP_REST",
+        image: "/images/projects/designs/debug-coffee/mockup-rest.png"
       },
       {
-        name: "PRODUCT_DETAILS",
-        image: "/images/projects/codes/debug-coffee/product-details.webp"
-      },
-      {
-        name: "CART",
-        image: "/images/projects/codes/debug-coffee/cart.webp"
-      },
-      {
-        name: "ORDER_DETAILS",
-        image: "/images/projects/codes/debug-coffee/order-details.webp"
-      },
-      {
-        name: "PROFILE",
-        image: "/images/projects/codes/debug-coffee/profile.webp"
-      },
-      {
-        name: "PROFILE_MANAGER",
-        image: "/images/projects/codes/debug-coffee/profile-manager.webp"
-      },
-      {
-        name: "ORDER_DELIVERED",
-        image: "/images/projects/codes/debug-coffee/order-delivered.webp"
-      },
-      {
-        name: "ORDER_FEEDBACK",
-        image: "/images/projects/codes/debug-coffee/order-feedback.webp"
-      },
-      {
-        name: "MY_ORDERS_DELIVERED",
-        image: "/images/projects/codes/debug-coffee/my-orders-delivered.webp"
+        name: "COMPONENTS",
+        image: "/images/projects/designs/debug-coffee/components.png"
       }
     ]
   },

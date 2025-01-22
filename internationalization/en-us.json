@@ -213,17 +213,10 @@
         "ALT": "Debug Coffee Logo",
         "ABOUT": "Debug Café is a project I created for a college assignment where we had to develop a complete application, containing prototyping, front-end, back-end and database. The idea I had was an app for a delivery coffee shop, where the user can register, add their address, credit cards, search for products, add to cart, place orders, track the delivery and then leave their review. <br></br>Currently the project is still just a simulation, so all orders placed are not charged or delivered. <br></br> The project was developed with React Native, TypeScript, Nest, Prisma and is available in both web and mobile versions. You can create an account and test it right now by accessing the website or installing the apk available in the github repository.",
         "IMAGES": {
-          "LOGIN": "Login Page",
-          "HOME": "Home Page",
-          "SEARCH": "Search Page",
-          "PRODUCT_DETAILS": "Product Details Page",
-          "PROFILE": "Profile Page",
-          "CART": "Cart Page",
-          "ORDER_DETAILS": "Order Details Page",
-          "PROFILE_MANAGER": "Profile Page (Manager)",
-          "ORDER_DELIVERED": "Order Page (Delivered)",
-          "ORDER_FEEDBACK": "Order Feedback Page",
-          "MY_ORDERS_DELIVERED": "My Orders Page (Delivered)"
+          "WIREFRAME": "Wireframe",
+          "MOCKUP": "Mockup (First Pages)",
+          "MOCKUP_REST": "Mockup (Last Pages)",
+          "COMPONENTS": "Style Guide"
         }
       },
       "ONNE": {
