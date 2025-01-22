@@ -16,24 +16,20 @@ export const designProjects: ProjectInfos[] = [
     image: "/images/logo/min.svg",
     images: [
       {
-        name: "HERO_DARK",
-        image: "/images/projects/codes/personal-website/hero-dark.png"
+        name: "DESKTOP_DARK",
+        image: "/images/projects/designs/personal-website/desktop-dark.png"
       },
       {
-        name: "HERO_LIGHT",
-        image: "/images/projects/codes/personal-website/hero-light.png"
+        name: "DESKTOP_LIGHT",
+        image: "/images/projects/designs/personal-website/desktop-light.png"
       },
       {
-        name: "HERO_LIGHT_PT",
-        image: "/images/projects/codes/personal-website/hero-light-pt.png"
+        name: "MOBILE",
+        image: "/images/projects/designs/personal-website/mobile.png"
       },
       {
-        name: "CAROUSELS",
-        image: "/images/projects/codes/personal-website/carousels.png"
-      },
-      {
-        name: "FORM",
-        image: "/images/projects/codes/personal-website/form.png"
+        name: "COMPONENTS",
+        image: "/images/projects/designs/personal-website/components.png"
       }
     ]
   },

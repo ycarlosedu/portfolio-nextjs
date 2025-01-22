@@ -14,9 +14,7 @@ import { TransitionLink } from "@/components/ui/TransitionLink";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { cn } from "@/lib/utils";
 import { List } from "@phosphor-icons/react/dist/ssr";
-import LogoImage from "images/logo/full.svg";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { useState } from "react";
 import { Button } from "../Button";
 import { MotionSVG } from "../MotionSVG";
@@ -71,13 +69,15 @@ export default function Header({ locale }: Props) {
               </SheetHeader>
               <div className="flex flex-col justify-between items-center w-full h-full">
                 <Nav className="flex-col items-start w-full" locale={locale} />
-                <Image
-                  src={LogoImage}
-                  alt="Carlos Silva Logo"
-                  width={200}
-                  height={56}
-                  className="h-auto"
-                />
+                <SheetTrigger asChild>
+                  <TransitionLink
+                    locale={locale}
+                    href={"/"}
+                    aria-label={t("HOME_ARIA_LABEL")}
+                  >
+                    <MotionSVG.Logo />
+                  </TransitionLink>
+                </SheetTrigger>
               </div>
             </SheetContent>
           </Sheet>
