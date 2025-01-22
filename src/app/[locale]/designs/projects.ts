@@ -75,27 +75,19 @@ export const designProjects: ProjectInfos[] = [
     images: [
       {
         name: "HOME",
-        image: "/images/projects/codes/onne/home.png"
+        image: "/images/projects/designs/onne/home.png"
       },
       {
-        name: "HOME_PT",
-        image: "/images/projects/codes/onne/home-pt.png"
+        name: "MOBILE",
+        image: "/images/projects/designs/onne/mobile.png"
       },
       {
-        name: "HOME_FOR_YOU",
-        image: "/images/projects/codes/onne/home-for-you.png"
+        name: "PORTAL",
+        image: "/images/projects/designs/onne/portal.png"
       },
       {
-        name: "HOME_FOR_YOUR_COMPANY",
-        image: "/images/projects/codes/onne/home-for-your-company.png"
-      },
-      {
-        name: "ABOUT_US",
-        image: "/images/projects/codes/onne/about-us.png"
-      },
-      {
-        name: "CONTACT",
-        image: "/images/projects/codes/onne/contact.png"
+        name: "APP",
+        image: "/images/projects/designs/onne/app.png"
       }
     ]
   },

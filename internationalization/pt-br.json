@@ -224,12 +224,10 @@
         "ALT": "ONNE Logo",
         "ABOUT": "Atualmente, um grande problema que as empresas enfrentam são as leis de proteção de dados. Pensando nisso, pensamos em criar a ONNE, uma startup que visa nos dar controle sobre nossos próprios dados.<br></br> Estamos desenvolvendo um aplicativo que permitirá que você tenha controle sobre quem tem acesso aos seus dados, e quais dados são esses. Quando alguém solicitar novos dados por meio de nossa plataforma, você receberá uma notificação em seu celular para aprovar ou rejeitar a solicitação, escolhendo quais dados serão compartilhados.<br></br> A qualquer momento, você pode verificar o histórico de compartilhamento de dados e alterar essas relações sem nenhum custo.<br></br> Com os dados dos usuários sob nosso controle, compartilhamos com as empresas apenas os dados aos quais elas receberam acesso de seus proprietários. Dessa forma, mantemos a privacidade e o controle dos usuários de acordo com a lei.<br></br> As empresas podem acessar e solicitar dados dos usuários por meio de nosso portal WEB ou integrando nossas APIs em seus próprios aplicativos.<br></br> O aplicativo e a plataforma serão lançados em breve.",
         "IMAGES": {
-          "HOME": "Página Inicial",
-          "HOME_PT": "Página Inicial (PT-BR)",
-          "HOME_FOR_YOU": "Página Inicial (Para Você)",
-          "HOME_FOR_YOUR_COMPANY": "Página Inicial (Para Sua Empresa)",
-          "ABOUT_US": "Sobre Nós",
-          "CONTACT": "Formulário de Contato"
+          "HOME": "Landing Page (Desktop)",
+          "MOBILE": "Landing Page (Mobile)",
+          "PORTAL": "Portal para empresas",
+          "APP": "App para usuários PF"
         }
       },
       "SAVEBYS": {
