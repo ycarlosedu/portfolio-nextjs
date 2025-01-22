@@ -29,23 +29,23 @@ export const codeProjects: ProjectInfos[] = [
     images: [
       {
         name: "HERO_DARK",
-        image: "/images/projects/codes/personal-website/hero-dark.png"
+        image: "/images/projects/codes/personal-website/hero-dark.webp"
       },
       {
         name: "HERO_LIGHT",
-        image: "/images/projects/codes/personal-website/hero-light.png"
+        image: "/images/projects/codes/personal-website/hero-light.webp"
       },
       {
         name: "HERO_LIGHT_PT",
-        image: "/images/projects/codes/personal-website/hero-light-pt.png"
+        image: "/images/projects/codes/personal-website/hero-light-pt.webp"
       },
       {
         name: "CAROUSELS",
-        image: "/images/projects/codes/personal-website/carousels.png"
+        image: "/images/projects/codes/personal-website/carousels.webp"
       },
       {
         name: "FORM",
-        image: "/images/projects/codes/personal-website/form.png"
+        image: "/images/projects/codes/personal-website/form.webp"
       }
     ]
   },
@@ -58,7 +58,7 @@ export const codeProjects: ProjectInfos[] = [
     repositoryHref: "https://github.com/ycarlosedu/debug-cafe-app",
     href: "debug-cafe.vercel.app",
     internal_href: "/codes/debug-coffee" as Pages,
-    image: "/images/projects/logos/debug-coffee.png",
+    image: "/images/projects/logos/debug-coffee.webp",
     isMobile: true,
     technologies: [
       "React Native",
@@ -146,27 +146,27 @@ export const codeProjects: ProjectInfos[] = [
     images: [
       {
         name: "HOME",
-        image: "/images/projects/codes/onne/home.png"
+        image: "/images/projects/codes/onne/home.webp"
       },
       {
         name: "HOME_PT",
-        image: "/images/projects/codes/onne/home-pt.png"
+        image: "/images/projects/codes/onne/home-pt.webp"
       },
       {
         name: "HOME_FOR_YOU",
-        image: "/images/projects/codes/onne/home-for-you.png"
+        image: "/images/projects/codes/onne/home-for-you.webp"
       },
       {
         name: "HOME_FOR_YOUR_COMPANY",
-        image: "/images/projects/codes/onne/home-for-your-company.png"
+        image: "/images/projects/codes/onne/home-for-your-company.webp"
       },
       {
         name: "ABOUT_US",
-        image: "/images/projects/codes/onne/about-us.png"
+        image: "/images/projects/codes/onne/about-us.webp"
       },
       {
         name: "CONTACT",
-        image: "/images/projects/codes/onne/contact.png"
+        image: "/images/projects/codes/onne/contact.webp"
       }
     ]
   },
@@ -197,47 +197,47 @@ export const codeProjects: ProjectInfos[] = [
     images: [
       {
         name: "HOME",
-        image: "/images/projects/codes/savebys/home.png"
+        image: "/images/projects/codes/savebys/home.webp"
       },
       {
         name: "HOW_IT_WORKS",
-        image: "/images/projects/codes/savebys/home-how-it-works.png"
+        image: "/images/projects/codes/savebys/home-how-it-works.webp"
       },
       {
         name: "SUPPORTERS",
-        image: "/images/projects/codes/savebys/home-supporters.png"
+        image: "/images/projects/codes/savebys/home-supporters.webp"
       },
       {
         name: "ABOUT_US",
-        image: "/images/projects/codes/savebys/about-us.png"
+        image: "/images/projects/codes/savebys/about-us.webp"
       },
       {
         name: "MOBILIA",
-        image: "/images/projects/codes/savebys/mobilia.png"
+        image: "/images/projects/codes/savebys/mobilia.webp"
       },
       {
         name: "MOBILIA_FORM",
-        image: "/images/projects/codes/savebys/mobilia-form.png"
+        image: "/images/projects/codes/savebys/mobilia-form.webp"
       },
       {
         name: "MOBILIA_PRODUCTS",
-        image: "/images/projects/codes/savebys/mobilia-products.png"
+        image: "/images/projects/codes/savebys/mobilia-products.webp"
       },
       {
         name: "MOBILIA_PRODUCTS_FILTERS",
-        image: "/images/projects/codes/savebys/mobilia-products-filters.png"
+        image: "/images/projects/codes/savebys/mobilia-products-filters.webp"
       },
       {
         name: "MOBILIA_PRODUCT",
-        image: "/images/projects/codes/savebys/mobilia-product.png"
+        image: "/images/projects/codes/savebys/mobilia-product.webp"
       },
       {
         name: "MOBILIA_BAG",
-        image: "/images/projects/codes/savebys/mobilia-bag.png"
+        image: "/images/projects/codes/savebys/mobilia-bag.webp"
       },
       {
         name: "MOBILIA_BAG_FORM",
-        image: "/images/projects/codes/savebys/mobilia-bag-form.png"
+        image: "/images/projects/codes/savebys/mobilia-bag-form.webp"
       }
     ]
   },
@@ -249,7 +249,7 @@ export const codeProjects: ProjectInfos[] = [
     isRepositoryPrivate: true,
     href: "newwavepasseiosnauticos.com.br",
     internal_href: "/codes/new-wave" as Pages,
-    image: "/images/projects/logos/new-wave.png",
+    image: "/images/projects/logos/new-wave.webp",
     technologies: [
       "PHP",
       "JavaScript",
@@ -263,56 +263,56 @@ export const codeProjects: ProjectInfos[] = [
     images: [
       {
         name: "LOGIN",
-        image: "/images/projects/codes/new-wave/login.png"
+        image: "/images/projects/codes/new-wave/login.webp"
       },
       {
         name: "PANEL_BANNERS",
-        image: "/images/projects/codes/new-wave/painel-banners.png"
+        image: "/images/projects/codes/new-wave/painel-banners.webp"
       },
       {
         name: "HOME",
-        image: "/images/projects/codes/new-wave/home.png"
+        image: "/images/projects/codes/new-wave/home.webp"
       },
       {
         name: "PANEL_INFOS",
-        image: "/images/projects/codes/new-wave/painel-informacoes.png"
+        image: "/images/projects/codes/new-wave/painel-informacoes.webp"
       },
       {
         name: "PANEL_INFOS_UPDATED",
         image:
-          "/images/projects/codes/new-wave/painel-informacoes-atualizadas.png"
+          "/images/projects/codes/new-wave/painel-informacoes-atualizadas.webp"
       },
       {
         name: "PANEL_FAQS",
-        image: "/images/projects/codes/new-wave/painel-duvidas.png"
+        image: "/images/projects/codes/new-wave/painel-duvidas.webp"
       },
       {
         name: "HOME_FAQS",
-        image: "/images/projects/codes/new-wave/home-duvidas.png"
+        image: "/images/projects/codes/new-wave/home-duvidas.webp"
       },
       {
         name: "PANEL_TOURS",
-        image: "/images/projects/codes/new-wave/painel-passeios.png"
+        image: "/images/projects/codes/new-wave/painel-passeios.webp"
       },
       {
         name: "PANEL_TOURS_CREATE",
-        image: "/images/projects/codes/new-wave/painel-passeios-editar.png"
+        image: "/images/projects/codes/new-wave/painel-passeios-editar.webp"
       },
       {
         name: "PANEL_TOURS_DELETE",
-        image: "/images/projects/codes/new-wave/painel-passeios-deletar.png"
+        image: "/images/projects/codes/new-wave/painel-passeios-deletar.webp"
       },
       {
         name: "HOME_TOURS",
-        image: "/images/projects/codes/new-wave/home-passeios.png"
+        image: "/images/projects/codes/new-wave/home-passeios.webp"
       },
       {
         name: "PANEL_TESTIMONIALS",
-        image: "/images/projects/codes/new-wave/painel-depoimentos.png"
+        image: "/images/projects/codes/new-wave/painel-depoimentos.webp"
       },
       {
         name: "HOME_TESTIMONIALS",
-        image: "/images/projects/codes/new-wave/home-depoimentos.png"
+        image: "/images/projects/codes/new-wave/home-depoimentos.webp"
       }
     ]
   }

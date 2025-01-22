@@ -17,19 +17,19 @@ export const designProjects: ProjectInfos[] = [
     images: [
       {
         name: "DESKTOP_DARK",
-        image: "/images/projects/designs/personal-website/desktop-dark.png"
+        image: "/images/projects/designs/personal-website/desktop-dark.webp"
       },
       {
         name: "DESKTOP_LIGHT",
-        image: "/images/projects/designs/personal-website/desktop-light.png"
+        image: "/images/projects/designs/personal-website/desktop-light.webp"
       },
       {
         name: "MOBILE",
-        image: "/images/projects/designs/personal-website/mobile.png"
+        image: "/images/projects/designs/personal-website/mobile.webp"
       },
       {
         name: "COMPONENTS",
-        image: "/images/projects/designs/personal-website/components.png"
+        image: "/images/projects/designs/personal-website/components.webp"
       }
     ]
   },
@@ -43,23 +43,23 @@ export const designProjects: ProjectInfos[] = [
     designHref:
       "https://www.figma.com/design/p4eexDBogNL2YsgS6y0Z65/Portfolio?node-id=56-4079&t=37VJDAqqdxOCJWAL-1",
     internal_href: "/designs/debug-coffee" as Pages,
-    image: "/images/projects/logos/debug-coffee.png",
+    image: "/images/projects/logos/debug-coffee.webp",
     images: [
       {
         name: "WIREFRAME",
-        image: "/images/projects/designs/debug-coffee/wireframe.png"
+        image: "/images/projects/designs/debug-coffee/wireframe.webp"
       },
       {
         name: "MOCKUP",
-        image: "/images/projects/designs/debug-coffee/mockup.png"
+        image: "/images/projects/designs/debug-coffee/mockup.webp"
       },
       {
         name: "MOCKUP_REST",
-        image: "/images/projects/designs/debug-coffee/mockup-rest.png"
+        image: "/images/projects/designs/debug-coffee/mockup-rest.webp"
       },
       {
         name: "COMPONENTS",
-        image: "/images/projects/designs/debug-coffee/components.png"
+        image: "/images/projects/designs/debug-coffee/components.webp"
       }
     ]
   },
@@ -75,19 +75,19 @@ export const designProjects: ProjectInfos[] = [
     images: [
       {
         name: "HOME",
-        image: "/images/projects/designs/onne/home.png"
+        image: "/images/projects/designs/onne/home.webp"
       },
       {
         name: "MOBILE",
-        image: "/images/projects/designs/onne/mobile.png"
+        image: "/images/projects/designs/onne/mobile.webp"
       },
       {
         name: "PORTAL",
-        image: "/images/projects/designs/onne/portal.png"
+        image: "/images/projects/designs/onne/portal.webp"
       },
       {
         name: "APP",
-        image: "/images/projects/designs/onne/app.png"
+        image: "/images/projects/designs/onne/app.webp"
       }
     ]
   },
@@ -103,27 +103,27 @@ export const designProjects: ProjectInfos[] = [
     images: [
       {
         name: "HOME",
-        image: "/images/projects/designs/savebys/home.png"
+        image: "/images/projects/designs/savebys/home.webp"
       },
       {
         name: "MOBILIA",
-        image: "/images/projects/designs/savebys/mobilia.png"
+        image: "/images/projects/designs/savebys/mobilia.webp"
       },
       {
         name: "MOBILIA_BAG",
-        image: "/images/projects/designs/savebys/mobilia-bag.png"
+        image: "/images/projects/designs/savebys/mobilia-bag.webp"
       },
       {
         name: "MONEY_CAMPAIGN",
-        image: "/images/projects/designs/savebys/money-campaign.png"
+        image: "/images/projects/designs/savebys/money-campaign.webp"
       },
       {
         name: "MARKETPLACE",
-        image: "/images/projects/designs/savebys/marketplace.png"
+        image: "/images/projects/designs/savebys/marketplace.webp"
       },
       {
         name: "MARKETPLACE_PRODUCTS",
-        image: "/images/projects/designs/savebys/marketplace-products.png"
+        image: "/images/projects/designs/savebys/marketplace-products.webp"
       }
     ]
   }

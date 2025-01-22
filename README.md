@@ -84,7 +84,7 @@ src/
 
 ## 📷 Demonstration
 
-<img src="./public/images/projects/codes/personal-website/hero-dark.png" width="1920px" style="display: block; margin: 0 auto" />
+<img src="./public/images/projects/codes/personal-website/hero-dark.webp" width="1920px" style="display: block; margin: 0 auto" />
 
 ## 🤝 Contributions
 
