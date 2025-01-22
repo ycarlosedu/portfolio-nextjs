@@ -111,47 +111,27 @@ export const designProjects: ProjectInfos[] = [
     images: [
       {
         name: "HOME",
-        image: "/images/projects/codes/savebys/home.png"
-      },
-      {
-        name: "HOW_IT_WORKS",
-        image: "/images/projects/codes/savebys/home-how-it-works.png"
-      },
-      {
-        name: "SUPPORTERS",
-        image: "/images/projects/codes/savebys/home-supporters.png"
-      },
-      {
-        name: "ABOUT_US",
-        image: "/images/projects/codes/savebys/about-us.png"
+        image: "/images/projects/designs/savebys/home.png"
       },
       {
         name: "MOBILIA",
-        image: "/images/projects/codes/savebys/mobilia.png"
-      },
-      {
-        name: "MOBILIA_FORM",
-        image: "/images/projects/codes/savebys/mobilia-form.png"
-      },
-      {
-        name: "MOBILIA_PRODUCTS",
-        image: "/images/projects/codes/savebys/mobilia-products.png"
-      },
-      {
-        name: "MOBILIA_PRODUCTS_FILTERS",
-        image: "/images/projects/codes/savebys/mobilia-products-filters.png"
-      },
-      {
-        name: "MOBILIA_PRODUCT",
-        image: "/images/projects/codes/savebys/mobilia-product.png"
+        image: "/images/projects/designs/savebys/mobilia.png"
       },
       {
         name: "MOBILIA_BAG",
-        image: "/images/projects/codes/savebys/mobilia-bag.png"
+        image: "/images/projects/designs/savebys/mobilia-bag.png"
       },
       {
-        name: "MOBILIA_BAG_FORM",
-        image: "/images/projects/codes/savebys/mobilia-bag-form.png"
+        name: "MONEY_CAMPAIGN",
+        image: "/images/projects/designs/savebys/money-campaign.png"
+      },
+      {
+        name: "MARKETPLACE",
+        image: "/images/projects/designs/savebys/marketplace.png"
+      },
+      {
+        name: "MARKETPLACE_PRODUCTS",
+        image: "/images/projects/designs/savebys/marketplace-products.png"
       }
     ]
   }

@@ -238,16 +238,11 @@
         "ABOUT": "SAVEBYS was developed to support entrepreneurs who face significant challenges in recovering from crises caused by external factors, such as natural disasters. The platform connects individuals and businesses willing to provide financial or material support, facilitating a sustainable, agile, and robust recovery. <br></br>Currently, we are forming partnerships with companies that want to help entrepreneurs get back on their feet. We have already carried out donation campaigns for furniture, products, food, and money, positively impacting many lives. <br></br>Soon, we will launch our social marketplace platform, where struggling businesses will be able to buy and sell products at special discounts, promoting collaboration and solidarity within the community.",
         "IMAGES": {
           "HOME": "Home Page",
-          "HOW_IT_WORKS": "How It Works",
-          "SUPPORTERS": "Supporters",
-          "ABOUT_US": "About Us Page",
           "MOBILIA": "Solidarity Furniture Campaign",
-          "MOBILIA_FORM": "Form to be a Donator at Solidarity Furniture Campaign",
-          "MOBILIA_PRODUCTS": "Solidarity Furniture Products",
-          "MOBILIA_PRODUCTS_FILTERS": "Products Filters",
-          "MOBILIA_PRODUCT": "Product Details",
           "MOBILIA_BAG": "Selected Products Bag",
-          "MOBILIA_BAG_FORM": "Form to Receive the Products"
+          "MONEY_CAMPAIGN": "Campaign to receive money donations",
+          "MARKETPLACE": "Marketplace Pages",
+          "MARKETPLACE_PRODUCTS": "Marketplace Products Pages"
         }
       }
     }

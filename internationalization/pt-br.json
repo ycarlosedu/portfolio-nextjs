@@ -238,16 +238,11 @@
         "ABOUT": "A SAVEBYS foi desenvolvida para apoiar empreendedores que enfrentam desafios significativos na recuperação após crises causadas por fatores externos, como desastres naturais. A plataforma conecta pessoas físicas e jurídicas dispostas a oferecer suporte financeiro ou material, facilitando uma recuperação sustentável, ágil e robusta. <br></br> Atualmente, estamos formando parcerias com empresas que desejam ajudar empreendedores a se reerguerem. Já realizamos campanhas de doações de móveis, produtos, alimentos e dinheiro, impactando positivamente a vida de muitos. <br></br>Em breve, lançaremos nossa plataforma de marketplace social, onde empresas em dificuldades poderão comprar e vender produtos com descontos especiais, promovendo a colaboração e a solidariedade dentro da comunidade.",
         "IMAGES": {
           "HOME": "Página Inicial",
-          "HOW_IT_WORKS": "Como Funciona",
-          "SUPPORTERS": "Apoiadores",
-          "ABOUT_US": "Sobre Nós",
           "MOBILIA": "Campanha Mobília Solidária",
-          "MOBILIA_FORM": "Formulário para ser Doador na Mobília Solidária",
-          "MOBILIA_PRODUCTS": "Produtos da Mobília Solidária",
-          "MOBILIA_PRODUCTS_FILTERS": "Filtros de Produtos",
-          "MOBILIA_PRODUCT": "Detalhes do Produto",
           "MOBILIA_BAG": "Sacola de Móveis Selecionados",
-          "MOBILIA_BAG_FORM": "Formulário para Receber os Móveis"
+          "MONEY_CAMPAIGN": "Campanha de Doação de Dinheiro",
+          "MARKETPLACE": "Páginas do Marketplace",
+          "MARKETPLACE_PRODUCTS": "Páginas de produtos do Marketplace"
         }
       }
     }
