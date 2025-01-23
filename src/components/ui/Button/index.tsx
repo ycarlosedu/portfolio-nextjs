@@ -5,7 +5,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex gap-2 items-center justify-center whitespace-nowrap rounded-lg text-base font-semibold ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:bg-gray-light disabled:text-black dark:disabled:bg-gray-dark dark:disabled:text-gray-light dark:ring-offset-zinc-950 dark:focus-visible:ring-zinc-300",
+  "inline-flex gap-2 items-center justify-center whitespace-nowrap rounded-lg text-base font-semibold ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-950 focus-visible:ring-offset-2 data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50 data-[disabled=true]:bg-gray-light data-[disabled=true]:text-black dark:data-[disabled=true]:bg-gray-dark dark:data-[disabled=true]:text-gray-light dark:ring-offset-zinc-950 dark:focus-visible:ring-zinc-300",
   {
     variants: {
       variant: {
@@ -34,12 +34,14 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, asChild = false, disabled, ...props }, ref) => {
     const Comp = asChild ? Slot : "button";
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
+        disabled={disabled}
+        data-disabled={disabled}
         {...props}
       />
     );
