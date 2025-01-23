@@ -126,5 +126,13 @@ export const designProjects: ProjectInfos[] = [
         image: "/images/projects/designs/savebys/marketplace-products.webp"
       }
     ]
+  },
+  {
+    slug: DESIGN_PROJECTS.SOON,
+    name: "SOON",
+    href: "",
+    internal_href: "" as Pages,
+    image: "/images/projects/soon.webp",
+    images: []
   }
 ];

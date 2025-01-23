@@ -38,12 +38,14 @@ export enum CODE_PROJECTS {
   DEBUG_COFFEE = "debug-coffee",
   ONNE = "onne",
   SAVEBYS = "savebys",
-  NEW_WAVE = "new-wave"
+  NEW_WAVE = "new-wave",
+  SOON = "soon"
 }
 
 export enum DESIGN_PROJECTS {
   PERSONAL_WEBSITE = "personal-website",
   DEBUG_COFFEE = "debug-coffee",
   ONNE = "onne",
-  SAVEBYS = "savebys"
+  SAVEBYS = "savebys",
+  SOON = "soon"
 }

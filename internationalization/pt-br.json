@@ -189,6 +189,11 @@
           "PANEL_TESTIMONIALS": "Painel de Controle - Depoimentos",
           "HOME_TESTIMONIALS": "Página Inicial - Depoimentos"
         }
+      },
+      "SOON": {
+        "TITLE": "Em Breve",
+        "ALT": "Imagem escrito 'Em Breve' em inglês",
+        "ABOUT": "Logo, novos projetos estarão disponíveis aqui. Fique de olho!"
       }
     }
   },
@@ -242,6 +247,11 @@
           "MARKETPLACE": "Páginas do Marketplace",
           "MARKETPLACE_PRODUCTS": "Páginas de produtos do Marketplace"
         }
+      },
+      "SOON": {
+        "TITLE": "Em Breve",
+        "ALT": "Imagem escrito 'Em Breve' em inglês",
+        "ABOUT": "Logo, novos projetos de design estarão disponíveis aqui. Fique de olho!"
       }
     }
   },

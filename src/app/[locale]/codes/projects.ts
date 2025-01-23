@@ -315,5 +315,13 @@ export const codeProjects: ProjectInfos[] = [
         image: "/images/projects/codes/new-wave/home-depoimentos.webp"
       }
     ]
+  },
+  {
+    slug: CODE_PROJECTS.SOON,
+    name: "SOON",
+    href: "",
+    internal_href: "" as Pages,
+    image: "/images/projects/soon.webp",
+    images: []
   }
 ];

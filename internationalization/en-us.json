@@ -189,6 +189,11 @@
           "PANEL_TESTIMONIALS": "Control Panel - Testimonials",
           "HOME_TESTIMONIALS": "Home Page - Testimonials"
         }
+      },
+      "SOON": {
+        "ABOUT": "New projects will be available here. Keep an eye out!",
+        "ALT": "Image saying 'Coming Soon'",
+        "TITLE": "Coming Soon"
       }
     }
   },
@@ -242,6 +247,11 @@
           "MARKETPLACE": "Marketplace Pages",
           "MARKETPLACE_PRODUCTS": "Marketplace Products Pages"
         }
+      },
+      "SOON": {
+        "ABOUT": "New design projects will be available here soon. Stay tuned!",
+        "ALT": "Image saying 'Coming Soon'",
+        "TITLE": "Coming Soon"
       }
     }
   },

@@ -32,10 +32,13 @@ type ProjectCardProps = {
 export function ProjectCard({ project, translations }: ProjectCardProps) {
   const t = useTranslations(`${translations}.PROJECTS.${project.name}`);
 
+  const disabled = !project.internal_href;
+
   return (
     <TransitionLink
       href={project.internal_href}
-      className="w-full max-w-[368px] flex flex-col gap-4 p-4 border border-gray-light dark:border-black rounded-lg hover:scale-[1.05] transition-all hover:bg-gray-light/20 dark:hover:bg-black/20"
+      data-disabled={disabled}
+      className="w-full max-w-[368px] flex flex-col gap-4 p-4 border border-gray-light dark:border-black rounded-lg data-[disabled=false]:hover:scale-[1.05] transition-all data-[disabled=false]:hover:bg-gray-light/20 data-[disabled=false]:dark:hover:bg-black/20 data-[disabled=true]:pointer-events-none"
     >
       <div className="flex items-center h-[247px] p-8 justify-center bg-gray-light dark:bg-black">
         <Image
@@ -50,6 +53,7 @@ export function ProjectCard({ project, translations }: ProjectCardProps) {
         <Typography.H3 className="text-primary text-base font-normal">
           {t("TITLE")}
         </Typography.H3>
+        {disabled && <p>{t("ABOUT")}</p>}
         <a
           href={project.websiteHref}
           target="_blank"
