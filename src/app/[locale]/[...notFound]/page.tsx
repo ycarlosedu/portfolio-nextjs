@@ -18,9 +18,8 @@ export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
-export async function generateMetadata({
-  params: { locale }
-}: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "METADATA.NOT_FOUND" });
 
   return {
@@ -36,7 +35,8 @@ export async function generateMetadata({
   };
 }
 
-export default async function Contact({ params: { locale } }: Props) {
+export default async function Contact({ params }: Props) {
+  const { locale } = await params;
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations("NOT_FOUND");

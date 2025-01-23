@@ -11,12 +11,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { VercelToolbar } from "@vercel/toolbar/next";
 import type { Metadata } from "next";
-import {
-  AbstractIntlMessages,
-  NextIntlClientProvider,
-  useMessages
-} from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, unstable_setRequestLocale } from "next-intl/server";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -98,9 +94,10 @@ type Props = {
   params: { locale: string };
 };
 
-export default function RootLayout({ children, params: { locale } }: Props) {
+export default async function RootLayout({ children, params }: Props) {
+  const { locale } = await params;
   unstable_setRequestLocale(locale);
-  const messages = useMessages();
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
@@ -118,10 +115,7 @@ export default function RootLayout({ children, params: { locale } }: Props) {
         </div>
 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <NextIntlClientProvider
-            locale={locale}
-            messages={messages as AbstractIntlMessages}
-          >
+          <NextIntlClientProvider locale={locale} messages={messages}>
             <TooltipProvider delayDuration={50}>
               <Header locale={locale} />
               {children}
