@@ -46,7 +46,7 @@ export default async function Contact({ params: { locale } }: Props) {
       <Typography.P className="font-bold text-lg">404</Typography.P>
       <Typography.H1 className="">{t("TITLE")}</Typography.H1>
       <Typography.Muted className="">{t("MESSAGE")}</Typography.Muted>
-      <Button asChild>
+      <Button asChild effect="shine">
         <TransitionLink className="mt-4" locale={locale} href={"/"}>
           <CaretLeft size={16} />
           {t("BACK_HOME")}

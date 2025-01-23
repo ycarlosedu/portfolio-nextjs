@@ -32,7 +32,7 @@ export function SeeMyWork() {
               {t("CODE_DESCRIPTION")}
             </Typography.P>
           </div>
-          <Button asChild>
+          <Button asChild effect="shine">
             <TransitionLink href={"/codes"}>
               {t("CODE_BUTTON")}
               <ArrowRight size={16} weight="bold" />
@@ -56,7 +56,7 @@ export function SeeMyWork() {
               {t("DESIGN_DESCRIPTION")}
             </Typography.P>
           </div>
-          <Button asChild>
+          <Button asChild effect="shine">
             <TransitionLink href={"/designs"}>
               {t("DESIGN_BUTTON")}
               <ArrowRight size={16} weight="bold" />

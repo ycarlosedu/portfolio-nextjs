@@ -95,6 +95,10 @@ const config = {
         "ring-phone": {
           "0%, 10%, 20%, 30%, 40%, 100%": { transform: "rotate(0deg)" },
           "5%, 15%, 25%, 35%": { transform: "rotate(10deg)" }
+        },
+        shine: {
+          "0%": { backgroundPosition: "200% 0" },
+          "25%, 100%": { backgroundPosition: "-200% 0" }
         }
       },
       animation: {
@@ -111,7 +115,8 @@ const config = {
         "float-side": "float-side 3s ease-in-out infinite",
         "float-shadow": "float-shadow 10s ease-in-out infinite",
         "pulse-shadow": "pulse-shadow 2s ease-in-out infinite",
-        "ring-phone": "ring-phone 5s ease-in-out infinite"
+        "ring-phone": "ring-phone 5s ease-in-out infinite",
+        shine: "shine 3s ease-out infinite"
       }
     }
   },

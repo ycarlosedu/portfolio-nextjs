@@ -18,6 +18,10 @@ const buttonVariants = cva(
         default: "w-full max-w-[324px] p-3 min-h-[62px]",
         small: "w-fit p-3 h-fit",
         icon: "h-10 w-10"
+      },
+      effect: {
+        shine:
+          "before:animate-shine relative overflow-hidden before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-no-repeat background-position_0s_ease"
       }
     },
     defaultVariants: {
@@ -34,11 +38,21 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, disabled, ...props }, ref) => {
+  (
+    { className, variant, size, effect, asChild = false, disabled, ...props },
+    ref
+  ) => {
     const Comp = asChild ? Slot : "button";
     return (
       <Comp
-        className={cn(buttonVariants({ variant, size, className }))}
+        className={cn(
+          buttonVariants({
+            variant,
+            size,
+            effect: disabled ? undefined : effect,
+            className
+          })
+        )}
         ref={ref}
         disabled={disabled}
         data-disabled={disabled}

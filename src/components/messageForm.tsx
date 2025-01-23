@@ -138,7 +138,12 @@ export function MessageForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" disabled={isLoading} className="self-center">
+        <Button
+          type="submit"
+          disabled={isLoading}
+          effect="shine"
+          className="self-center"
+        >
           {isLoading ? t("LOADING_BUTTON") : t("BUTTON")}
           {isLoading ? (
             <CircleNotch size={16} weight="bold" className="animate-spin" />

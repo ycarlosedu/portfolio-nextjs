@@ -49,7 +49,7 @@ export function ProjectImages({ project, projectType }: ProjectsProps) {
       />
 
       <div className="flex flex-wrap gap-2.5 items-center justify-center w-full">
-        <Button asChild disabled={project.isWebsitePrivate}>
+        <Button asChild disabled={project.isWebsitePrivate} effect="shine">
           <a href={project.websiteHref} target="_blank">
             <Globe size={16} />
             WEBSITE
@@ -62,7 +62,7 @@ export function ProjectImages({ project, projectType }: ProjectsProps) {
         </Button>
 
         {projectType === PROJECT_TYPE.CODES && (
-          <Button asChild disabled={project.isRepositoryPrivate}>
+          <Button asChild disabled={project.isRepositoryPrivate} effect="shine">
             <a href={project.repositoryHref} target="_blank">
               <GithubLogo size={16} />
               GITHUB
@@ -76,7 +76,7 @@ export function ProjectImages({ project, projectType }: ProjectsProps) {
         )}
 
         {projectType === PROJECT_TYPE.DESIGNS && (
-          <Button asChild disabled={project.isDesignPrivate}>
+          <Button asChild disabled={project.isDesignPrivate} effect="shine">
             <a href={project.designHref} target="_blank">
               <FigmaLogo size={16} />
               FIGMA

@@ -7,7 +7,7 @@
     "source.organizeImports": "explicit"
   },
   "tailwindCSS.experimental.classRegex": [
-    ["tva\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+    ["cva\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
   ],
   "i18n-ally.localesPaths": ["internationalization"],
   "i18n-ally.sourceLanguage": "english",

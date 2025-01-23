@@ -1,5 +1,5 @@
 module.exports = {
   plugins: ["prettier-plugin-tailwindcss"],
   tailwindAttributes: ["className"],
-  tailwindFunctions: ["tva"]
+  tailwindFunctions: ["cva"]
 };
