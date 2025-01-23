@@ -3,8 +3,10 @@
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
 import { useIsVisible } from "@/hooks/useIsVisible";
+import { LayoutGroup, motion } from "motion/react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import TextRotate from "./ui/TextRotate";
 
 export function Hero() {
   const t = useTranslations("HOME.HERO");
@@ -27,9 +29,31 @@ export function Hero() {
       <div className="flex flex-col gap-8 pb-8 w-full max-w-default">
         <div className="flex flex-col gap-16 md:gap-0 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col gap-3 max-w-[400px] lg:max-w-[500px]">
-            <Typography.H1 className="text-primary lg:text-7xl">
-              Frontend Developer.
-            </Typography.H1>
+            <LayoutGroup>
+              <motion.h1
+                className="scroll-m-20 text-5xl leading-[1.2] font-bold tracking-tight text-primary lg:text-7xl"
+                layout
+              >
+                <TextRotate
+                  texts={["Frontend", "Fullstack", "Freelancer"]}
+                  staggerFrom={"last"}
+                  initial={{ y: "100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "-120%" }}
+                  staggerDuration={0.025}
+                  splitLevelClassName="overflow-hidden"
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                  rotationInterval={2000}
+                />
+                <motion.span
+                  layout
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                >
+                  {" "}
+                  Developer
+                </motion.span>
+              </motion.h1>
+            </LayoutGroup>
             <Typography.P className="text-xl">{t("SUBTITLE")}</Typography.P>
           </div>
           <div className="animate-float-shadow w-fit rounded-lg overflow-hidden transition-transform hover:rotate-3">
