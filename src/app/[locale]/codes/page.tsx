@@ -4,14 +4,12 @@ import { Contact } from "@/components/contact";
 import { Projects } from "@/components/projects";
 import { FloatingButton } from "@/components/ui/FloatingButton";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
-import { PROJECT_TYPE } from "@/constants";
+import { PageParams, PROJECT_TYPE } from "@/constants";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { codeProjects } from "./projects";
 
 type Props = {
-  params: {
-    locale: string;
-  };
+  params: PageParams;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

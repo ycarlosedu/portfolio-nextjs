@@ -6,7 +6,7 @@ import { SendMeAMessage } from "@/components/sendMeAMessage";
 import { FloatingMenu } from "@/components/ui/FloatingMenu";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
 import { WhatIDo } from "@/components/whatIDo";
-import { SECTIONS, URL_SOCIALS } from "@/constants";
+import { PageParams, SECTIONS, URL_SOCIALS } from "@/constants";
 import {
   AddressBook,
   ChatCircleText,
@@ -22,9 +22,7 @@ import { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = {
-  params: {
-    locale: string;
-  };
+  params: PageParams;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

@@ -4,6 +4,10 @@ export const sleep = (ms: number) => {
 
 export const IS_DEV_MODE = process.env.NODE_ENV === "development";
 
+export type PageParams = Promise<{
+  locale: string;
+}>;
+
 export enum SECTIONS {
   HERO = "hero",
   WHAT_I_DO = "what-i-do",

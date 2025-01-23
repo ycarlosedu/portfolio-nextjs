@@ -17,15 +17,14 @@ export function generateStaticParams() {
 }
 
 type Props = {
-  params: {
+  params: Promise<{
     locale: string;
     slug: CODE_PROJECTS;
-  };
+  }>;
 };
 
-export async function generateMetadata({
-  params: { locale, slug }
-}: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale, slug } = await params;
   const project = codeProjects.find((project) => project.slug === slug);
 
   if (!project) {
@@ -50,7 +49,8 @@ export async function generateMetadata({
   };
 }
 
-export default async function CodeProject({ params: { locale, slug } }: Props) {
+export default async function CodeProject({ params }: Props) {
+  const { locale, slug } = await params;
   setRequestLocale(locale);
   const project = codeProjects.find((project) => project.slug === slug);
 

@@ -4,14 +4,13 @@ import { Button } from "@/components/ui/Button";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
 import { TransitionLink } from "@/components/ui/TransitionLink";
 import { Typography } from "@/components/ui/Typography";
+import { PageParams } from "@/constants";
 import { locales } from "@/i18n/routing";
 import { CaretLeft } from "@phosphor-icons/react/dist/ssr";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = {
-  params: {
-    locale: string;
-  };
+  params: PageParams;
 };
 
 export async function generateStaticParams() {

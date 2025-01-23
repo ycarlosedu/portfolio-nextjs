@@ -3,7 +3,7 @@ import Header from "@/components/ui/Header";
 import { ScrollIndicator } from "@/components/ui/ScrollIndicator";
 import { Toaster } from "@/components/ui/Sonner";
 import { TooltipProvider } from "@/components/ui/Tooltip";
-import { IS_DEV_MODE } from "@/constants";
+import { IS_DEV_MODE, PageParams } from "@/constants";
 import { locales } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/Theme";
@@ -91,7 +91,7 @@ export function generateStaticParams() {
 
 type Props = {
   children: React.ReactNode;
-  params: { locale: string };
+  params: PageParams;
 };
 
 export default async function RootLayout({ children, params }: Props) {
