@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight, CircleNotch } from "@phosphor-icons/react/dist/ssr";
 import { Button } from "./ui/Button";
 
 import {
@@ -140,7 +140,11 @@ export function MessageForm() {
         />
         <Button type="submit" disabled={isLoading} className="self-center">
           {isLoading ? t("LOADING_BUTTON") : t("BUTTON")}
-          <ArrowRight size={16} weight="bold" />
+          {isLoading ? (
+            <CircleNotch size={16} weight="bold" className="animate-spin" />
+          ) : (
+            <ArrowRight size={16} weight="bold" />
+          )}
         </Button>
       </form>
     </Form>
