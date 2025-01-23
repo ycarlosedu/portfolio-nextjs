@@ -66,12 +66,12 @@ body {
   .embla__dot {
     -webkit-tap-highlight-color: #1b1b1b50;
     -webkit-appearance: none;
-    @apply appearance-none rounded-full justify-center items-center h-8 w-8 m-0 p-0 border-none cursor-pointer inline-flex touch-manipulation bg-transparent;
+    @apply appearance-none rounded-full justify-center items-center h-8 w-8 m-0 p-0 border-none cursor-pointer inline-flex touch-manipulation bg-transparent hover:scale-150 transition-all duration-300;
   }
 
   .embla__dot:after {
     box-shadow: inset 10px 0 0 0.2rem #b3b3b3;
-    @apply content-[""] flex items-center rounded-full h-3 w-3;
+    @apply content-[""] flex items-center rounded-full h-3 w-3 transition-all duration-300;
   }
 
   .embla__dot--selected:after {
