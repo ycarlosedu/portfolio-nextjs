@@ -1,7 +1,7 @@
 "use client";
 
 import { sleep } from "@/constants";
-import { Link, Pages, usePathname, useRouter } from "@/navigation";
+import { Link, Pages, usePathname, useRouter } from "@/i18n/routing";
 import { ComponentProps, ElementRef, forwardRef } from "react";
 
 type Props = ComponentProps<typeof Link> & {

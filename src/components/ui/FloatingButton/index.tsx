@@ -6,7 +6,7 @@ import {
   TooltipContent,
   TooltipTrigger
 } from "@/components/ui/Tooltip";
-import { Pages } from "@/navigation";
+import { Pages } from "@/i18n/routing";
 import { CaretLeft } from "@phosphor-icons/react/dist/ssr";
 import { TransitionLink } from "../TransitionLink";
 

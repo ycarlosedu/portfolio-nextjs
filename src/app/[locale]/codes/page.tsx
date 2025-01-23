@@ -5,7 +5,7 @@ import { Projects } from "@/components/projects";
 import { FloatingButton } from "@/components/ui/FloatingButton";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
 import { PROJECT_TYPE } from "@/constants";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { codeProjects } from "./projects";
 
 type Props = {
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Codes({ params }: Props) {
   const { locale } = await params;
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "CODES" });
 

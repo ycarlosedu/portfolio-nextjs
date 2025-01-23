@@ -19,7 +19,7 @@ import {
   Path
 } from "@phosphor-icons/react/dist/ssr";
 import { Metadata } from "next";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = {
   params: {
@@ -67,7 +67,7 @@ const socials = [
 
 export default async function Home({ params }: Props) {
   const { locale } = await params;
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "HOME" });
 
   const sections = [

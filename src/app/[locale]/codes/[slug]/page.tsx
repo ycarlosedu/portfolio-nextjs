@@ -8,7 +8,7 @@ import { FloatingButton } from "@/components/ui/FloatingButton";
 import TechnologiesCarousel from "@/components/ui/TechnologiesCarousel";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
 import { CODE_PROJECTS, PROJECT_TYPE } from "@/constants";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
 import { codeProjects } from "../projects";
 
@@ -51,7 +51,7 @@ export async function generateMetadata({
 }
 
 export default async function CodeProject({ params: { locale, slug } }: Props) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const project = codeProjects.find((project) => project.slug === slug);
 
   if (!project) {

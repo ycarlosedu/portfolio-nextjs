@@ -12,7 +12,7 @@ import {
   TooltipTrigger
 } from "@/components/ui/Tooltip";
 import { TransitionLink } from "@/components/ui/TransitionLink";
-import { Pages } from "@/navigation";
+import { Pages } from "@/i18n/routing";
 import { Globe } from "@phosphor-icons/react/dist/ssr";
 import { usePathname } from "next/navigation";
 

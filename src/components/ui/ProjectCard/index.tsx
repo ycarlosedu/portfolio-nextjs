@@ -1,7 +1,7 @@
 import { TransitionLink } from "@/components/ui/TransitionLink";
 import { Typography } from "@/components/ui/Typography";
 import { CODE_PROJECTS, DESIGN_PROJECTS, PROJECT_TYPE } from "@/constants";
-import { Pages } from "@/navigation";
+import { Pages } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Badge from "../Badge";

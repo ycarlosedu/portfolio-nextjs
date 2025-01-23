@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/Button";
 import { TransitionContainer } from "@/components/ui/TransitionContainer";
 import { TransitionLink } from "@/components/ui/TransitionLink";
 import { Typography } from "@/components/ui/Typography";
-import { locales } from "@/i18n";
+import { locales } from "@/i18n/routing";
 import { CaretLeft } from "@phosphor-icons/react/dist/ssr";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = {
   params: {
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Contact({ params }: Props) {
   const { locale } = await params;
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
 
   const t = await getTranslations("NOT_FOUND");
 

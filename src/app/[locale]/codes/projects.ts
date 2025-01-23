@@ -1,6 +1,6 @@
 import { ProjectInfos } from "@/components/ui/ProjectCard";
 import { CODE_PROJECTS } from "@/constants";
-import { Pages } from "@/navigation";
+import { Pages } from "@/i18n/routing";
 
 export const codeProjects: ProjectInfos[] = [
   {
