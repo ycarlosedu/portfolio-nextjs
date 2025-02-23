@@ -128,7 +128,8 @@ export function Contact() {
             className="h-auto"
           />
           <Typography.P className="text-center">
-            Copyright ©2024 Carlos Eduardo Oliveira da Silva
+            Copyright ©{new Date().getFullYear().toString()} Carlos Eduardo
+            Oliveira da Silva
           </Typography.P>
         </div>
       </footer>
