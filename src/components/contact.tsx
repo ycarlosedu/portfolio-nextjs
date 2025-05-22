@@ -1,5 +1,3 @@
-"use client";
-
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS, URL_SOCIALS } from "@/constants";
 import {
@@ -8,12 +6,12 @@ import {
   LinkedinLogo
 } from "@phosphor-icons/react/dist/ssr";
 import Logo from "images/logo/full.svg";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { TransitionLink } from "./ui/TransitionLink";
 
-export function Contact() {
-  const t = useTranslations("CONTACT");
+export async function Contact() {
+  const t = await getTranslations("CONTACT");
 
   return (
     <section

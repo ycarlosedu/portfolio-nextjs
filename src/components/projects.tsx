@@ -1,18 +1,15 @@
-"use client";
-
-import { useTranslations } from "next-intl";
-
 import { ProjectCard, ProjectInfos } from "@/components/ui/ProjectCard";
 import { Typography } from "@/components/ui/Typography";
 import { PROJECT_TYPE } from "@/constants";
+import { getTranslations } from "next-intl/server";
 
 type ProjectsProps = {
   projects: ProjectInfos[];
   translations: PROJECT_TYPE;
 };
 
-export function Projects({ projects, translations }: ProjectsProps) {
-  const t = useTranslations(translations);
+export async function Projects({ projects, translations }: ProjectsProps) {
+  const t = await getTranslations(translations);
 
   return (
     <section className="px-default md:min-h-screen max-w-default w-full flex flex-col items-center gap-4 md:pt-32 pb-20">

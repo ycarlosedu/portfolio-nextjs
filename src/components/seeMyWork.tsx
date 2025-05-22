@@ -1,15 +1,13 @@
-"use client";
-
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Button } from "./ui/Button";
 import { TransitionLink } from "./ui/TransitionLink";
 
-export function SeeMyWork() {
-  const t = useTranslations("HOME.SEE_MY_WORK");
+export async function SeeMyWork() {
+  const t = await getTranslations("HOME.SEE_MY_WORK");
 
   return (
     <section

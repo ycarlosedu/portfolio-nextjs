@@ -25,6 +25,7 @@ export function Hero() {
         width={200}
         height={210}
         alt="Triangle svg"
+        priority
       />
       <div className="flex flex-col gap-8 pb-8 w-full max-w-default">
         <div className="flex flex-col gap-16 md:gap-0 md:flex-row md:items-center md:justify-between">
@@ -63,6 +64,7 @@ export function Hero() {
               width={288}
               height={384}
               alt="Carlos Silva Profile Image"
+              priority
             />
           </div>
         </div>

@@ -2,7 +2,7 @@ import { TransitionLink } from "@/components/ui/TransitionLink";
 import { Typography } from "@/components/ui/Typography";
 import { CODE_PROJECTS, DESIGN_PROJECTS, PROJECT_TYPE } from "@/constants";
 import { Pages } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Badge from "../Badge";
 import { CarouselList } from "../Carousel";
@@ -29,8 +29,8 @@ type ProjectCardProps = {
   translations: PROJECT_TYPE;
 };
 
-export function ProjectCard({ project, translations }: ProjectCardProps) {
-  const t = useTranslations(`${translations}.PROJECTS.${project.name}`);
+export async function ProjectCard({ project, translations }: ProjectCardProps) {
+  const t = await getTranslations(`${translations}.PROJECTS.${project.name}`);
 
   const disabled = !project.internal_href;
 
@@ -47,6 +47,7 @@ export function ProjectCard({ project, translations }: ProjectCardProps) {
           width={192}
           height={183}
           className="h-full w-auto rounded-3xl"
+          priority
         />
       </div>
       <div className="flex flex-col gap-2">
@@ -54,10 +55,7 @@ export function ProjectCard({ project, translations }: ProjectCardProps) {
           {t("TITLE")}
         </Typography.H3>
         {disabled && <p>{t("ABOUT")}</p>}
-        <span
-          className="font-semibold flex items-center gap-1 w-fit"
-          onClick={(e) => e.stopPropagation()}
-        >
+        <span className="font-semibold flex items-center gap-1 w-fit">
           {project.href}
         </span>
         {Boolean(project.technologies?.length) && (

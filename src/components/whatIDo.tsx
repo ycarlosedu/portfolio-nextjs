@@ -1,15 +1,13 @@
-"use client";
-
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
 import { technologies } from "@/utils/carousel/technologies";
 import { tools } from "@/utils/carousel/tools";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Carousel from "./ui/Carousel";
 
-export function WhatIDo() {
-  const t = useTranslations("HOME.WHAT_I_DO");
+export async function WhatIDo() {
+  const t = await getTranslations("HOME.WHAT_I_DO");
 
   return (
     <section

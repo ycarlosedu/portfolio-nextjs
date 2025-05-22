@@ -1,12 +1,10 @@
-"use client";
-
 import { Typography } from "@/components/ui/Typography";
 import { SECTIONS } from "@/constants";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
-export function OverTheYears() {
-  const t = useTranslations("HOME.OVER_THE_YEARS");
+export async function OverTheYears() {
+  const t = await getTranslations("HOME.OVER_THE_YEARS");
 
   return (
     <section

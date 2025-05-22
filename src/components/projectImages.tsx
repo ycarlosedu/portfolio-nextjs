@@ -1,7 +1,3 @@
-"use client";
-
-import { useTranslations } from "next-intl";
-
 import { ProjectInfos } from "@/components/ui/ProjectCard";
 import { Typography } from "@/components/ui/Typography";
 import { PROJECT_TYPE } from "@/constants";
@@ -14,6 +10,7 @@ import {
   Lock
 } from "@phosphor-icons/react/dist/ssr";
 import { cva } from "class-variance-authority";
+import { getTranslations } from "next-intl/server";
 import { Button } from "./ui/Button";
 import Carousel from "./ui/Carousel";
 
@@ -31,8 +28,8 @@ type ProjectsProps = {
   projectType: PROJECT_TYPE;
 };
 
-export function ProjectImages({ project, projectType }: ProjectsProps) {
-  const t = useTranslations(`${projectType}.PROJECTS.${project.name}`);
+export async function ProjectImages({ project, projectType }: ProjectsProps) {
+  const t = await getTranslations(`${projectType}.PROJECTS.${project.name}`);
 
   const imagesTranslated = project.images.map((image) => ({
     name: t(`IMAGES.${image.name}`),

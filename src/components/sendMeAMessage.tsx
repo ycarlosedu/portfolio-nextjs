@@ -1,15 +1,13 @@
-"use client";
-
 import { Typography } from "@/components/ui/Typography";
 
 import { SECTIONS } from "@/constants";
-import { useTranslations } from "next-intl";
 
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { MessageForm } from "./messageForm";
 
-export function SendMeAMessage() {
-  const t = useTranslations("HOME.SEND_ME_A_MESSAGE");
+export async function SendMeAMessage() {
+  const t = await getTranslations("HOME.SEND_ME_A_MESSAGE");
 
   return (
     <section

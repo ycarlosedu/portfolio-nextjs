@@ -1,16 +1,19 @@
 import { MessageForm } from "@/components/messageForm";
 import { Typography } from "@/components/ui/Typography";
 import { PROJECT_TYPE } from "@/constants";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 type ProjectAboutProps = {
   projectName: string;
   projectType: PROJECT_TYPE;
 };
 
-export function ProjectAbout({ projectName, projectType }: ProjectAboutProps) {
-  const t = useTranslations(`PROJECT_ABOUT`);
-  const translateProject = useTranslations(
+export async function ProjectAbout({
+  projectName,
+  projectType
+}: ProjectAboutProps) {
+  const t = await getTranslations(`PROJECT_ABOUT`);
+  const translateProject = await getTranslations(
     `${projectType}.PROJECTS.${projectName}`
   );
 
