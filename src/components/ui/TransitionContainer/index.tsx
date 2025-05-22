@@ -9,12 +9,12 @@ export function TransitionContainer({ children, className, ...props }: Props) {
     <motion.main
       initial={{
         opacity: 0.3,
-        x: "200vw",
+        // x: "200vw",
         filter: "blur(12px)"
       }}
       animate={{
         opacity: 1,
-        x: 0,
+        // x: 0,
         filter: "blur(0px)"
       }}
       transition={{

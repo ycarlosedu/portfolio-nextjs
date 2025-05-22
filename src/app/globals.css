@@ -89,7 +89,7 @@ body {
   }
 
   .page-transition {
-    @apply !opacity-0 !-translate-x-[100vw] !blur-md;
+    @apply !opacity-0 !blur-md;
   }
 }
 
