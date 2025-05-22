@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import useVisibleSectionStore from "@/store/visibleSectionStore";
 import Link from "next/link";
-import { ComponentProps, HTMLAttributeAnchorTarget } from "react";
+import { ComponentProps, HTMLAttributeAnchorTarget, JSX } from "react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../Tooltip";
 
 type LinkMenu = {
