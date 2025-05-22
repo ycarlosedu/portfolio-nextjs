@@ -34,9 +34,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     namespace: `DESIGNS.PROJECTS.${project.name}`
   });
 
+  const description = t
+    .rich("ABOUT", {
+      br: () => ""
+    })
+    ?.toString()
+    .split(".")[0];
+
   return {
     title: t("TITLE") + " (Design) | Carlos Silva",
-    description: t("ABOUT"),
+    description,
     alternates: {
       canonical: `https://carlossilva.vercel.app/pt-br/designs/${slug}`,
       languages: {
