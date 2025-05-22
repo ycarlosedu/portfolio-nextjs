@@ -5,6 +5,9 @@ const withVercelToolbar = require("@vercel/toolbar/plugins/next")();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    viewTransition: true
+  },
   images: {
     remotePatterns: [
       {

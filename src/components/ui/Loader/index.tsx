@@ -1,6 +1,9 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
-import { ComponentProps } from "react";
+import {
+  ComponentProps,
+  unstable_ViewTransition as ViewTransition
+} from "react";
 import { MotionSVG } from "../MotionSVG";
 
 type Props = ComponentProps<typeof motion.div> & {
@@ -23,6 +26,7 @@ export default function Loader({
       {show && (
         <motion.div
           exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
           className={cn(
             "flex w-full items-center justify-center",
             sectionSize && "flex-1",
@@ -33,7 +37,9 @@ export default function Loader({
           {...rest}
         >
           <div className="flex w-full animate-bounce flex-col items-center justify-center gap-2 text-primary">
-            <MotionSVG.Logo />
+            <ViewTransition name="motion-logo">
+              <MotionSVG.Logo />
+            </ViewTransition>
             <span className={`text-xs text-gray-dark dark:text-gray-light`}>
               {text}
             </span>
