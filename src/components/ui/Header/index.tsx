@@ -44,7 +44,7 @@ export default function Header({ locale }: Props) {
           : "-translate-y-80 2xl:translate-y-0"
       )}
     >
-      <div className="container relative flex items-start xs:items-center justify-between h-full">
+      <div className="container relative flex items-center justify-between h-full">
         <TransitionLink
           locale={locale}
           href={"/"}
@@ -52,7 +52,7 @@ export default function Header({ locale }: Props) {
         >
           <MotionSVG.Logo />
         </TransitionLink>
-        <div className="flex items-center absolute xs:relative top-0 right-0 gap-4 flex-col-reverse xs:flex-row h-fit">
+        <div className="flex items-center gap-1 xxs:gap-2 xs:gap-3 md:gap-4 flex-row h-fit">
           <ToggleTheme />
           <ToggleLanguage locale={locale} />
           <Sheet>
