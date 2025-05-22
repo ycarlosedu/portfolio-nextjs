@@ -54,15 +54,12 @@ export function ProjectCard({ project, translations }: ProjectCardProps) {
           {t("TITLE")}
         </Typography.H3>
         {disabled && <p>{t("ABOUT")}</p>}
-        <a
-          href={project.websiteHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-semibold hover:underline flex items-center gap-1 w-fit"
+        <span
+          className="font-semibold flex items-center gap-1 w-fit"
           onClick={(e) => e.stopPropagation()}
         >
           {project.href}
-        </a>
+        </span>
         {Boolean(project.technologies?.length) && (
           <div className="flex gap-2 items-center flex-wrap w-full">
             {project.technologies
