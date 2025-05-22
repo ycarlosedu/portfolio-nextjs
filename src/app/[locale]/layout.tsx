@@ -14,6 +14,7 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { Inter } from "next/font/google";
+import InitialLoader from "./initial-loader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -119,6 +120,7 @@ export default async function RootLayout({ children, params }: Props) {
           <meta itemProp="name" content="Carlos Silva | Front-End Developer" />
           <meta itemProp="alternateName" content="Carlos Silva Portfolio" />
         </div>
+        <InitialLoader />
 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider locale={locale} messages={messages}>
