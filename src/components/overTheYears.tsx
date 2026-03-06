@@ -33,9 +33,8 @@ export async function OverTheYears() {
           </Typography.H2>
           <Typography.P>{t("PARAGRAPH1")}</Typography.P>
           <Typography.P>{t("PARAGRAPH2")}</Typography.P>
-          <Typography.P>{t("PARAGRAPH3")}</Typography.P>
           <Typography.P>
-            {t.rich("PARAGRAPH4", {
+            {t.rich("PARAGRAPH3", {
               onne: (chunks) => (
                 <a
                   href="https://onne.site"
@@ -56,7 +55,7 @@ export async function OverTheYears() {
               )
             })}
           </Typography.P>
-          <Typography.P>{t("PARAGRAPH5")}</Typography.P>
+          <Typography.P>{t("PARAGRAPH4")}</Typography.P>
         </div>
         <Image
           src="/images/over-the-years.svg"
