@@ -4,6 +4,51 @@ import { Pages } from "@/i18n/routing";
 
 export const codeProjects: ProjectInfos[] = [
   {
+    slug: CODE_PROJECTS.SOMME,
+    name: "SOMME",
+    isWebsitePrivate: true,
+    isRepositoryPrivate: true,
+    href: "under-construction",
+    internal_href: "/codes/somme" as Pages,
+    image: "/images/projects/logos/somme.webp",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "Vercel",
+      "Shadcn UI",
+      "Zod",
+      "React Hook Form",
+      "Zustand",
+      "Framer Motion",
+      "Lucide Icons"
+    ],
+    images: [
+      {
+        name: "LOGIN",
+        image: "/images/projects/codes/somme/login.webp"
+      },
+      {
+        name: "HOME_1",
+        image: "/images/projects/codes/somme/home-1.webp"
+      },
+      {
+        name: "HOME_2",
+        image: "/images/projects/codes/somme/home-2.webp"
+      },
+      {
+        name: "TRANSACTIONS",
+        image: "/images/projects/codes/somme/transactions.webp"
+      },
+      {
+        name: "CATEGORIES",
+        image: "/images/projects/codes/somme/categories.webp"
+      }
+    ]
+  },
+  {
     slug: CODE_PROJECTS.PERSONAL_WEBSITE,
     name: "PERSONAL_WEBSITE",
     isWebsitePrivate: false,

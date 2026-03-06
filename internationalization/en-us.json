@@ -109,6 +109,18 @@
     "DESCRIPTION": "Some work I've done in the past.",
     "BACK_BUTTON": "Back",
     "PROJECTS": {
+            "SOMME": {
+        "TITLE": "Somme",
+        "ALT": "Somme Logo",
+        "ABOUT": "Somme is a personal financial dashboard I'm building to help people manage their finances in a simple and efficient way. Users can register their income and expenses, mark bills as paid, clone, edit, and create installment or recurring payments, as well as set up spending categories and budgets. <br></br>The app provides a complete monthly overview, displaying income, expenses, available balance, and the total amount still pending payment — all presented visually through charts and indicators. <br></br>The project will include a free forever plan with some limitations, and a premium plan with extra features for those who want even more complete financial control. <br></br>Somme is still under development and has not been released to the public yet, but it will be available for everyone soon.",
+        "IMAGES": {
+          "LOGIN": "Login Page",
+          "HOME_1": "Dashboard initial with a summary of the most important information",
+          "HOME_2": "Charts showing data about the user's expenses",
+          "TRANSACTIONS": "Transactions Page",
+          "CATEGORIES": "Categories Page"
+        }
+      },
       "PERSONAL_WEBSITE": {
         "TITLE": "My Personal Website",
         "ALT": "Carlos Silva Logo",

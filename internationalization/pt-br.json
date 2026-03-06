@@ -109,6 +109,18 @@
     "DESCRIPTION": "Alguns trabalhos que fiz no passado.",
     "BACK_BUTTON": "Voltar",
     "PROJECTS": {
+      "SOMME": {
+        "TITLE": "Somme",
+        "ALT": "Somme Logo",
+        "ABOUT": "O Somme é um dashboard financeiro pessoal que estou desenvolvendo para ajudar as pessoas a organizarem suas finanças de forma simples e eficiente. Com ele, o usuário pode cadastrar suas receitas e despesas, marcar contas como pagas, clonar, editar e lançar compras parceladas ou recorrentes, além de criar categorias de gastos e definir orçamentos. <br></br>O app fornece um resumo completo de cada mês, exibindo receitas, despesas, saldo disponível e o valor total que ainda falta ser pago, tudo de maneira visual e intuitiva através de gráficos e indicadores. <br></br>O projeto contará com um plano gratuito para sempre, com algumas limitações, e um plano premium com funcionalidades extras para quem deseja um controle financeiro ainda mais completo. <br></br>O Somme ainda está em desenvolvimento e não foi liberado ao público, mas em breve estará disponível para todos.",
+        "IMAGES": {
+          "LOGIN": "Página de Login",
+          "HOME_1": "Dashboard inicial com um resumo das informações mais importantes",
+          "HOME_2": "Gráficos mostrando dados sobre as despesas do usuário",
+          "TRANSACTIONS": "Transações",
+          "CATEGORIES": "Categorias"
+        }
+      },
       "PERSONAL_WEBSITE": {
         "TITLE": "Meu Site Pessoal",
         "ALT": "Carlos Silva Logo",

@@ -38,6 +38,7 @@ export enum PROJECT_TYPE {
 }
 
 export enum CODE_PROJECTS {
+  SOMME = "somme",
   PERSONAL_WEBSITE = "personal-website",
   DEBUG_COFFEE = "debug-coffee",
   ONNE = "onne",
