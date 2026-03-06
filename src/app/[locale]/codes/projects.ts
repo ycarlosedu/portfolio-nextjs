@@ -95,6 +95,53 @@ export const codeProjects: ProjectInfos[] = [
     ]
   },
   {
+      slug: CODE_PROJECTS.SECCOL,
+    name: "SECCOL",
+    isWebsitePrivate: true,
+    isRepositoryPrivate: true,
+    href: "internal-project",
+    internal_href: "/codes/seccol" as Pages,
+    image: "/images/projects/logos/seccol.webp",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+      "Shadcn UI",
+      "Zod",
+      "React Hook Form",
+      "Zustand",
+      "Lucide Icons"
+    ],
+    images: [
+      {
+        name: "LOGIN",
+        image: "/images/projects/codes/seccol/login.webp"
+      },
+      {
+        name: "HOME",
+        image: "/images/projects/codes/seccol/home.webp"
+      },
+      {
+        name: "PROCEDURES",
+        image: "/images/projects/codes/seccol/procedures.webp"
+      },
+      {
+        name: "HEADER",
+        image: "/images/projects/codes/seccol/header-footer.webp"
+      },
+      {
+        name: "CLIENTS",
+        image: "/images/projects/codes/seccol/clients.webp"
+      },
+      {
+        name: "REGISTER_CLIENTS",
+        image: "/images/projects/codes/seccol/register-client.webp"
+      }
+    ]
+  },
+  {
     slug: CODE_PROJECTS.DEBUG_COFFEE,
     name: "DEBUG_COFFEE",
     isWebsitePrivate: false,

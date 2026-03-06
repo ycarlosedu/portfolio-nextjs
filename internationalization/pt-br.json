@@ -133,6 +133,19 @@
           "FORM": "Formulário de Contato"
         }
       },
+            "SECCOL": {
+        "TITLE": "Seccol",
+        "ALT": "Seccol Logo",
+        "ABOUT": "O Seccol é um sistema de gerenciamento desenvolvido para uma empresa especializada em certificações de qualidade em áreas limpas, cabines de segurança biológica, capelas de exaustão, entre outros equipamentos. <br></br>O projeto conta com diversos formulários de cadastro de usuários, técnicos, ferramentas, clientes, departamentos, procedimentos, ordens de serviço, propostas de clientes e equipamentos, com o propósito de centralizar e organizar todo o gerenciamento da empresa, substituindo planilhas manuais por uma plataforma digital eficiente. <br></br>Além do gerenciamento completo, o sistema permite gerar PDFs de forma fácil e rápida para envio aos clientes, otimizando o fluxo de trabalho e garantindo mais agilidade e profissionalismo na entrega dos documentos.",
+        "IMAGES": {
+          "LOGIN": "Página de Login",
+          "HOME": "Dashboard inicial com um resumo das informações mais importantes",
+          "PROCEDURES": "Listagem de procedimentos/departamentos e cadastro de novos",
+          "HEADER": "Gerenciamento de cabeçalho e rodapé usados na geração de PDFs",
+          "CLIENTS": "Listagem de clientes e cadastro de novos",
+          "REGISTER_CLIENTS": "Formulários de cadastro de clientes"
+        }
+      },
       "DEBUG_COFFEE": {
         "TITLE": "Debug Café",
         "ALT": "Debug Café Logo",

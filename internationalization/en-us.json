@@ -133,6 +133,19 @@
           "FORM": "Contact Form"
         }
       },
+                  "SECCOL": {
+        "TITLE": "Seccol",
+        "ALT": "Seccol Logo",
+        "ABOUT": "Seccol is a management system developed for a company specialized in quality certifications for cleanrooms, biological safety cabinets, fume hoods, and other equipment. <br></br>The project features several registration forms for users, technicians, tools, clients, departments, procedures, work orders, client proposals, and equipment, with the purpose of centralizing and organizing all company management, replacing manual spreadsheets with an efficient digital platform. <br></br>In addition to complete management, the system allows easy and fast PDF generation for sending to clients, streamlining the workflow and ensuring more agility and professionalism in document delivery.",
+        "IMAGES": {
+          "LOGIN": "Login Page",
+          "HOME": "Dashboard initial with a summary of the most important information",
+          "PROCEDURES": "List of procedures/departments and registration of new ones",
+          "HEADER": "Management of header and footer used in PDF generation",
+          "CLIENTS": "List of clients and registration of new ones",
+          "REGISTER_CLIENTS": "Client registration forms"
+        }
+      },
       "DEBUG_COFFEE": {
         "TITLE": "Debug Coffee",
         "ALT": "Debug Coffee Logo",
